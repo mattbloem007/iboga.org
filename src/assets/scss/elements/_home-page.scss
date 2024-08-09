@@ -1,0 +1,31 @@
+.info-container {
+  margin: 0 64px 120px 64px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.info-title {
+  margin: 0 152.9px 135px 0;
+  overflow-wrap: break-word;
+  font-family: 'Cabinet Grotesk', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 64px;
+  color: #000000;
+  font-family: 'Cabinet Grotesk', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.333;
+}
+
+.info-description {
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Epilogue';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+}

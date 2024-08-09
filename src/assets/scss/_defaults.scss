@@ -20,10 +20,87 @@ main {
     line-height: 1.5;
   }
 }
+
+/* ========= RESETS ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
-  color: var(--home-link-color);
   text-decoration: none;
-  &:hover {
-    color: var(--home-link-hover-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "CabinetGrotesk-reg";
+  font-size: 72px;
+}
+
+h2 {
+  font-family: "CabinetGrotesk-reg";
+  font-size: 64px;
+}
+
+h3 {
+  font-family: "CabinetGrotesk-med";
+  font-size: 36px;
+}
+
+h4 {
+  font-family: "CabinetGrotesk-med";
+  font-size: 32px;
+}
+
+h5 {
+  font-family: "CabinetGrotesk-med";
+  font-size: 24px;
+}
+
+.heading-bold {
+  font-family: "CabinetGrotesk-med";
+}
+
+p {
+  font-family: "Epilogue";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.p-reg-weight {
+  font-weight: 400;
+}
+
+.p-small {
+  font-size: 16px;
+  text-align: initial;
+  text-justify: initial;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+     font-size: 40px; 
+  }
+
+  h2 {
+      font-size: 36px;
+  }
+
+  p {
+      font-size: 16px;
   }
 }
+
+/* ========= /RESETS ========= */

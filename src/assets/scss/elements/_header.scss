@@ -1,0 +1,97 @@
+/* ------ HEADER LIAM ------- */
+
+/* ------ Hero Section ------ */
+
+.hero-slide {
+    padding: 280px 0px 185px 0px;
+    color: var(--white-text);
+    height: 838px;
+}
+
+.hero-slide h1 {
+    margin-bottom: 16px;
+}
+
+.hero-slide a {
+    margin-top: 32px;
+}
+
+.hero-content-slide-1 {
+    background: url(../vectors/banners-images/hero-banner-1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-content-slide {
+    background-size: cover;
+}
+
+.hero-slide h1 {
+    max-width: 760px;
+}
+
+.hero-content-slide-1 p {
+    max-width: 511px;
+}
+
+.hero-content-slide-2 {
+    background: url(../vectors/banners-images/hero-banner-2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-content-slide-2 p {
+    max-width: 419px;
+}
+
+
+.hero-content-slide-3 {
+    background: url(../vectors/banners-images/hero-banner-3.png) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-content-slide-3 p {
+    max-width: 546px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero-slide {
+        height: 690px;
+        padding: 190px 0px 0px 0px;
+    }
+}
+
+/* ------ /Hero Section ------ */
+
+
+
+.header-title {
+  margin-bottom: 26px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Cabinet Grotesk', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 72px;
+  color: #FFFFFF;
+  font-family: 'Cabinet Grotesk', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.333;
+  color: #FFFFFF;
+}
+
+.header-excerpt {
+  margin-bottom: 32px;
+  display: inline-block;
+  align-self: flex-start;
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Epilogue';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.header-text-container {
+  width: 50%;
+}

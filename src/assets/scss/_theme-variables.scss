@@ -1,30 +1,98 @@
-// breakpoints
+@import url("https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1022px;
 $breakpoint-xl: 1200px;
 
+
+.max-width {
+  max-width: 1440px;
+  padding: 0px 64px;
+  margin: 0 auto;
+}
+
+.margin-left-width {
+  margin-left: calc((100vw - ( 1440px - 112px )) / 2);
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 1440px) {
+    .margin-left-width {
+        margin-left: 64px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .max-width {
+        padding: 0px 16px;
+        overflow: hidden;
+    }
+
+    .margin-left-width {
+        margin-left: 16px;
+    }
+}
+
+
 :root {
-  --font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  --font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
-  --font-size-small: 12px;
+  /* fonts */
+  --font-cabinet-grotesk: "Cabinet Grotesk";
+  --font-epilogue: Epilogue;
 
-  --home-link-color: #d4d4d4;
-  --home-link-hover-color: var(--primary-color);
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-xl: 20px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-size-17xl: 36px;
+  --font-size-xs: 12px;
+  --font-size-base: 16px;
+  --font-size-13xl: 32px;
+  --font-size-mini: 15px;
+  --font-size-45xl: 64px;
 
-  --button-color: #e5c3d3;
-  --button-alternate-color: #5c2941;
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: rgba(0, 0, 0, 0.4);
+  --color-gray-200: rgba(255, 255, 255, 0.25);
+  --color-gray-300: rgba(0, 0, 0, 0.15);
+  --color-gray-400: rgba(0, 0, 0, 0.3);
+  --color-black: #000;
+  --color-palegoldenrod: #fdffb9;
+  --color-whitesmoke: #f0f0f0;
+  --color-seagreen: #35834b;
+  --color-lightgreen: #80de9a;
+  --color-darkgreen: #1D4127;
 
-  --post-link-color: #0f070b;
+  --light-green: #80DE9A;
+  --med-green: #35834B;
+  --dark-green: #1D4127;
+  --light-yellow: #FEFFB9;
+  --orange: #FFA740;
+  --orange-transparent: rgba(255, 167, 64, 0.7);
+  --black-bg: #000;
+  --black-text: #000;
+  --white-bg: #fff;
+  --white-transparent: rgba(255,255,255,0.25);
+  --white-text: #fff;
 
-  --nav-link-hover-bg: #111;
-  --text-color-meta: rgba(0, 0, 0, 0.5);
+  /* Gaps */
+  --gap-sm: 14px;
+  --gap-3xs: 10px;
 
-  --label-text: #777;
-  --input-focus-border: #83aaac;
+  /* Paddings */
+  --padding-base: 16px;
+  --padding-7xl: 26px;
+  --padding-13xl: 32px;
 
-  // CSS Grid Utility
-  --grid-gap: 30px;
+  /* Border radiuses */
+  --br-13xl: 32px;
 }

@@ -37,6 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const id = post.node.id
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
+    const template = post.node.frontmatter.template
 
     createPage({
       path: post.node.frontmatter.slug,
@@ -44,8 +45,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         `src/templates/${String(post.node.frontmatter.template)}.js`
       ),
       // additional data can be passed via context
+
       context: {
         id,
+        template,
         previous,
         next,
       },

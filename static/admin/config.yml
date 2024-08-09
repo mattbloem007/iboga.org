@@ -1,3 +1,8 @@
+local_backend:
+    url: http://localhost:8081/api/v1
+    allowed_hosts: ['192.168.0.1']
+
+
 backend:
   name: git-gateway
   branch: main
@@ -61,6 +66,7 @@ collections:
           widget: "markdown",
           hint: "Main content goes here.",
         }
+
   - label: "Pages"
     name: "pages"
     files:
@@ -74,21 +80,84 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - label: "CTA"
-            name: "cta"
-            widget: "object"
+          - label: "Header Slides"
+            name: "header_slides"
+            label_singular: 'Header Slide'
+            widget: "list"
             fields:
-              - name: "ctaText"
-                label: "CTA text"
+              - label: "Title"
+                name: "title"
                 widget: "string"
-              - name: "ctaLink"
-                label: "CTA Link"
-                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - name: "ctaType"
+                    label: "CTA type"
+                    widget: "select"
+                    options: ["button", "search bar", "none"]
+                  - name: "ctaText"
+                    label: "CTA text (For button CTA type)"
+                    widget: "string"
+                  - name: "ctaLink"
+                    label: "CTA Link (For button CTA type)"
+                    widget: "string"
+
+          - label: 'Section 1 (Title and Paragraph)'
+            name: section1
+            widget: 'object'
+            fields:
+              - {
+                  label: 'ID',
+                  name: 'id',
+                  widget: string
+                }
+              - {
+                  label: 'Title',
+                  name: section1_title,
+                  widget: string
+                }
+              - {
+                  label: 'Paragraph',
+                  name: section1_paragraph,
+                  widget: markdown,
+                }
+              - {
+                  label: 'Button',
+                  name: btn,
+                  widget: boolean,
+                  default: false
+                }
+              - {
+                  label: 'Button Text',
+                  name: btn_text,
+                  widget: string,
+                }
+              - {
+                  label: 'Button type',
+                  name: btn_type,
+                  widget: select,
+                  options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "button-primary" }]
+                }
+
+          # - label: 'Slider Section 1'
+          #   name: slider1
+          #   widget: 'object'
+          #   fields:
+          #     - {
+          #         label: 'Title',
+          #         name: section1_title,
+          #         widget: string
+          #       }
+          #     - {
+          #         label: 'Paragraph',
+          #         name: section1_paragraph,
+          #         widget: string,
+          #       }
+
+
       - label: "About"
         name: "about"
         file: "src/content/pages/about.md"
@@ -120,6 +189,50 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+
+  - name: "slider_cards"
+    label: "Slider Cards"
+    label_singular: "Slider Card"
+    description: >
+      Create a slider card here.
+    folder: "src/content/cards"
+    create: true
+    fields:
+      - {
+          label: "Card Type",
+          name: "card_type",
+          widget: "select",
+          default: "Article White",
+          options: ['Article White', 'Article Green', 'Article List', 'Video Card', 'Audio Card']
+        }
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Description", name: "description", widget: "text", required: true }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Resource Links",
+          name: "resources",
+          widget: "list",
+          hint: "List URL for resource links here (For Article List card only)",
+        }
+      - {
+          label: "Video Source",
+          name: "video",
+          widget: "string",
+          hint: "Provide embed URL for video link here (For Video Card only)",
+        }
+      - {
+          label: "Audio Source",
+          name: "audio",
+          widget: "string",
+          hint: "Provide embed URL for audio link here (For Audio Card only)",
+        }
+
   - name: settings
     label: Settings
     files:

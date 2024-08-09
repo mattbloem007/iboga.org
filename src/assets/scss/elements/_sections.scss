@@ -1,0 +1,666 @@
+.title-and-info {
+  padding: 80px 0px 60px 0px;
+}
+
+.title-and-info h2 {
+   min-width: 375px;
+   margin-right: 125px;
+}
+
+@media screen and (max-width: 1100px) {
+    .title-and-info .flex {
+        flex-direction: column;
+    }
+
+    .title-and-info h2 {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        min-width: 0px;
+    }
+}
+
+/* ------ Image Break ------ */
+
+.image-break {
+    padding: 60px 0px 80px 0px;
+}
+
+.image-container img {
+    max-height: 600px;
+    width: calc(100%);
+    object-fit: cover;
+}
+
+.image-container {
+    flex: 0 0 auto; /* Prevent the image from stretching */
+}
+
+@media screen and (max-width: 576px) {
+    .image-container img {
+        max-width: none;
+        height: 400px;
+    }
+}
+
+/* ------ /Image Break ------ */
+
+/* ------ About Iboga Section ------ */
+
+.about-iboga {
+    margin-bottom: 72px;
+}
+
+.about-iboga-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.about-iboga h2 {
+    max-width: 375px;
+    margin-right: 125px;
+}
+
+@media screen and (max-width: 1100px) {
+    .about-iboga .flex {
+        flex-direction: column;
+    }
+
+    .about-iboga h2 {
+        max-width: none;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-iboga .max-width {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-iboga-btn {
+        margin-bottom: 0px;
+        margin-top: 24px;
+    }
+}
+
+/* ------ /About Iboga Section ------ */
+
+
+/* ------ Vision & Mission Section ------ */
+
+.vision-mission-cards {
+    margin-bottom: 80px;
+}
+
+.vision-mission-cards .flex {
+    gap: 24px;
+}
+
+.vision-mission-card h4 {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--black-bg);
+    margin-bottom: 16px;
+}
+
+.card-paragraphs {
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .vision-mission-cards .flex {
+        flex-direction: column;
+    }
+}
+
+/* ------ /Vision & Mission Section ------ */
+
+
+/* ------ Applications Of Iboga ------ */
+
+.application-of-iboga .section-container {
+    padding: 80px 0px;
+    background-color: var(--dark-green);
+    margin-bottom: 40px;
+}
+
+.application-of-iboga .flex {
+    align-items: center;
+}
+
+.application-of-iboga .flex img {
+    margin-left: -64px;
+}
+
+.application-of-iboga .section-inner {
+    max-width: 580px;
+    margin-left: 88px;
+    margin-right: 64px;
+}
+
+.application-of-iboga .section-inner {
+    color: var(--light-yellow);
+}
+
+.application-of-iboga .section-inner h2 {
+    margin-bottom: 20px;
+}
+
+.application-of-iboga .section-inner p {
+    margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1360px) {
+    .application-of-iboga .section-inner h2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .application-of-iboga .flex img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .application-of-iboga .section-inner {
+        margin-left: 48px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .application-of-iboga .margin-left-width {
+        margin-left: 0px;
+    }
+
+    .application-of-iboga .section-inner h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .application-of-iboga .flex img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .application-of-iboga .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .application-of-iboga .flex img {
+        max-width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 32px;
+    }
+    .application-of-iboga .flex img,
+    .application-of-iboga .section-inner {
+        margin-left: 16px;
+    }
+
+    .application-of-iboga .section-inner {
+        max-width: none;
+        margin-right: 16px;
+    }
+
+    .application-of-iboga .section-inner h2 br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .application-of-iboga .flex img {
+        margin-left: 0px;
+    }
+}
+
+/* ------ /Applications Of Iboga ------ */
+
+
+/* ------ Research and Media ------ */
+
+.research-media-slider {
+    padding: 80px 0px 60px 0px;
+}
+
+.research-media-slider .flex {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.slider-headline {
+    max-width: 565px !important;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .slider-headline {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .research-media-slider .flex {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .research-media-slider .flex .button-secondary {
+        margin-left: calc(100% - 190px);
+    }
+
+    .slider-headline p {
+        margin: 24px 0px;
+    }
+}
+
+/* ------ /Research and Media ------ */
+
+
+/* ------ Donate Section ------ */
+
+.donate-section {
+    padding: 60px 0px 60px 0px;
+}
+
+.donate-container {
+    padding: 55px 48px;
+    width: 100%;
+  //  background: url(./images/section-images/donate-section-img.png) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.donate-details {
+    background-color: var(--med-green);
+    max-width: 670px;
+    padding: 58px 48px 64px 48px;
+    color: var(--light-yellow);
+}
+
+.donate-details p {
+    padding: 20px 0px 36px 0px;
+}
+
+.donate-buttons-container  {
+    max-width: 400px;
+
+}
+
+.donate-buttons-container .button-secondary {
+    width: calc(100% - 22px);
+    justify-content: center;
+    color: var(--white-bg);
+    border-color: var(--white-bg);
+    margin-bottom: 24px;
+}
+
+.donate-buttons-container .button-secondary:hover {
+    border: var(--orange);
+}
+
+.donate-buttons-container .button-secondary i {
+    background-color: var(--white-bg);
+}
+
+.donate-buttons-container form input {
+    height: 60px;
+    padding: 18px 12px;
+    font-family: "Epilogue";
+    margin-right: 24px;
+}
+
+.donate-buttons-container form input::placeholder {
+    font-family: "Epilogue";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.donate-buttons-container  form button {
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+    .donate-section .margin-left-width {
+        margin-left: 0px;
+    }
+
+    .donate-container {
+        padding: 55px 16px;
+    }
+
+    .donate-buttons-container  form input {
+        width: 49%;
+        margin-right: 0px;
+    }
+
+    .donate-details {
+        padding: 32px 16px 36px 16px;
+    }
+
+
+    .donate-buttons-container .button-secondary {
+        width: 100%;
+    }
+
+    .donate-buttons-container  form button {
+        width: 49%;
+    }
+}
+
+/* ------ /Donate Section ------ */
+
+
+/* ------ Share With Iboga CTA ------ */
+
+.share-with-us-cta-section {
+    padding: 60px 0px 60px 0px;
+}
+
+.share-with-us-cta-section .flex {
+    gap: 24px;
+}
+
+.share-with-us-card h4 {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--black-bg);
+    margin-bottom: 16px;
+}
+
+.share-with-us-card p {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .share-with-us-cta-section .flex {
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+/* ------ /Share With Iboga CTA ------ */
+
+
+/* ------ Contact Section ------ */
+
+.contact-section {
+padding: 60px 0px 150px 0px;
+}
+
+.contact-section .contact-section-flex {
+    gap: 36px;
+    align-items: flex-start;
+}
+
+.contact-section h2 {
+    max-width: 475px;
+    margin-bottom: 48px;
+}
+
+form label {
+    font-family: "Epilogue";
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+form textarea:focus,
+form input:focus {
+    outline: none;
+}
+
+.contact-us-form {
+    flex: 1;
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.contact-us-form .form-row:last-of-type {
+    margin-bottom: 0px;
+}
+
+.contact-section .form-row button {
+    font-size: 18px;
+}
+
+.contact-us-form .form-row .flex {
+    gap: 20px;
+}
+
+.contact-us-form .form-row .flex .form-element {
+    width: 100%;
+}
+
+.contact-us-form .form-row input {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Epilogue";
+    padding: 0px 15px;
+    border: 1px solid var(--black-bg);
+}
+
+.contact-us-form .form-row textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Epilogue";
+    border: 1px solid var(--black-bg);
+}
+
+.news-letter-form {
+    width: 456px;
+}
+
+
+/* --- CUSTOM DROPDOWN --- */
+
+.dropdown-chosen-text {
+    height: 50px;
+    width: 100%;
+    border: 1px solid var(--black-bg);
+    font-size: 20px;
+    font-family: "Epilogue";
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.custom-dropdown-row {
+    margin-bottom: 10px;
+}
+
+.custom-dropdown {
+    position: relative;
+
+    height: auto;
+}
+
+.custom-dropdown ul {
+    background-color: var(--med-green);
+    // position: absolute;
+    // width: 100%;
+     display: none;
+    // left: 0;
+    // bottom: -195px;
+    padding: 8px 24px;
+    margin: 0;
+}
+
+.custom-dropdown ul.active {
+    display: block;
+}
+
+.contact-us-form .form-row .dropdown-input {
+    opacity: 0;
+    height: 0px;
+    pointer-events: none;
+}
+
+.custom-dropdown ul li {
+    display: block;
+    padding: 15px 0px;
+    border-bottom: 2px solid var(--white-bg);
+    color: var(--white-text);
+    font-size: 18px;
+    font-family: "Epilogue";
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.custom-dropdown ul li:hover {
+    color: var(--light-yellow);
+}
+
+.custom-dropdown ul li:hover::before {
+  //  content: url(./icons/svg//arrow-yellow.svg);
+    margin-right: 8px;
+}
+
+.custom-dropdown ul li:last-of-type {
+    border: none;
+}
+
+/* --- /CUSTOM DROPDOWN --- */
+
+.news-letter-form {
+    background-color: var(--light-green);
+    padding: 20px;
+    max-width: 456px;
+}
+
+.news-letter-form h4 {
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.news-letter-form .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.news-letter-form .form-row:last-of-type {
+    margin-bottom: 0px;
+}
+
+.news-letter-form .form-row input {
+    height: 50px;
+    border: none;
+    background-color: var(--white-bg);
+    font-size: 20px;
+    font-family: "Epilogue";
+    padding: 0px 15px;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 4px;
+  border: 1px solid var(--black-bg);
+  position: absolute;
+  left: -30px;
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked::before {
+  content: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  padding-top: 3px;
+  padding-left: 1px;
+}
+
+.custom-checkbox label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+// .custom-checkbox label::before {
+//     content: "";
+//     height: 26px;
+//     width: 26px;
+//     border-radius: 4px;
+//     border: 1px solid var(--black-bg);
+//     position: absolute;
+//     left: -40px;
+// }
+//
+// .custom-checkbox label:checked::before {
+//     content: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+//     padding-top: 3px;
+//     padding-left: 1px;
+// }
+
+.news-letter-form button {
+    height: 60px;
+    background-color: var(--black-bg);
+    border: none;
+    color: var(--white-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.news-letter-form button:hover {
+    background-color: var(--orange);
+}
+
+.news-letter-form button i {
+    background-color: var(--white-text
+    );
+    margin-left: 14px;
+}
+
+.news-letter-form button:hover i {
+    animation: skip-slide 0.6s forwards;
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-section .contact-section-flex {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .contact-us-form {
+        width: 100%;
+    }
+
+    .news-letter-form {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact-section h2 {
+        margin-bottom: 32px;
+    }
+}
+
+/* ------ /Contact Section ------ */

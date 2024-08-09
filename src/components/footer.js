@@ -4,22 +4,72 @@ import { Link } from "gatsby"
 import { RiHeart2Line } from "react-icons/ri"
 
 const Footer = () => (
-  <footer
-    className="site-footer"
-    sx={{
-      bg: "siteColor",
-    }}
-  >
-    <div className="container">
-      <p>
-        A GatsbyJS Starter for Netlify CMS, Made with{" "}
-        <span className="icon -love">
-          <RiHeart2Line />
-        </span>{" "}
-        by <Link to="/">Stackrole.com</Link>
-      </p>
-    </div>
-  </footer>
+  <footer>
+        <div class="margin-left-width">
+            <div></div>
+        </div>
+        <div class="max-width">
+            <div class="flex">
+                <div class="footer-left-col">
+                    <div class="footer-logo">
+                        <h5>Iboga.org</h5>
+                    </div>
+                    <p class="p-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                </div>
+                <div class="footer-right-col">
+
+                    <div class="footer-link-col">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="">Directory</a></li>
+                            <li><a href="">Library</a></li>
+                            <li><a href="">Education</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-col">
+                        <h6>About</h6>
+                        <ul>
+                            <li><a href="">About Iboga.org</a></li>
+                            <li><a href="">What is iboga</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-col">
+                        <h6>Media</h6>
+                        <ul>
+                            <li><a href="">Research</a></li>
+                            <li><a href="">Podcast</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-col">
+                        <h6>Legal</h6>
+                        <ul>
+                            <li><a href="">Terms &amp; Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-link-col">
+                        <h6>Contact</h6>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Newsletter</a></li>
+                            <li><a href="">Donate</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="rights-reserved">
+            Iboga.org | All Rights Reserved
+        </div>
+    </footer>
 )
 
 export default Footer

@@ -1,6 +1,67 @@
 @import "theme-variables";
 @import "defaults";
 @import "lib/css-grid-utility";
+@import "elements/navigation";
+@import "elements/header";
+@import "elements/buttons";
+@import "elements/home-page";
+@import "elements/slider";
+@import "elements/sections";
+@import "footer";
+
+/* ========= FONTS ========= */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'CabinetGrotesk-reg';
+    src: url('./fonts/Cabinet-Grotesk/CabinetGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CabinetGrotesk-med';
+    src: url('./fonts/Cabinet-Grotesk/CabinetGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CabinetGrotesk-bold';
+    src: url('./fonts/Cabinet-Grotesk/CabinetGrotesk-Bold.ttf') format('truetype');
+}
+/* ========= /FONTS ========= */
+
+/* MOBILE ADJUSTMENTS */
+
+@media screen and (max-width: 1440px) {
+    .margin-left-width {
+        margin-left: 64px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .max-width {
+        padding: 0px 16px;
+        overflow: hidden;
+    }
+
+    .margin-left-width {
+        margin-left: 16px;
+    }
+
+    .hero-button,
+    .button-primary {
+        padding: 0px 16px;
+    }
+
+    .button-primary,
+    .button-secondary,
+    .hero-button {
+        font-size: 15px;
+    }
+}
+
+/* END MOBILE ADJUSTMENTS */
+
+
+
 
 // .primary-container {
 // 	display: grid;
@@ -9,13 +70,17 @@
 // }
 .primary-container main {
   min-height: calc(100vh - 60px - 81px);
+  max-width: 1440px;
+  width: 100%;
 }
 .site-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   padding: 30px 20px;
+  width: 100%;
 }
 .site-navigation {
   ul {

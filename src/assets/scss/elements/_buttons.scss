@@ -1,0 +1,184 @@
+/* -------- LIAM BUTTONS --------- */
+
+.hero-button {
+    font-family: "Epilogue";
+    background-color: var(--orange-transparent);
+    height: 60px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 32px;
+    color: var(--white-text);
+    transition: all .3s ease-in-out;
+}
+
+.hero-button:hover {
+    background-color: var(--orange);
+}
+
+.hero-button:hover img {
+    animation: skip-slide 0.6s forwards;
+}
+
+@keyframes skip-slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px); /* Adjust the skip distance as needed */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hero-button img {
+    //background-color: #fff !important;
+    margin-left: 14px;
+}
+
+.button-primary {
+    font-family: "Epilogue";
+    background-color: var(--black-bg);
+    height: 60px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 32px;
+    color: var(--white-text);
+    transition: all .3s ease-in-out;
+}
+
+.button-primary:hover {
+    background-color: var(--orange);
+}
+
+.button-primary img {
+    // background-color: #fff !important;
+    margin-left: 14px;
+}
+
+.button-primary:hover img {
+    animation: skip-slide 0.6s forwards;
+}
+
+.button-secondary {
+    font-family: "Epilogue";
+    background-color: transparent;
+    border: 1px solid var(--black-bg);
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 32px;
+    color: var(--black-text);
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.button-secondary:hover {
+    background-color: var(--orange);
+    color: var(--white-bg);
+    border-color: var(--orange);
+    transition: all .3s ease-in-out;
+}
+
+.button-secondary img {
+    margin-left: 14px;
+}
+
+.button-secondary:hover img {
+    animation: skip-slide 0.6s forwards;
+    // background-color: var(--white-bg);
+    transition: all .3s ease-in-out;
+}
+
+
+.article-button-container {
+    display: flex;
+}
+
+.article-button {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--black-bg);
+    color: var(--white-text);
+    padding: 0px 17px;
+    font-size: 16px;
+    font-family: "Epilogue";
+    font-weight: 500;
+    flex: 1;
+    transition: all .3s ease-in-out;
+}
+
+.article-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--black-bg);
+    border-radius: 32px;
+    margin-left: 12px;
+}
+
+
+.article-icon i {
+    background-color: var(--black-bg) !important;
+    transition: all .3s ease-in-out;
+}
+
+.article-card-v2:hover .article-button-container .article-button,
+.article-card:hover .article-button-container .article-button {
+    background-color: var(--orange);
+}
+
+.article-card-v2:hover .article-icon i,
+.article-card:hover .article-icon i {
+   transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 992px) {
+    .hero-button,
+    .button-primary {
+        padding: 0px 16px;
+    }
+
+    .button-primary,
+    .button-secondary,
+    .hero-button {
+        font-size: 15px;
+    }
+}
+
+
+.orange-btn {
+  background: rgba(255, 167, 64, 0.7);
+  margin-bottom: 128px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  padding: 21px 32px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.btn-text {
+  margin-right: 14.1px;
+  overflow-wrap: break-word;
+  font-family: 'Epilogue';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.info-btn {
+  border: 1px solid #000000;
+  margin: 0 0 24px 712px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}

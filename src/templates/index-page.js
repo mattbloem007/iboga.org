@@ -25,45 +25,28 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
+import TitleAndInfo from '../components/sections/titleAndInfo'
+import SliderSection from '../components/sections/sliderSection'
+import ImageBreak from '../components/sections/imageBreak'
+import TextCards from '../components/sections/textCards'
+import InfoAndImage from '../components/sections/infoAndImage'
+import Donate from '../components/sections/donateSection'
+import ContactSection from '../components/sections/contactSection'
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query HomeQuery($template: String!) {
+    markdownRemark(frontmatter: {template: {eq: $template}}) {
       id
-      html
       frontmatter {
-        title
-        tagline
-        featuredImage {
-          childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
-          }
+        header_slides{
+          title
+          excerpt
+
         }
-        cta {
-          ctaText
-          ctaLink
-        }
-      }
-    }
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 6
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
-              }
-            }
-          }
+        section1 {
+          section1_title
+          section1_paragraph
+          btn
         }
       }
     }
@@ -71,188 +54,43 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { frontmatter } = markdownRemark
+  console.log("frontmatter", frontmatter)
+  const aboutIboga = "<strong class=\"heading-bold\">About</strong> <br> Iboga.org"
+  const aboutInfo = "At Iboga.org, we are dedicated to the responsible and respectful integration of iboga into the world. Founded by Simon Anderson, our mission is to empower individuals with balanced and accessible information, fostering a global community rooted in wisdom sharing and holistic healing. We honor traditional knowledge and scientific research, promoting safety and transparency in all we do. Join us in exploring the profound potential of iboga."
+  const directoryTitle = ""
+  const directoryInfo = ""
+  const mediaTitle = "<strong class=\"heading-bold\">Research</strong> and Media"
+  const mediaInfo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+  const textCards1 =
+  [
+    {title: "Our Vision", info: "A world where fundamental wisdom about how to meet and integrate the gift of iboga - through traditional practices, scientific research, and graceful blessings - is fully accessible and impeccably integrated by all, fostering personal transformation, community healing, and a respectful relationship with this sacred plant."},
+    {title: "Our Mission", info: "We individuals with the knowledge and resources they need to navigate their iboga journey safely and respectfully. We curate and share balanced information from traditional wisdom, scientific research, and personal experiences.&nbsp; We foster a global community dedicated to responsible integration practices and advocate for the sustainable future of iboga."}
+  ]
+  const textCards2 =
+  [
+    {title: "Share Your Insights with Iboga.org's Journal", info: "Are you passionate about Iboga and its transformative potential? We invite researchers, practitioners, and enthusiasts to submit their articles, studies, and personal stories to Iboga.org's Journal. Your contributions can help expand the knowledge and understanding of this powerful plant medicine."},
+    {title: "Speak at the Summit Conference", info: "Join the conversation and become a speaker at our upcoming Summit Conference. Share your expertise, experiences, and insights with a global audience. Whether you are a seasoned practitioner, researcher, or advocate, your voice can inspire and educate others in the Iboga community."}
+  ]
+
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
-  const sIcons = Icons.socialIcons.map((icons, index) => {
-    return (
-      <div key={"social icons" + index}>
-        {icons.icon === "facebook" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Facebook" rel="noopener noreferrer">
-            <RiFacebookBoxFill alt="Facebook icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "twitter" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Twitter" rel="noopener noreferrer">
-            <RiTwitterFill alt="Twitter icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "linkedin" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Linkedin" rel="noopener noreferrer">
-            <RiLinkedinBoxFill alt="Linkedin icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "youtube" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Youtube" rel="noopener noreferrer">
-            <RiYoutubeFill alt="Youtube icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "instagram" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Instagram" rel="noopener noreferrer">
-            <RiInstagramFill alt="Instagram icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "rss" ? (
-          <a href={icons.url} target="_blank" aria-label="link to RSS" rel="noopener noreferrer">
-            <RiRssFill alt="RSS icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "github" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Github" rel="noopener noreferrer">
-            <RiGithubFill alt="Github icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "telegram" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Telegram" rel="noopener noreferrer">
-            <RiTelegramFill alt="Telegram icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "pinterest" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Pinterest" rel="noopener noreferrer">
-            <RiPinterestFill alt="Pinterest icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "snapchat" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Snapchat" rel="noopener noreferrer">
-            <RiSnapchatFill alt="Snapchat icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "skype" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Skype" rel="noopener noreferrer">
-            <RiSkypeFill alt="Skype icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "wordpress" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Wordpress" rel="noopener noreferrer">
-            <FaWordpress alt="Wordpress icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "tiktok" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Wordpress" rel="noopener noreferrer">
-            <FaTiktok alt="tiktok icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "dribbble" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Dribbble" rel="noopener noreferrer">
-            <RiDribbbleFill alt="Dribbble icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "medium" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Medium" rel="noopener noreferrer">
-            <RiMediumFill alt="Medium icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "behance" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Behance" rel="noopener noreferrer">
-            <RiBehanceFill alt="Behance icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "vk" ? (
-          <a href={icons.url} target="_blank" aria-label="link to vk" rel="noopener noreferrer">
-            <FaVk alt="vk icon" />
-          </a>
-        ) : (
-          ""
-        )}
-      </div>
-    )
-  })
+
   return (
-    <Layout>
+    <Layout page="home">
       <Seo />
-      <div className="home-banner grids col-1 sm-2">
-        <div>
-          <h1 className="title">{frontmatter.title}</h1>
-          <p
-            className="tagline"
-            sx={{
-              color: "muted",
-            }}
-          >
-            {frontmatter.tagline}
-          </p>
-          <div
-            className="description"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-          <Link
-            to={frontmatter.cta.ctaLink}
-            className="button"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-            {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-          <div
-            className="social-icons"
-            sx={{
-              variant: "variants.socialIcons",
-            }}
-          >
-            {sIcons}
-          </div>
-        </div>
-        <div>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
-      <BlogListHome data={posts} />
+        <TitleAndInfo title={frontmatter.section1.section1_title} info={frontmatter.section1.section1_paragraph} btn={false}/>
+        <SliderSection title={directoryTitle} info={directoryInfo}/>
+        <ImageBreak />
+        <TitleAndInfo title={aboutIboga} info={aboutInfo} btn={true}/>
+        <TextCards data={textCards1} btn={false}/>
+        <InfoAndImage />
+        <SliderSection title={mediaTitle} info={mediaInfo} />
+        <Donate />
+        <TextCards data={textCards2} btn={true} />
+        <ContactSection />
     </Layout>
   )
 }

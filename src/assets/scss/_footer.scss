@@ -1,0 +1,68 @@
+/* ------ Footer ------ */
+
+footer .margin-left-width div {
+    width: 100%;
+    background-color: var(--black-bg);
+    height: 1px;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+}
+
+.footer-left-col {
+    max-width: 350px;
+}
+
+.footer-logo {
+    padding: 32px;
+    background-color: var(--dark-green);
+    max-width: 164px;
+    color: var(--white-text);
+    margin-bottom: 28px;
+}
+
+footer h6 {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.footer-right-col {
+    display: flex;
+    gap: 40px;
+    padding-top: 36px;
+    flex-wrap: wrap;
+}
+
+.footer-link-col li {
+    margin-bottom: 12px;
+}
+
+.footer-link-col li a {
+    font-family: "Epilogue";
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.rights-reserved {
+    background-color: var(--black-bg);
+    color: var(--white-text);
+    font-size: 16px;
+    font-family: "Epilogue";
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 680px) {
+    footer .flex {
+        flex-direction: column;
+    }
+}
+
+/* ------ /Footer ------ */

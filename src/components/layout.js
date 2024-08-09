@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Logo from "./logo"
 import Navigation from "./navigation"
+import NavBar from './navigation-iboga'
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
@@ -24,25 +25,14 @@ const query = graphql`
   }
 `
 
-const Layout = ({ children, className, props }) => {
+const Layout = ({ children, className, props, page }) => {
   const { site, siteSearchIndex } = useStaticQuery(query)
   const { siteTitle } = site.siteMetadata
 
   return (
     <div className="primary-container">
-      <Header>
-        <Logo title={siteTitle} />
-        <div sx={layoutStyle.nav}>
-          <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
-            <Search searchIndex={siteSearchIndex.index} />
-          </div>
-          <Navigation />
-        </div>
-        <div sx={layoutStyle.appearance}>
-          <Search searchIndex={siteSearchIndex.index} />
-          <Theme />
-        </div>
-      </Header>
+      <NavBar />
+      <Header page={page} />
       <main className={"container " + className}>{children}</main>
       <Footer />
     </div>
@@ -61,5 +51,6 @@ const layoutStyle = {
     display: "flex",
     alignItems: "center",
     gap: 4,
+    width: "100%"
   },
 }

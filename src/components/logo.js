@@ -2,9 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Logo = props => (
-  <div className="site-logo">
-    <Link to="/">{props.title}</Link>
-  </div>
+  <Link to="/">
+    <div className="logo">
+      <span className="site-title">
+        {props.title}
+      </span>
+    </div>
+  </Link>
 )
 
 export default Logo
