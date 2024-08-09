@@ -9,13 +9,13 @@ const Theme = () => {
     <div sx={themeStyles.modeOption}>
       <button
         onClick={e => {
-          setColorMode(colorMode === "default" ? "dark" : "default")
+          setColorMode(colorMode === "default" ? "light" : "default")
         }}
       >
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
           <div sx={themeStyles.modeText}>
-            {colorMode === "default" ? "Dark" : "Light"}
+            {colorMode === "default" ? "Light" : "Light"}
           </div>
         </div>
       </button>
