@@ -1,7 +1,7 @@
 import React from "react"
-import WhiteButton from '../buttons/whiteButton'
+import blackArrow from "../../assets/vectors/arrow-icon-black.svg"
 
-const TextCards = ({data, btn}) => {
+const TextCards = ({data, cta}) => {
 
   return (
     <section className="vision-mission-cards">
@@ -9,13 +9,14 @@ const TextCards = ({data, btn}) => {
         <div className="flex">
           {
             data && data.map(info => {
+              console.log("INFO", info);
               return (
                   <div className="vision-mission-card">
                       <h4>{info.title}</h4>
                       <p className="card-paragraphs">
-                        {info.info}
+                        {info.excerpt}
                       </p>
-                      {btn && <WhiteButton />}
+                      {info.cta.btn && <a href={info.cta.btn_link} class={info.cta.btn_type}>{info.cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>}
                   </div>
               )
             })

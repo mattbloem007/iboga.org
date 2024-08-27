@@ -50,7 +50,7 @@ const NavBar = () => {
       </div>
       :
       <div className="scrolling-navigation active">
-        <div className="max-width">
+        <div className="max-width-scroll">
           <div className="flex">
             <Logo title={siteTitle} />
             <div className="scroll-nav-content">

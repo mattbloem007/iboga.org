@@ -32,8 +32,7 @@ const Layout = ({ children, className, props, page }) => {
   return (
     <div className="primary-container">
       <NavBar />
-      <Header page={page} />
-      <main className={"container " + className}>{children}</main>
+      {children}
       <Footer />
     </div>
   )

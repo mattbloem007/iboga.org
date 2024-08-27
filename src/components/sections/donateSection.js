@@ -5,7 +5,7 @@ import bgImage from '../../assets/vectors/section-images/donate-section-img.png'
 import arrow from '../../assets/vectors/arrow-icon.svg'
 import dollar from '../../assets/vectors/MoneyIcon_x2.svg'
 
-const Donate = () => {
+const Donate = ({ data }) => {
 
   return (
     <section className="donate-section">
@@ -17,12 +17,12 @@ const Donate = () => {
                }}
             >
                 <div className="donate-details">
-                    <h2><strong className="heading-bold">Donate</strong> to the Legal Challenge Fund</h2>
+                    <h2 dangerouslySetInnerHTML={{ __html: data.donate_title }}></h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        {data.donate_info}
                     </p>
                     <div className="donate-buttons-container">
-                        <a href="" className="button-secondary">Contact Us <img className="icon send-icon" src={arrow}></img></a>
+                        <a href={data.cta.btn_link} className="button-secondary">{data.cta.btn_text} <img className="icon send-icon" src={arrow}></img></a>
                         <div>
                             <form action="">
                                 <input type="text" placeholder="R 100" />

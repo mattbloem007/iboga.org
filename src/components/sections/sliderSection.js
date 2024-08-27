@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react"
 import Slider from "react-slick";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import arrow from '../../assets/vectors/arrow-next-black.svg'
 import arrowWhite from '../../assets/vectors/arrow-next-white.svg'
@@ -16,7 +17,7 @@ import PrevSliderButton from '../buttons/prevSliderButton'
 import NextSliderButton from '../buttons/nextSliderButton'
 import WhiteButton from '../buttons/whiteButton'
 
-const SliderSection = ({ title, info }) => {
+const SliderSection = ({ title, info, posts, cards }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
@@ -29,7 +30,7 @@ const SliderSection = ({ title, info }) => {
     swipeToSlide: true,
     slidesToScroll: 1,
     afterChange: current => {
-      setProgress((current / 4) * 100)
+      setProgress((current / 5) * 100)
     }
   };
 
@@ -56,33 +57,62 @@ const SliderSection = ({ title, info }) => {
       </div>
         <div className="margin-left-width">
         <Slider classNameName="article-slider" {...settings} ref={slider => { sliderRef = slider; }}>
-          <a href="" className="card-holder article-card" tabindex="0">
-              <img src={articleImage1} alt="" />
-              <div className="article-card-inner">
-                  <h4>Success Stories</h4>
-                  <p className="p-small">
-                      “Meeting with the Sacred, Ancient and Wise African medicine of Iboga has been a journey that has taken me deeper into profound and...
-                  </p>
-              </div>
-              <div className="article-button-container">
-                  <div className="article-button">Read More Stories</div>
-                  <div className="article-icon">
-                      <img className="icon arrow-icon" src={arrow}></img>
+        {posts && posts.edges.map((slider) => {
+          console.log("SLider data", slider.node.html)
+          return (
+            slider.node.frontmatter.featuredImage ?
+            <a href="" className="card-holder article-card" tabindex="0">
+              <GatsbyImage
+                image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                alt={slider.node.frontmatter.title + " - Featured image"}
+              />
+                <div className="article-card-inner">
+                    <h4>{slider.node.frontmatter.title}</h4>
+                    <p className="p-small">{slider.node.rawMarkdownBody}</p>
+                </div>
+                <div className="article-button-container">
+                    <div className="article-button">Read More Stories</div>
+                    <div className="article-icon">
+                        <img className="icon arrow-icon" src={arrow}></img>
+                    </div>
+                </div>
+            </a>
+            :
+            <a href="" className="card-holder article-card-v2" tabindex="-1">
+                <div className="article-card-inner">
+                    <h4>{slider.node.frontmatter.title}</h4>
+                    <p className="p-small">{slider.node.rawMarkdownBody}</p>
+                </div>
+                <div className="article-button-container">
+                    <div className="article-button">Read More Stories</div>
+                    <div className="article-icon">
+                        <img className="icon arrow-icon" src={arrowWhite}></img>
+                    </div>
+                </div>
+            </a>
+          )
+        })}
+        {cards && cards.edges.map((card) => {
+          if (card.node.frontmatter.card_type == "Article List") {
+            return (
+              <div className="card-holder article-card-v3">
+                  <div className="article-card-inner">
+                      <h4>{card.node.frontmatter.title}</h4>
+                      <p className="p-small">{card.node.frontmatter.description}</p>
+                      <div className="multi-link-box">
+                          <ul>
+                          {card.node.frontmatter.resources && card.node.frontmatter.resources.map((resource) => {
+                            return (
+                              <li><a href={resource.link} tabindex="-1">{resource.label} <img className="icon arrow-icon" src={arrow}></img></a></li>
+                            )
+                          })}
+                          </ul>
+                      </div>
                   </div>
               </div>
-          </a>
-          <a href="" className="card-holder article-card-v2" tabindex="-1">
-              <div className="article-card-inner">
-                  <h4>Featuring a key statistic or finding from recent iboga research</h4>
-                  <p className="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-              <div className="article-button-container">
-                  <div className="article-button">Read More Stories</div>
-                  <div className="article-icon">
-                      <img className="icon arrow-icon" src={arrowWhite}></img>
-                  </div>
-              </div>
-          </a>
+            )
+          }
+        })}
           <div className="card-holder article-card-v3">
               <div className="article-card-inner">
                   <h4>How Iboga Can Help</h4>

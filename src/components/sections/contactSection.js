@@ -6,7 +6,7 @@ import send from '../../assets/vectors/send.svg'
 import sendWhite from '../../assets/vectors/send-white.svg'
 import chev from '../../assets/vectors/chevron.svg'
 
-const ContactSection = () => {
+const ContactSection = ({ title, newsletter_title }) => {
   const [dropdown, setDropDown] = useState(false)
   const [option, setOption] = useState('Reason for contacting us...')
   const myValues = [
@@ -28,7 +28,7 @@ const ContactSection = () => {
   return (
     <section className="contact-section">
         <div className="max-width">
-            <h2><strong className="heading-bold">Connect</strong> with Us or Collaborate</h2>
+            <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
             <div className="flex contact-section-flex">
                 <form action="" className="contact-us-form">
                     <div className="form-row">
@@ -86,8 +86,7 @@ const ContactSection = () => {
 
                 </form>
                 <form action="" className="news-letter-form">
-                    <h4>Join our Newsletter
-                        to receive important updates</h4>
+                    <h4>{newsletter_title}</h4>
                     <div className="form-row">
                         <label for="">Full Name</label>
                         <input type="text" />
@@ -104,7 +103,7 @@ const ContactSection = () => {
                         </div>
                     </div>
                     <div className="form-row">
-                        <button>Subscribe <img className="icon send-icon" src={sendWhite}></img></button>
+                        <button className="button-primary">Subscribe <img className="icon send-icon" src={sendWhite}></img></button>
                     </div>
                 </form>
             </div>

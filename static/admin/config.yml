@@ -29,7 +29,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
     create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    fields:
       - {
           label: "Template",
           name: "template",
@@ -66,6 +66,15 @@ collections:
           widget: "markdown",
           hint: "Main content goes here.",
         }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          multiple: true,
+          create: true,
+          options: ["Home", "Research And Media", "Published Articles", "Studies & Clinical Trials"]
+        }
+
 
   - label: "Pages"
     name: "pages"
@@ -93,6 +102,7 @@ collections:
               - label: "CTA"
                 name: "cta"
                 widget: "object"
+                collapsed: true
                 fields:
                   - name: "ctaType"
                     label: "CTA type"
@@ -104,59 +114,372 @@ collections:
                   - name: "ctaLink"
                     label: "CTA Link (For button CTA type)"
                     widget: "string"
+                    hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases."
 
-          - label: 'Section 1 (Title and Paragraph)'
+          - label: 'Title and Paragraph (Section 1)'
             name: section1
             widget: 'object'
+            collapsed: true
+            fields:
+              # - {
+              #     label: 'ID',
+              #     name: 'id',
+              #     widget: string
+              #   }
+              - { label: 'Title', name: "section1_title", widget: "string" }
+              - { label: 'Paragraph', name: "section1_paragraph", widget: "markdown" }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
+
+
+          - label: 'Slider 1'
+            name: slider1
+            widget: 'object'
+            collapsed: true
             fields:
               - {
-                  label: 'ID',
-                  name: 'id',
-                  widget: string
+                  label: 'Title',
+                  name: slider1_title,
+                  widget: string,
+                  required: false,
+                  default: ""
                 }
+              - {
+                  label: 'Info',
+                  name: slider1_info,
+                  widget: string,
+                  required: false,
+                  default: ""
+                }
+              - {
+                  label: "Slider Cards for Slider 1",
+                  name: "home_slider_cards1",
+                  widget: "relation",
+                  collection: "slider_cards",
+                  multiple: true,
+                  search_fields: ["title"],
+                  display_fields: [ "title" ],
+                  value_field: "{{title}}" #["description, "card_type", "tags", "resources.*", "video", "audio"],
+                }
+
+
+          - label: 'Image Break (Section 2)'
+            name: section2
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Image Break',
+                  name: image_break,
+                  widget: image
+                }
+
+          - label: 'About Title And Paragraph (Section 3)'
+            name: section3
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Title', name: "about_title", widget: "string" }
+              - { label: 'Paragraph', name: "about_paragraph", widget: "markdown" }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
+
+          - label: "Text Columns (Section4)"
+            name: "section4"
+            label_singular: 'Text Column'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
+
+          - label: 'Image, Title And Paragraph (Section 5)'
+            name: section5
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Title', name: "title", widget: "string" }
+              - { label: 'Paragraph', name: "paragraph", widget: "markdown" }
+              - { label: 'Image', name: "image", widget: "image" }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }, {label: "Black", value: "button-primary"}],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
+
+          - label: 'Slider 2'
+            name: slider2
+            widget: 'object'
+            collapsed: true
+            fields:
               - {
                   label: 'Title',
-                  name: section1_title,
+                  name: slider2_title,
+                  widget: string,
+                  required: false,
+                  default: ""
+                }
+              - {
+                  label: 'Info',
+                  name: slider2_info,
+                  widget: string,
+                  required: false,
+                  default: ""
+                }
+              - {
+                  label: "Slider Cards for Slider 2",
+                  name: "home_slider_cards2",
+                  widget: "relation",
+                  collection: "slider_cards",
+                  multiple: true,
+                  search_fields: ["title"],
+                  display_fields: [ "title" ],
+                  value_field: "{{title}}",
+                }
+              # - {
+              #     label: "Blog post Cards for Slider 2",
+              #     name: "home_slider_post_cards2",
+              #     widget: "relation",
+              #     collection: "posts",
+              #     multiple: true,
+              #     search_fields: ["title"],
+              #     display_fields: [ "title" ],
+              #     value_field: "{{title}}",
+              #   }
+
+          - label: 'Donate Section (Section 6)'
+            name: section6
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Title',
+                  name: donate_title,
                   widget: string
                 }
               - {
-                  label: 'Paragraph',
-                  name: section1_paragraph,
-                  widget: markdown,
+                  label: 'Info',
+                  name: donate_info,
+                  widget: string
                 }
-              - {
-                  label: 'Button',
-                  name: btn,
-                  widget: boolean,
-                  default: false
-                }
-              - {
-                  label: 'Button Text',
-                  name: btn_text,
-                  widget: string,
-                }
-              - {
-                  label: 'Button type',
-                  name: btn_type,
-                  widget: select,
-                  options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "button-primary" }]
-                }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }, {label: "Black", value: "button-primary"}],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
 
-          # - label: 'Slider Section 1'
-          #   name: slider1
-          #   widget: 'object'
-          #   fields:
-          #     - {
-          #         label: 'Title',
-          #         name: section1_title,
-          #         widget: string
-          #       }
-          #     - {
-          #         label: 'Paragraph',
-          #         name: section1_paragraph,
-          #         widget: string,
-          #       }
+          - label: "Text Columns (Section 7)"
+            name: "section7"
+            label_singular: 'Text Column'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }, { label: "Black", value: "button-primary" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
 
+          - label: 'Contact (Section 8)'
+            name: section8
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Contact Title',
+                  name: title,
+                  widget: string
+                }
+              - {
+                  label: 'Newsletter Title',
+                  name: newsletter_title,
+                  widget: string
+                }
 
       - label: "About"
         name: "about"
@@ -169,8 +492,134 @@ collections:
               default: "about-page",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/about" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "About Header Slides"
+            name: "about_header_slides"
+            label_singular: 'About Header Slide'
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - name: "ctaType"
+                    label: "CTA type"
+                    widget: "select"
+                    options: ["button", "search bar", "none"]
+                  - name: "ctaText"
+                    label: "CTA text (For button CTA type)"
+                    widget: "string"
+                  - name: "ctaLink"
+                    label: "CTA Link (For button CTA type)"
+                    widget: "string"
+                    hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases."
+
+          - label: 'Title and Paragraph (Section 1)'
+            name: about_section1
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Title', name: "title", widget: "string" }
+              - { label: 'Paragraph', name: "paragraph", widget: "markdown" }
+              - label: "CTA Button"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
+
+          - label: "Our Team (Section 2)"
+            name: "about_section2"
+            label_singular: 'Team member'
+            widget: "list"
+            fields:
+              - label: "Title and Name"
+                name: "title"
+                widget: "string"
+              - { label: "Descrition", name: "excerpt", widget: "markdown" }
+              - { label: 'Team member Image', name: 'team_image', widget: 'image', required: false }
+
+          - label: "Our Approach (Section 3)"
+            name: "about_section3"
+            label_singular: 'Text Card'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
+
+          - label: 'Our Story (Section 4)'
+            name: about_section4
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Title', name: "title", widget: "string" }
+              - { label: 'Subtitle', name: "subtitle", widget: "string" }
+              - { label: 'Paragraph', name: "paragraph", widget: "markdown" }
+              - { label: 'Image', name: "image", widget: "image" }
+
+          - label: "Text Cards (Section 5)"
+            name: "about_section5"
+            label_singular: 'Text Card'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
+          - label: 'Newsletter (Section 6)'
+            name: about_section6
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Newsletter Title',
+                  name: title,
+                  widget: string
+                }
+              - {
+                  label: 'Newsletter Description',
+                  name: excerpt,
+                  widget: string
+                }
+
       - label: "Contact"
         name: "contact"
         file: "src/content/pages/contact.md"
@@ -198,7 +647,14 @@ collections:
       Create a slider card here.
     folder: "src/content/cards"
     create: true
+    summary: "{{card_type}} - {{title}}: {{tags[0]}}"
     fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "slider-card",
+        }
       - {
           label: "Card Type",
           name: "card_type",
@@ -218,19 +674,31 @@ collections:
           label: "Resource Links",
           name: "resources",
           widget: "list",
+          fields: [{ label: "Label", name: "label", widget: "string" }, { label: "Link", name: "link", widget: "string", default: "https://"}],
           hint: "List URL for resource links here (For Article List card only)",
+          required: false,
         }
       - {
           label: "Video Source",
           name: "video",
-          widget: "string",
+          widget: "file",
           hint: "Provide embed URL for video link here (For Video Card only)",
+          required: false,
         }
       - {
           label: "Audio Source",
           name: "audio",
-          widget: "string",
+          widget: "file",
           hint: "Provide embed URL for audio link here (For Audio Card only)",
+          required: false,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          multiple: true,
+          create: true,
+          options: ["Home", "Research And Media", "Published Articles", "Studies & Clinical Trials"],
         }
 
   - name: settings

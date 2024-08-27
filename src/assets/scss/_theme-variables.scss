@@ -17,6 +17,11 @@ $breakpoint-xl: 1200px;
   margin: 0 auto;
 }
 
+.max-width-scroll {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .margin-left-width {
   margin-left: calc((100vw - ( 1440px - 112px )) / 2);
 }

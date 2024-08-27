@@ -8,7 +8,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
 
-const Header = ({ children, page }) => {
+const Header = ({ children, page, data }) => {
 
   var settings = {
     draggable: true,
@@ -19,31 +19,31 @@ const Header = ({ children, page }) => {
     autoplaySpeed: 4000,
   };
 
-  const headerQuery = useStaticQuery(graphql`
-    query headerQuery {
-        markdownRemark(frontmatter: {template: {eq: "index-page"}}) {
-          frontmatter {
-            header_slides {
-              title
-              excerpt
-              header_image {
-                childImageSharp {
-                  gatsbyImageData
-                }
-                publicURL
-              }
-              cta {
-                ctaType
-                ctaText
-                ctaLink
-              }
-            }
-          }
-        }
-      }
-  `);
+  // const headerQuery = useStaticQuery(graphql`
+  //   query headerQuery {
+  //       markdownRemark(frontmatter: {template: {eq: "index-page"}}) {
+  //         frontmatter {
+  //           header_slides {
+  //             title
+  //             excerpt
+  //             header_image {
+  //               childImageSharp {
+  //                 gatsbyImageData
+  //               }
+  //               publicURL
+  //             }
+  //             cta {
+  //               ctaType
+  //               ctaText
+  //               ctaLink
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  // `);
 
-  const HeaderData = headerQuery.markdownRemark.frontmatter.header_slides
+  const HeaderData = data
   const headerImage = HeaderData.header_image
   let image, backgroundImage;
 
@@ -78,95 +78,8 @@ const Header = ({ children, page }) => {
         )
       })
     }
-      {/**<section class="hero-holder hero-section hero-content-slide-1">
-          <div class="hero-content">
-            <div class="hero-slide">
-              <div class="max-width">
-                <div class="hero-text">
-                  <h1><strong class="heading-bold">Find</strong> resources</h1>
-                  <p>
-                      Learn about the Holy Wood from Traditional Animist, Biomedical and Scientific viewpoints
-                  </p>
-                  <a href="" class="hero-button" tabindex="-1">Read Essays by Practitioners <img className="icon arrow-icon" src={ButtonArrow}></img></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="hero-holder hero-section hero-content-slide-2">
-          <div class="hero-content">
-            <div class="hero-slide">
-              <div class="max-width">
-                <div class="hero-text">
-                  <h1><strong class="heading-bold">Learn about</strong> using Iboga</h1>
-                  <p>
-                      Gain insights from experienced modern and traditional practitioners
-                  </p>
-                  <a href="" class="hero-button hero-slide-2-btn" tabindex="-1">Read Accounts of Iboga use Guides <img className="icon arrow-icon" src={ButtonArrow}></img></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="hero-holder hero-section hero-content-slide-3">
-          <div class="hero-content">
-            <div class="hero-slide">
-              <div class="max-width">
-                <div class="hero-text">
-                  <h1><strong class="heading-bold">Find</strong> resources</h1>
-                  <p>
-                      Learn about the Holy Wood from Traditional Animist, Biomedical and Scientific viewpoints
-                  </p>
-                  <a href="" class="hero-button" tabindex="-1">Read Essays by Practitioners <img className="icon arrow-icon" src={ButtonArrow}></img></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>*/}
     </Slider>
   )
-  // return (
-  //   headerImage ?
-  //     <header
-  //     className="site-header"
-  //     sx={{
-  //         backgroundImage: `url(${headerImage.publicURL})`
-  //     }}
-  //   >
-  //     {children}
-  //     <div className="header-text-container">
-  //       <div className="header-title">
-  //         {HeaderData.title}
-  //       </div>
-  //       <div className="header-excerpt">
-  //         {HeaderData.excerpt}
-  //       </div>
-  //       <button className="orange-btn btn-text">
-  //         {HeaderData.cta.ctaText}
-  //       </button>
-  //     </div>
-  //   </header>
-  //   :
-  //   <header
-  //   className="site-header"
-  //   sx={{
-  //       bg: "siteColor"
-  //   }}
-  // >
-  //   {children}
-  //   <div className="header-text-container">
-  //     <div className="header-title">
-  //       {HeaderData.title}
-  //     </div>
-  //     <div className="header-excerpt">
-  //       {HeaderData.excerpt}
-  //     </div>
-  //     <button className="orange-btn btn-text">
-  //       {HeaderData.cta.ctaText}
-  //     </button>
-  //   </div>
-  // </header>
-  // )
 }
 
 export default Header

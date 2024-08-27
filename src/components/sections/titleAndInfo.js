@@ -1,14 +1,14 @@
 import React from "react"
-import WhiteButton from '../buttons/whiteButton'
+import blackArrow from "../../assets/vectors/arrow-icon-black.svg"
 
-const TitleAndInfo = ({title, info, btn}) => {
+const TitleAndInfo = ({title, info, cta}) => {
 
   return (
     <section class="title-and-info">
       <div class="max-width">
-      {btn &&
+      {cta.btn &&
         <div class="about-iboga-btn">
-            <WhiteButton />
+            <a href={cta.btn_link} class={cta.btn_type}>{cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>
         </div>
       }
         <div class="flex">

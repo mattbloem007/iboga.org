@@ -1,13 +1,14 @@
 import React from "react"
-import image from '../../assets/vectors/section-images/homepage-spacing-image.png'
+import { GatsbyImage } from "gatsby-plugin-image"
 
-const ImageBreak = () => {
+
+const ImageBreak = ({ image }) => {
 
   return (
     <section className="image-break">
         <div className="margin-left-width">
             <div className="image-container">
-                <img src={image} alt="" />
+                <GatsbyImage image={image} alt="" style={{width: "100%"}}/>
             </div>
         </div>
     </section>
