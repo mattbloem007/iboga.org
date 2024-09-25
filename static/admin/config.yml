@@ -492,32 +492,32 @@ collections:
               default: "about-page",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/about" }
-          - label: "About Header Slides"
-            name: "about_header_slides"
-            label_singular: 'About Header Slide'
-            widget: "list"
+          - label: "About Banner"
+            name: "about_banner"
+            widget: "object"
+            collapsed: true
             fields:
               - label: "Title"
                 name: "title"
                 widget: "string"
               - { label: "Paragraph", name: "excerpt", widget: "markdown" }
               - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
-              - label: "CTA"
-                name: "cta"
-                widget: "object"
-                collapsed: true
-                fields:
-                  - name: "ctaType"
-                    label: "CTA type"
-                    widget: "select"
-                    options: ["button", "search bar", "none"]
-                  - name: "ctaText"
-                    label: "CTA text (For button CTA type)"
-                    widget: "string"
-                  - name: "ctaLink"
-                    label: "CTA Link (For button CTA type)"
-                    widget: "string"
-                    hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases."
+              # - label: "CTA"
+              #   name: "cta"
+              #   widget: "object"
+              #   collapsed: true
+              #   fields:
+              #     - name: "ctaType"
+              #       label: "CTA type"
+              #       widget: "select"
+              #       options: ["button", "search bar", "none"]
+              #     - name: "ctaText"
+              #       label: "CTA text (For button CTA type)"
+              #       widget: "string"
+              #     - name: "ctaLink"
+              #       label: "CTA Link (For button CTA type)"
+              #       widget: "string"
+              #       hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases."
 
           - label: 'Title and Paragraph (Section 1)'
             name: about_section1

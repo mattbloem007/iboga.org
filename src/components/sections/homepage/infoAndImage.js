@@ -1,5 +1,5 @@
 import React from "react"
-import arrow from '../../assets/vectors/arrow-icon.svg'
+import arrow from '../../../assets/vectors/arrow-icon.svg'
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const InfoAndImage = ({ data }) => {
@@ -9,7 +9,7 @@ const InfoAndImage = ({ data }) => {
         <div className="margin-left-width">
             <div className="section-container">
                 <div className="flex">
-                    <GatsbyImage image={data.image.childImageSharp.gatsbyImageData} alt="" />
+                    <GatsbyImage style={{display: "unset", overflow: "unset"}} image={data.image.childImageSharp.gatsbyImageData} alt="" />
                     <div className="section-inner">
                             <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
                             <p>

@@ -1,9 +1,9 @@
 import React from "react"
-import PlayBtn from '../../assets/vectors/play-btn.svg'
-import SkipBack from '../../assets/vectors/skip-prev.svg'
-import PrevRepeat from '../../assets/vectors/prev-15sec.svg'
-import NextRepeat from '../../assets/vectors/next-15sec.svg'
-import SkipForward from '../../assets/vectors/skip-forward.svg'
+import PlayBtn from '../../../assets/vectors/play-btn.svg'
+import SkipBack from '../../../assets/vectors/skip-prev.svg'
+import PrevRepeat from '../../../assets/vectors/prev-15sec.svg'
+import NextRepeat from '../../../assets/vectors/next-15sec.svg'
+import SkipForward from '../../../assets/vectors/skip-forward.svg'
 
 
 

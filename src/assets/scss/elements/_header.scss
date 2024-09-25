@@ -95,3 +95,37 @@
 .header-text-container {
   width: 50%;
 }
+
+/* ------ Page Banner ------ */
+
+.page-banner {
+    padding: 275px 0px 120px 0px;
+}
+
+.page-banner h1 {
+    margin-bottom: 16px;
+}
+
+/* ------ /Page Banner ------ */
+
+/* ------ About Banner ------ */
+
+.about-banner h1, .about-banner p {
+    color: var(--white-text);
+}
+
+.about-banner p {
+    max-width: 581px;
+}
+
+.about-banner {
+    background-size: cover;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+    .page-banner {
+        padding-top: 190px;
+    }
+}
+/* ------ /About Banner ------ */

@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import bgImage from '../../assets/vectors/section-images/donate-section-img.png'
-import arrow from '../../assets/vectors/arrow-icon.svg'
-import dollar from '../../assets/vectors/MoneyIcon_x2.svg'
+import bgImage from '../../../assets/vectors/section-images/donate-section-img.png'
+import arrow from '../../../assets/vectors/arrow-icon.svg'
+import dollar from '../../../assets/vectors/MoneyIcon_x2.svg'
 
 const Donate = ({ data }) => {
 

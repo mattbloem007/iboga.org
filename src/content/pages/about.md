@@ -1,51 +1,108 @@
 ---
 template: about-page
 slug: /about
+about_banner:
+  title: About Iboga.org
+  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+  header_image: /assets/bg_about.png
+about_section1:
+  title: Heartfelt Intro
+  paragraph: >-
+    We experienced firsthand the profound healing and transformation iboga
+    offers when used responsibly. Inspired by this, we founded Iboga.org. Our
+    mission is to facilitate a respectful and responsible integration of iboga
+    into the world, empowering individuals to make informed choices.
+
+
+    From brain healing to discovering our true calling, iboga's potential benefits are as diverse as the people seeking them. It works holistically, not simply masking symptoms, but guiding individuals to uncover the roots of their challenges and higher potential.
+
+
+    Iboga is a gift for all humanity. We honor those who've paved the way while advocating for accessible, responsible sharing of this knowledge globally.\
+
+    Join us in building a community dedicated to wisdom sharing and impeccable practice with the Holy wood.
+  cta:
+    btn: false
+about_section2:
+  - title: Founder - SY
+    excerpt: With over a decade of experience, SY has significantly contributed to
+      psychedelic facilitation and education. He developed successful protocols
+      for iboga...
+  - title: Editor - Jadhe
+    excerpt: Jadhe is writer, an angelic healing trainer and a shaman
+about_section3:
+  - title: Connecting with the Spirit of Iboga and Providing Balanced Information
+    excerpt: Iboga.org's primary focus is providing a connection to the spirit of
+      this wonderful teacher and also balanced, accessible information about
+      iboga to empower individuals seeking wisdom. We do not directly offer
+      iboga treatments. We prioritize honoring, respect and safety by
+      encouraging those listed in our Directory to transparently share their
+      approach, their view and their safety protocols.
+  - title: Emphasizing Traditional Knowledge and Holistic Understanding
+    excerpt: Supporting the communities working with and where iboga originates is
+      essential to us. We are committed to establishing initiatives such as
+      integral growing, a legal defense fund and accessible treatment
+      scholarships. These efforts promote both the sustainability of iboga and
+      equitable access to its benefits globally.
+  - title: Fostering Collaboration and Inclusive Knowledge Sharing
+    excerpt: Collaboration is at the heart of our mission. We welcome contributions
+      from practitioners, researchers, and individuals with diverse experiences
+      to share on our platform. Through our podcast, journal, and community
+      forums, we strive to create an inclusive space where knowledge is shared
+      freely.
+  - title: Supporting Sustainable and Equitable Iboga Initiatives
+    excerpt: While we include scientific research, Iboga.org places a unique
+      emphasis on traditional knowledge, spiritual wisdom, and diverse
+      perspectives on iboga's potential uses. We believe these insights
+      complement existing scientific resources, offering a holistic
+      understanding of this complex medicine.
+about_section4:
+  title: Our Story
+  subtitle: A Message from Our Founder - Simon Anderson (SY)
+  paragraph: >-
+    Iboga has profoundly changed my life. After experiencing firsthand its power
+    to heal deep-rooted wounds, I feel compelled to share this extraordinary
+    medicine with the world, in a free yet impeccable manner.  This led to the
+    creation of Iboga.org, a non-profit platform offering balanced knowledge and
+    supporting those seeking informed pathways to iboga.
+
+
+    My journey with iboga began after witnessing the Iboga panel at the 2013 Khanyisa Conference at WITS university.  After a personal transformative experience with ibogaine, I was drawn to working with the rootbark itself.  With a background in spiritual practice, I approached iboga as a teacher, working with it through both flood doses and microdosing.  These experiences deepened my connection, even guiding me into completing training as a Sangoma.
+
+
+    A difficult childhood and challenging early adulthood experiences left lasting scars.  While traditional spiritual practices had offered valuable tools, iboga brought a miraculous level of repair. It was as if we traveled back in time to mend those original wounds, transforming my life in unimaginable ways.
+
+
+    Witnessing the transformation I was undergoing led to curiosity in my friends and community who desired to know more and experience firsthand this medicine and so I was called into serving ceremony and supplying the wood.  Since beginning service in 2014, I have supported more than 250 people through iboga flood experiences and guided over 500 people through 7-week microdosing programs.
+
+
+    My approach has transformed over time. What began as one-on-one, low-dose work  has evolved into a collaborative model.  I'm honored to serve alongside my wife, herself a profound medicine woman and teacher, supported by our students and those seeking to study our protocols and approach to iboga.
+
+
+    Initially, I intended the Iboga.org domain to support sustainable sourcing and supply. However, my years of serving the community, coupled with the growing interest in iboga through scientific studies, podcasts, and documentaries, highlighted the pressing need for a broader information platform.
+
+
+    Over the past three years, I've had the privilege of connecting with others who share a similar mission of responsible knowledge-sharing and advocacy around iboga.  Together, we are entering a new era for Iboga.org.  Our expanded vision is to create a truly global, collaborative resource,  guided by the principles of integrity, inclusivity, and respect for this extraordinary medicine.
+
+
+    While I am involved in a commercial venture focusing on iboga (Mpande Ethnomedicine), I am committed to ensuring Iboga.org operates with full editorial independence.  We strive for transparency about how my work may intersect with this informational resource.
+  image: /assets/our_story_image.png
+about_section5:
+  - title: Our Vision
+    excerpt: A world where fundamental wisdom about how to meet and integrate the
+      gift of iboga - through traditional practices, scientific research, and
+      graceful blessings - is fully accessible and impeccably integrated by all,
+      fostering personal transformation, community healing, and a respectful
+      relationship with this sacred plant.
+  - title: Our Mission
+    excerpt: We individuals with the knowledge and resources they need to navigate
+      their iboga journey safely and respectfully. We curate and share balanced
+      information from traditional wisdom, scientific research, and personal
+      experiences.  We foster a global community dedicated to responsible
+      integration practices and advocate for the sustainable future of iboga.
+about_section6:
+  title: Join our Newsletter to receive important updates
+  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore.
 title: About Foundation
 ---
-
-Thank you! Now say "nuclear wessels"! No! Don't jump! A sexy mistake. Anyone who laughs is a communist!
-
-A true inspiration for the children. And when we woke up, we had these bodies. Moving along… Do a flip! Michelle, I don't regret this, but I bth rue and lament it.
-
-![Toys](/assets/vanessa-bucceri-gdirwiyama8-unsplash.jpg "Toys")
-
-Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Well, then good news! It's a suppository. Then we'll go with that data file! **I've been there.** _My folks were always on me to groom myself and wear underpants._ What am I, the pope?
-
-Daddy Bender, we're hungry. We can't compete with Mom! Her company is big and evil! Ours is small and neutral! We're rescuing ya. We'll go deliver this crate like professionals, and then we'll go home.
-
-I didn't ask for a completely reasonable excuse! I asked you to get busy! I never loved you. OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. With a warning label this big, you know they gotta be fun!
-
-1. And from now on you're all named Bender Jr.
-2. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."
-3. You wouldn't. Ask anyway!
-
-Bender, quit destroying the universe! No! The cat shelter's on to me. Enough about your promiscuous mother, Hermes! We have bigger problems. Fatal. I guess if you want children beaten, you have to do it yourself.
-
-I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money. You mean while I'm sleeping in it? I don't want to be rescued.
-
-- You know the worst thing about being a slave? They make you work, but they don't pay you or let you go.
-- And when we woke up, we had these bodies.
-- Spare me your space age technobabble, Attila the Hun!
-
-Hi, I'm a naughty nurse, and I really need someone to talk to. \$9.95 a minute. But, like most politicians, he promised more than he could deliver. I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.
-
-You mean while I'm sleeping in it? I suppose I could part with 'one' and still be feared… Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Negative, bossy meat creature!
-
-Oh God, what have I done? I don't 'need' to drink. I can quit anytime I want! Bender! Ship! Stop bickering or I'm going to come back there and change your opinions manually! Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.
-
-Ask her how her day was. In our darkest hour, we can stand erect, with proud upthrust bosoms. Why did you bring us here? I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.
-
-Good news, everyone! I've taught the toaster to feel love! This opera's as lousy as it is brilliant! Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry!
-
-Hello Morbo, how's the family? You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
-
-My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. Incidentally, you have a dime up your nose.
-
-You are the last hope of the universe. You know the worst thing about being a slave? They make you work, but they don't pay you or let you go. I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually?
-
-Hey, guess what you're accessories to. I feel like I was mauled by Jesus. Why would a robot need to drink? What are their names? Fry! Quit doing the right thing, you jerk! Doomsday device? Ah, now the ball's in Farnsworth's court!
-
-I saw you with those two "ladies of the evening" at Elzars. Explain that. Shinier than yours, meatbag. That's the ONLY thing about being a slave. Um, is this the boring, peaceful kind of taking to the streets?
-
-Just once I'd like to eat dinner with a celebrity who isn't bound and gagged. Daddy Bender, we're hungry. Kids don't turn rotten just from watching TV. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.

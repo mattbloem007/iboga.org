@@ -1,8 +1,8 @@
 import React from "react"
-import WhiteButton from '../buttons/whiteButton'
-import arrow from '../../assets/vectors/arrow-next-black.svg'
-import articleImage2 from "../../assets/vectors/article-placeholder-images/article-video.png"
-import PlayBtn from '../../assets/vectors/play-btn.svg'
+import WhiteButton from '../../buttons/whiteButton'
+import arrow from '../../../assets/vectors/arrow-next-black.svg'
+import articleImage2 from "../../../assets/vectors/article-placeholder-images/article-video.png"
+import PlayBtn from '../../../assets/vectors/play-btn.svg'
 
 
 

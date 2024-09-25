@@ -2,20 +2,20 @@ import React, { useState, useRef } from "react"
 import Slider from "react-slick";
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import arrow from '../../assets/vectors/arrow-next-black.svg'
-import arrowWhite from '../../assets/vectors/arrow-next-white.svg'
-import PlayBtn from '../../assets/vectors/play-btn.svg'
-import SkipBack from '../../assets/vectors/skip-prev.svg'
-import PrevRepeat from '../../assets/vectors/prev-15sec.svg'
-import NextRepeat from '../../assets/vectors/next-15sec.svg'
-import SkipForward from '../../assets/vectors/skip-forward.svg'
+import arrow from '../../../assets/vectors/arrow-next-black.svg'
+import arrowWhite from '../../../assets/vectors/arrow-next-white.svg'
+import PlayBtn from '../../../assets/vectors/play-btn.svg'
+import SkipBack from '../../../assets/vectors/skip-prev.svg'
+import PrevRepeat from '../../../assets/vectors/prev-15sec.svg'
+import NextRepeat from '../../../assets/vectors/next-15sec.svg'
+import SkipForward from '../../../assets/vectors/skip-forward.svg'
 
-import articleImage1 from "../../assets/vectors/article-placeholder-images/article-1.png"
-import articleImage2 from "../../assets/vectors/article-placeholder-images/article-video.png"
+import articleImage1 from "../../../assets/vectors/article-placeholder-images/article-1.png"
+import articleImage2 from "../../../assets/vectors/article-placeholder-images/article-video.png"
 
-import PrevSliderButton from '../buttons/prevSliderButton'
-import NextSliderButton from '../buttons/nextSliderButton'
-import WhiteButton from '../buttons/whiteButton'
+import PrevSliderButton from '../../buttons/prevSliderButton'
+import NextSliderButton from '../../buttons/nextSliderButton'
+import WhiteButton from '../../buttons/whiteButton'
 
 const SliderSection = ({ title, info, posts, cards }) => {
   const [progress, setProgress] = useState(0);

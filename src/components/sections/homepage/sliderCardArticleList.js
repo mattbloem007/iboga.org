@@ -1,6 +1,6 @@
 import React from "react"
-import WhiteButton from '../buttons/whiteButton'
-import arrow from '../../assets/vectors/arrow-next-black.svg'
+import WhiteButton from '../../buttons/whiteButton'
+import arrow from '../../../assets/vectors/arrow-next-black.svg'
 
 
 const SliderCardArticleList = ({data, btn}) => {

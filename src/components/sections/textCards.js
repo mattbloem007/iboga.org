@@ -16,7 +16,7 @@ const TextCards = ({data, cta}) => {
                       <p className="card-paragraphs">
                         {info.excerpt}
                       </p>
-                      {info.cta.btn && <a href={info.cta.btn_link} class={info.cta.btn_type}>{info.cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>}
+                      {info.cta && <a href={info.cta.btn_link} class={info.cta.btn_type}>{info.cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>}
                   </div>
               )
             })

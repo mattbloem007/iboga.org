@@ -27,11 +27,11 @@ import Seo from "../components/seo"
 import Header from '../components/header'
 import Icons from "../util/socialmedia.json"
 import TitleAndInfo from '../components/sections/titleAndInfo'
-import SliderSection from '../components/sections/sliderSection'
+import SliderSection from '../components/sections/homepage/sliderSection'
 import ImageBreak from '../components/sections/imageBreak'
 import TextCards from '../components/sections/textCards'
-import InfoAndImage from '../components/sections/infoAndImage'
-import Donate from '../components/sections/donateSection'
+import InfoAndImage from '../components/sections/homepage/infoAndImage'
+import Donate from '../components/sections/homepage/donateSection'
 import ContactSection from '../components/sections/contactSection'
 
 export const pageQuery = graphql`
