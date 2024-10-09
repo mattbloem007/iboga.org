@@ -23,16 +23,16 @@ const Footer = () => (
                     <div class="footer-link-col">
                         <h6>Useful Links</h6>
                         <ul>
-                            <li><a href="">Directory</a></li>
-                            <li><a href="">Library</a></li>
-                            <li><a href="">Education</a></li>
+                            <li><a href="/">Directory</a></li>
+                            <li><a href="/library">Library</a></li>
+                            <li><a href="/education">Education</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-link-col">
                         <h6>About</h6>
                         <ul>
-                            <li><a href="">About Iboga.org</a></li>
+                            <li><a href="/about">About Iboga.org</a></li>
                             <li><a href="">What is iboga</a></li>
                         </ul>
                     </div>
@@ -57,7 +57,7 @@ const Footer = () => (
                     <div class="footer-link-col">
                         <h6>Contact</h6>
                         <ul>
-                            <li><a href="">Contact Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                             <li><a href="">Newsletter</a></li>
                             <li><a href="">Donate</a></li>
                         </ul>

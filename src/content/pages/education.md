@@ -1,24 +1,29 @@
 ---
-template: contact-page
-slug: /contact
-title: Get in touch
-contact_banner:
-  title: Connect with Us or Collaborate
+template: education-page
+slug: /education
+education_banner:
+  title: Education
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
-  header_image: /assets/contact_bg.png
-reasons_form:
-  - reason: This is a placeholder reason for contacting...
-  - reason: This is a reason for contacting...
-  - reason: This is a placeholder reason for contacting...
-  - reason: This is a placeholder for contacting...
-contact_section2:
+    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore.
+education_section1:
+  title: Share Your Insights With Us
+  paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore. elit, sed do eiusmod tempor
+    incididunt
+  image: /assets/sharewithus.png
+education_section2:
+  slider1_title: Published Articles
+  slider1_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore.
+education_section3:
   - title: Share Your Insights with Iboga.org's Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
       contributions can help expand the knowledge and understanding of this
-      powerful plant medicine.
+      powerful plant medicine
     cta:
       btn: true
       btn_text: Submit a Journal Entry
@@ -35,12 +40,8 @@ contact_section2:
       audience. Whether you are a seasoned practitioner, researcher, or
       advocate, your voice can inspire and educate others in the Iboga
       community.
-contact_section3:
+education_section4:
   title: Join our Newsletter to receive important updates
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore.
 ---
-
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
-
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)

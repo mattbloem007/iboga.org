@@ -3,6 +3,8 @@ import { jsx } from "theme-ui"
 import {useStaticQuery, graphql} from 'gatsby';
 import Slider from "react-slick";
 import ButtonArrow from '../assets/vectors/arrow-icon.svg'
+import SearchIcon from "../assets/vectors/SearchIcon_x2.svg"
+
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 import { convertToBgImage } from "gbimage-bridge"
@@ -46,7 +48,7 @@ const Header = ({ children, page, data }) => {
   const HeaderData = data
   const headerImage = HeaderData.header_image
   let image, backgroundImage;
-
+  console.log("Header", HeaderData.header_image)
   if (HeaderData.length) {
     return (
       <Slider className="hero-slider-container" {...settings}>
@@ -82,7 +84,7 @@ const Header = ({ children, page, data }) => {
       </Slider>
     )
   }
-  else {
+  else if (HeaderData.header_image) {
     image = getImage(HeaderData.header_image)
     backgroundImage= convertToBgImage(image)
     return (
@@ -92,7 +94,7 @@ const Header = ({ children, page, data }) => {
            {...backgroundImage}
            preserveStackingContext
          >
-        <section class="page-banner about-banner">
+        <section class="header-banner about-banner">
           <div class="max-width">
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
               <p>
@@ -103,6 +105,24 @@ const Header = ({ children, page, data }) => {
         </section>
       </BackgroundImage>
     </div>
+    )
+  }
+  else if (HeaderData.header_image === undefined) {
+    return (
+      <div className="hero-slider-container">
+      <section class="page-banner media-banner">
+          <div class="max-width">
+              <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
+              <p>{HeaderData.excerpt}</p>
+              <form action="" class="content-search">
+                  <input type="text" placeholder="Search Media..." />
+                  <button>
+                      <img className="icon search-icon" src={SearchIcon} />
+                  </button>
+              </form>
+          </div>
+      </section>
+      </div>
     )
   }
 

@@ -21,6 +21,8 @@ const SliderSection = ({ title, info, posts, cards }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
+  let numSlides = posts.edges.length + cards.edges.length
+  numSlides = numSlides - 1
 
   var settings = {
     swipe: true,
@@ -30,7 +32,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
     swipeToSlide: true,
     slidesToScroll: 1,
     afterChange: current => {
-      setProgress((current / 5) * 100)
+      setProgress((current / numSlides) * 100)
     }
   };
 
@@ -58,7 +60,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
         <div className="margin-left-width">
         <Slider classNameName="article-slider" {...settings} ref={slider => { sliderRef = slider; }}>
         {posts && posts.edges.map((slider) => {
-          console.log("SLider data", slider.node.html)
+          console.log("SLider data", slider)
           return (
             slider.node.frontmatter.featuredImage ?
             <a href="" className="card-holder article-card" tabindex="0">
@@ -93,6 +95,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
           )
         })}
         {cards && cards.edges.map((card) => {
+          console.log("CARDS", card.node.frontmatter.audio)
           if (card.node.frontmatter.card_type == "Article List") {
             return (
               <div className="card-holder article-card-v3">
@@ -112,60 +115,34 @@ const SliderSection = ({ title, info, posts, cards }) => {
               </div>
             )
           }
+          else if (card.node.frontmatter.card_type == "Audio Card") {
+            return (
+              <div className="card-holder article-audio-card">
+                  <div className="article-audio">
+                      <iframe style={{borderRadius: "12px"}} src={card.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <h5>{card.node.frontmatter.title}</h5>
+                  <a href="" className="podcast-link" tabindex="-1">View Podcast</a>
+                  </div>
+              </div>
+            )
+          }
+          else if (card.node.frontmatter.card_type == "Video Card") {
+            return(
+              <a href="" className="card-holder article-video-card" tabindex="-1">
+                  <div className="thumbnail">
+                      <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={card.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div className="article-card-inner">
+                      <h5>{card.node.frontmatter.title}</h5>
+                      <p className="p-small">
+                          {card.node.frontmatter.description}
+                      </p>
+                  </div>
+              </a>
+            )
+          }
         })}
-          <div className="card-holder article-card-v3">
-              <div className="article-card-inner">
-                  <h4>How Iboga Can Help</h4>
-                  <p className="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div className="multi-link-box">
-                      <ul>
-                          <li><a href="" tabindex="-1">This is a link to a resource <img className="icon arrow-icon" src={arrow}></img></a></li>
-                          <li><a href="" tabindex="-1">This is a link to a resource <img className="icon arrow-icon" src={arrow}></img></a></li>
-                          <li><a href="" tabindex="-1">This is a link to a resource <img className="icon arrow-icon" src={arrow}></img></a></li>
-                          <li><a href="" tabindex="-1">This is a link to a resource <img className="icon arrow-icon" src={arrow}></img></a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <a href="" className="card-holder article-video-card" tabindex="-1">
-              <div className="thumbnail">
-                  <img src={articleImage2} alt="" />
-                  <div className="thumb-icon">
-                      <img className="icon play-icon" src={PlayBtn}></img>
-                  </div>
-              </div>
-              <div className="article-card-inner">
-                  <h5>This is just  a placeholder  title for a Media Video</h5>
-                  <p className="p-small">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur
-                  </p>
-              </div>
-          </a>
-          <div className="card-holder article-audio-card">
-              <div className="article-audio">
-                  <div className="playtime">
-                      <p className="current-time">20:45</p>
-                      <div className="audio-progress-tracker">
-                          <div className="audio-progress"></div>
-                      </div>
-                      <p className="end-time">54:39</p>
-                  </div>
-                  <div className="audio-controls">
-                      <button className="previous-song-btn" tabindex="-1"><img className="icon skip-icon" src={SkipBack}></img></button>
-                      <button className="skip-15sec-back-btn" tabindex="-1"><img className="icon repeat-icon" src={PrevRepeat}></img></button>
-                      <button className="play-audio-btn" tabindex="-1">
-                          <div className="play-audio-btn">
-                              <img className="icon play-icon" src={PlayBtn}></img>
-                          </div>
-                      </button>
-                      <button className="skip-15sec-forward-btn" tabindex="-1"><img className="icon repeat-forward-icon" src={NextRepeat}></img></button>
-                      <button className="next-song-btn" tabindex="-1"><img className="icon skip-forward-icon" src={SkipForward}></img></button>
-                  </div>
-              <h5>This is a title for a recent
-                  podcast episode </h5>
-              <a href="" className="podcast-link" tabindex="-1">View Podcast</a>
-          </div>
-      </div>
+
     </Slider>
         </div>
           <div className="max-width">

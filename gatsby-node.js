@@ -1,4 +1,5 @@
 const path = require("path")
+const slugify = require('slugify')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -20,6 +21,36 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+
+      libraryPages:  allMarkdownRemark(
+         filter: {frontmatter: {template: {eq: "library-page"}}}
+       ) {
+         edges {
+           node {
+             frontmatter {
+               title
+               excerpt
+               template
+             }
+           }
+         }
+       }
+
+       postPages:  allMarkdownRemark(
+          filter: {frontmatter: {template: {eq: "blog-post"}}}
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
+                slug
+                template
+              }
+            }
+          }
+        }
+
+
     }
   `)
 
@@ -31,6 +62,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Create markdown pages
   const posts = result.data.allMarkdownRemark.edges
+  const { libraryPages, postPages } = result.data
+
   let blogPostsCount = 0
 
   posts.forEach((post, index) => {
@@ -40,7 +73,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const next = index === 0 ? null : posts[index - 1].node
     const template = post.node.frontmatter.template
 
-    if (post.node.frontmatter.slug){
+    if (post.node.frontmatter.slug && post.node.frontmatter.template !== "blog-post"){
       createPage({
         path: post.node.frontmatter.slug,
         component: path.resolve(
@@ -63,6 +96,51 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       blogPostsCount++
     }
   })
+
+  libraryPages.edges.forEach((libraryPage, index) => {
+    console.log("Library page", libraryPage)
+    const id = libraryPage.node.id
+    const template = libraryPage.node.frontmatter.template
+    const title = libraryPage.node.frontmatter.title
+
+    console.log("TITLE", title)
+
+    createPage({
+      path: `/library/${slugify(title)}`,
+      component: path.resolve(
+        `src/templates/media-detailed-page.js`
+      ),
+      // additional data can be passed via context
+
+      context: {
+        id,
+        template,
+        title,
+      },
+    })
+  })
+
+  postPages.edges.forEach((postPage, index) => {
+
+    const id = postPage.node.id
+    const template = postPage.node.frontmatter.template
+    const title = postPage.node.frontmatter.title
+
+    createPage({
+      path: `/library/${slugify(title)}`,
+      component: path.resolve(
+        `src/templates/media-article-page.js`
+      ),
+      // additional data can be passed via context
+
+      context: {
+        id,
+        template,
+        title,
+      },
+    })
+  })
+
 
   // Create blog-list pages
   const postsPerPage = 9

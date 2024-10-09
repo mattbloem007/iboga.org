@@ -1,112 +1,57 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { graphql } from "gatsby"
-import { RiSendPlane2Line } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Header from '../components/header'
+import ContactForm from '../components/sections/contactpage/contactForm'
+import TextCards from '../components/sections/textCards'
+import NewsletterSection from '../components/sections/newsletterSection'
+
 
 export const pageQuery = graphql`
-  query ContactQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 140)
+  query ContactQuery($template: String!) {
+    markdownRemark(frontmatter: {template: {eq: $template}}) {
       frontmatter {
-        title
-      }
-    }
-    site {
-      siteMetadata {
-        title
+        contact_banner {
+          title
+          excerpt
+          header_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+
+        reasons_form {
+          reason
+        }
+
+        contact_section2 {
+          title
+          excerpt
+        }
+
+        contact_section3 {
+          title
+          excerpt
+        }
       }
     }
   }
 `
-
-const Contact = ({ data }) => {
-  const { markdownRemark, site } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+const ContactPage = ({ data }) => {
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
 
   return (
-    <Layout className="contact-page" sx={contactStyles.contactPage}>
-      <Seo
-        title={frontmatter.title}
-        description={frontmatter.title + " " + site.siteMetadata.title}
-      />
-      <div className="wrapper">
-        <h1>{frontmatter.title}</h1>
-        <div
-          className="description"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-        <form
-          className="contact-form"
-          action="/thanks"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Subject
-              <input type="text" name="subject" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message<textarea name="message" required></textarea>
-            </label>
-          </p>
-          <p className="text-align-right">
-            <button
-              className="button"
-              sx={{
-                variant: "variants.button",
-              }}
-              type="submit"
-            >
-              Send Message{" "}
-              <span className="icon -right">
-                <RiSendPlane2Line />
-              </span>
-            </button>
-          </p>
-        </form>
-      </div>
+    <Layout className="page" page="contact">
+      <Header data={frontmatter.contact_banner} />
+      <ContactForm data={frontmatter.reasons_form} />
+      <TextCards data={frontmatter.contact_section2} />
+      <NewsletterSection title={frontmatter.contact_section3.title} newsletter_title={frontmatter.contact_section3.excerpt}/>
     </Layout>
   )
 }
 
-export default Contact
-
-const contactStyles = {
-  contactPage: {
-    input: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-    textarea: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-  },
-}
+export default ContactPage

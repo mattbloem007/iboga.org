@@ -31,7 +31,7 @@ const Layout = ({ children, className, props, page }) => {
 
   return (
     <div className="primary-container">
-      <NavBar />
+      <NavBar page={page}/>
       {children}
       <Footer />
     </div>
