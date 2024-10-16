@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+
 import React, { useState } from "react"
 import bgImage from '../../assets/vectors/section-images/donate-section-img.png'
 import send from '../../assets/vectors/send.svg'

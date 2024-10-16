@@ -1,15 +1,13 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Logo from "./logo"
-import Navigation from "./navigation"
 import NavBar from './navigation-iboga'
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
-import Theme from "../components/theme"
 import Search from "../components/search"
 
 const query = graphql`
@@ -37,11 +35,10 @@ const Layout = ({ children, className, props }) => {
           <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
             <Search searchIndex={siteSearchIndex.index} />
           </div>
-          <Navigation />
+          <NavBar />
         </div>
         <div sx={layoutStyle.appearance}>
           <Search searchIndex={siteSearchIndex.index} />
-          <Theme />
         </div>
       </Header>
       <main className={"container " + className}>{children}</main>

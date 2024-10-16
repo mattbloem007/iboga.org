@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
 import React from "react"
 import arrow from '../../../assets/vectors/arrow-icon.svg'
 import { getImage, GatsbyImage } from "gatsby-plugin-image"

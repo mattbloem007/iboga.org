@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import {useStaticQuery, graphql} from 'gatsby';
 import Slider from "react-slick";
 import ButtonArrow from '../assets/vectors/arrow-icon.svg'

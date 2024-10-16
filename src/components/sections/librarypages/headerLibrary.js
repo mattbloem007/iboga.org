@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import {useStaticQuery, graphql} from 'gatsby';
 import BackArrow from '../../../assets/vectors/back-arrow.svg'
 import SearchIcon from "../../../assets/vectors/SearchIcon_x2.svg"

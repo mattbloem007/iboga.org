@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+
 import React from "react"
 import bgImage from '../../../assets/vectors/section-images/donate-section-img.png'
 import arrow from '../../../assets/vectors/arrow-icon.svg'
@@ -12,7 +11,7 @@ const Donate = ({ data }) => {
         <div className="margin-left-width">
             <div
             className="donate-container"
-            sx={{
+            style={{
                 backgroundImage: `url(${bgImage})`
                }}
             >

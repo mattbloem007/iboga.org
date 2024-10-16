@@ -20,7 +20,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-theme-ui",
+  //  "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
