@@ -6,6 +6,7 @@ export function onRenderBody(
   }
 ) {
  setHeadComponents([
+   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>,
    <link
     rel="stylesheet"
     type="text/css"
