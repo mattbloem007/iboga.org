@@ -3,41 +3,33 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const netlifyCmsPaths = {
-  resolve: `gatsby-plugin-netlify-cms-paths`,
-  options: {
-    cmsConfig: `/static/admin/config.yml`,
-  },
-}
+// const netlifyCmsPaths = {
+//   resolve: `gatsby-plugin-netlify-cms-paths`,
+//   options: {
+//     cmsConfig: `/static/admin/config.yml`,
+//   },
+// }
 
 const settings = require("./src/util/site.json")
 
 module.exports = {
   siteMetadata: settings.meta,
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets/`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content/`,
-        name: `content`,
-      },
-    },
+    `gatsby-plugin-decap-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         gfm: true,
         plugins: [
-          netlifyCmsPaths,
+          // netlifyCmsPaths,
+          {
+           resolve: `gatsby-remark-relative-images-v2`,
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -84,10 +76,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets/`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/`,
+        name: `content`,
+      },
+    },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-theme-ui",
-    `gatsby-plugin-netlify-cms`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -108,18 +111,18 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {},
-        allPageHeaders: [],
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
-        transformHeaders: (headers, path) => headers,
-        generateMatchPathRewrites: true,
-      },
-    },
+    // `gatsby-plugin-netlify`,
+    // {
+    //   resolve: `gatsby-plugin-netlify`,
+    //   options: {
+    //     headers: {},
+    //     allPageHeaders: [],
+    //     mergeSecurityHeaders: true,
+    //     mergeLinkHeaders: true,
+    //     mergeCachingHeaders: true,
+    //     transformHeaders: (headers, path) => headers,
+    //     generateMatchPathRewrites: true,
+    //   },
+    // },
   ],
 }
