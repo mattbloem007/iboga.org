@@ -6,9 +6,8 @@ media_banner:
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore.
 media_section2:
-  slider1_title: Published Articles
-  slider1_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
+  slider1_title: Journal Articles
+  slider1_info: Access published research articles about Iboga from peer-reviewed journals
 media_section3:
   slider2_title: Studies & Clinical Trials
   slider2_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
