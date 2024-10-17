@@ -6,7 +6,7 @@ media_banner:
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore.
 media_section2:
-  slider1_title: Published Articles
+  slider1_title: Journal Articles
   slider1_info: LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore.
 media_section3:
