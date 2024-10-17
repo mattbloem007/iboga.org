@@ -1,6 +1,6 @@
 ---
 template: library-page
-title: Journal Articles
+title: Published Articles
 excerpt: LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore.
 donate_title: Donate to the Legal Challenge Fund
