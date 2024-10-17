@@ -1,8 +1,7 @@
 ---
 template: library-page
-title: Studies & Clinical Trials
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore.
+title: Books, Films, and more
+excerpt: Browse collections of books, films, and other media about Iboga
 donate_title: Donate to the Legal Challenge Fund
 donate_info: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
