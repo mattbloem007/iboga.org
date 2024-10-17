@@ -9,9 +9,8 @@ media_section2:
   slider1_title: Journal Articles
   slider1_info: Access published research articles about Iboga from peer-reviewed journals
 media_section3:
-  slider2_title: Studies & Clinical Trials
-  slider2_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
+  slider2_title: Books, Films, and TV
+  slider2_info: Browse collections of books and films about Iboga
 media_section4:
   title: Join our Newsletter to receive important updates
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
