@@ -33,22 +33,22 @@ about_section2:
 about_section3:
   - title: Connecting with the Spirit of Iboga and Providing Balanced Information
     excerpt: Iboga.org's primary focus is providing a connection to the spirit of
-      this wonderful teacher and also balanced, accessible information about
-      iboga to empower individuals seeking wisdom. We do not directly offer
-      iboga treatments. We prioritize honoring, respect and safety by
-      encouraging those listed in our Directory to transparently share their
-      approach, their view and their safety protocols.
+      this wonderful teacher as well as  access to balanced, accessible
+      information about iboga to empower individuals seeking wisdom. We do not
+      directly offer iboga treatments. We prioritize honor, respect, and safety
+      by encouraging those listed in our Directory to transparently share their
+      approach, their view, and their safety protocols.
   - title: Emphasizing Traditional Knowledge and Holistic Understanding
-    excerpt: Supporting the communities working with and where iboga originates is
+    excerpt: Supporting the communities working with iboga, where it originates, is
       essential to us. We are committed to establishing initiatives such as
-      integral growing, a legal defense fund and accessible treatment
+      integral growing, a legal defense fund, and accessible treatment
       scholarships. These efforts promote both the sustainability of iboga and
       equitable access to its benefits globally.
   - title: Fostering Collaboration and Inclusive Knowledge Sharing
     excerpt: Collaboration is at the heart of our mission. We welcome contributions
       from practitioners, researchers, and individuals with diverse experiences
       to share on our platform. Through our podcast, journal, and community
-      forums, we strive to create an inclusive space where knowledge is shared
+      forums we strive to create an inclusive space where knowledge is shared
       freely.
   - title: Supporting Sustainable and Equitable Iboga Initiatives
     excerpt: While we include scientific research, Iboga.org places a unique
@@ -73,10 +73,10 @@ about_section4:
     A difficult childhood and challenging early adulthood experiences left lasting scars.  While traditional spiritual practices had offered valuable tools, iboga brought a miraculous level of repair. It was as if we traveled back in time to mend those original wounds, transforming my life in unimaginable ways.
 
 
-    Witnessing the transformation I was undergoing led to curiosity in my friends and community who desired to know more and experience firsthand this medicine and so I was called into serving ceremony and supplying the wood.  Since beginning service in 2014, I have supported more than 250 people through iboga flood experiences and guided over 500 people through 7-week microdosing programs.
+    Witnessing the transformation I was undergoing led to curiosity in my friends and community who desired to know more and experience firsthand this medicine, and so I was called into serving ceremony and supplying the wood.  Since beginning service in 2014, I have supported more than 250 people through iboga flood experiences and guided over 500 people through 7-week microdosing programs.
 
 
-    My approach has transformed over time. What began as one-on-one, low-dose work  has evolved into a collaborative model.  I'm honored to serve alongside my wife, herself a profound medicine woman and teacher, supported by our students and those seeking to study our protocols and approach to iboga.
+    My approach has transformed over time. What began as one-on-one, low-dose work has evolved into a collaborative model.  I'm honored to serve alongside my wife, herself a profound medicine woman and teacher, supported by our students and those seeking to study our protocols and approach to iboga.
 
 
     Initially, I intended the Iboga.org domain to support sustainable sourcing and supply. However, my years of serving the community, coupled with the growing interest in iboga through scientific studies, podcasts, and documentaries, highlighted the pressing need for a broader information platform.
@@ -95,11 +95,12 @@ about_section5:
       fostering personal transformation, community healing, and a respectful
       relationship with this sacred plant.
   - title: Our Mission
-    excerpt: We individuals with the knowledge and resources they need to navigate
-      their iboga journey safely and respectfully. We curate and share balanced
-      information from traditional wisdom, scientific research, and personal
-      experiences.  We foster a global community dedicated to responsible
-      integration practices and advocate for the sustainable future of iboga.
+    excerpt: We empower individuals with the knowledge and resources they need to
+      navigate their iboga journey safely and respectfully. We curate and share
+      balanced information from traditional wisdom, scientific research, and
+      personal experiences.  We foster a global community dedicated to
+      responsible integration practices and advocate for the sustainable future
+      of iboga.
 about_section6:
   title: Join our Newsletter to receive important updates
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
