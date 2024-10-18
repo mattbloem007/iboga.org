@@ -35,4 +35,4 @@ This absence is all the more notable given the recent surge of Western scientifi
 Yet this validation comes with responsibility. As Western science continues to confirm the power of these plant teachers, the principles outlined in this paper offer a crucial framework for moving forward with respect, reciprocity, and recognition of Indigenous wisdom traditions. The message is clear: the future of psychedelic medicine must honor its roots.\
 \
 \
-Read the whole article here: <https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00227-7/fulltext>
+Read the original journal article here: <https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00227-7/fulltext>
