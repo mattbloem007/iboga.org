@@ -32,4 +32,7 @@ The gap between Indigenous wisdom and Western adoption is particularly striking 
 
 This absence is all the more notable given the recent surge of Western scientific interest in psychedelic medicines. The past fifteen years have seen unprecedented clinical research demonstrating remarkable therapeutic potential for a variety of afflictions, both mental and physical. These findings validate what Indigenous communities have known through millennia of careful stewardship - that plants like iboga, psilocybin mushrooms, and ayahuasca carry profound healing capabilities.
 
-Yet this validation comes with responsibility. As Western science continues to confirm the power of these plant teachers, the principles outlined in this paper offer a crucial framework for moving forward with respect, reciprocity, and recognition of Indigenous wisdom traditions. The message is clear: the future of psychedelic medicine must honor its roots.
+Yet this validation comes with responsibility. As Western science continues to confirm the power of these plant teachers, the principles outlined in this paper offer a crucial framework for moving forward with respect, reciprocity, and recognition of Indigenous wisdom traditions. The message is clear: the future of psychedelic medicine must honor its roots.\
+\
+\
+Read the whole article here: <https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00227-7/fulltext>
