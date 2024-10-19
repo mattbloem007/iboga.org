@@ -12,6 +12,7 @@ description: Researchers have brought together voices from both indigenous and
 tags:
   - Home
   - Published Articles
+  - Research And Media
 ---
 A landmark paper published early last year in The Lancet Regional Health-Americas has established eight essential principles for ethical engagement with Indigenous peoples in psychedelic research and practice. This groundbreaking framework emerges at a critical moment, as Western science and commerce increasingly intersect with ancient healing traditions.
 
