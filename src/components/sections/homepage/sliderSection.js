@@ -70,7 +70,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
               />
                 <div className="article-card-inner">
                     <h4>{slider.node.frontmatter.title}</h4>
-                    <p className="p-small">{slider.node.rawMarkdownBody}</p>
+                    <p className="p-small">{slider.node.frontmatter.description}</p>
                 </div>
                 <div className="article-button-container">
                     <div className="article-button">Read More Stories</div>
@@ -83,7 +83,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
             <a href="" className="card-holder article-card-v2" tabindex="-1">
                 <div className="article-card-inner">
                     <h4>{slider.node.frontmatter.title}</h4>
-                    <p className="p-small">{slider.node.rawMarkdownBody}</p>
+                    <p className="p-small">{slider.node.frontmatter.description}</p>
                 </div>
                 <div className="article-button-container">
                     <div className="article-button">Read More Stories</div>

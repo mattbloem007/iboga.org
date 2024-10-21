@@ -37,6 +37,8 @@ const ArticlePage = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
+  console.log ("DAATA", data)
+
   return (
     <Layout className="page" page="Article">
       <div class="article-headline">
@@ -58,7 +60,7 @@ const ArticlePage = ({ data }) => {
           </div>
       </div>
       <div class="article-content">
-          <div class="max-width" dangerouslySetInnerHTML={{__html: data.rawMarkdownBody}}>
+          <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.rawMarkdownBody}}>
           </div>
       </div>
       <NewsletterSection title="Join our Newsletter to receive important updates" newsletter_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."/>

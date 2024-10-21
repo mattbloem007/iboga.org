@@ -18,7 +18,7 @@ const LargeArticleItem = ({post}) => {
             }
                 <h3>{post.node.frontmatter.title}</h3>
                 <p className="p-small">
-                    {post.node.rawMarkdownBody}
+                    {post.node.frontmatter.description}
                 </p>
                 <div class="article-button-container">
                     <div class="article-button">Read More Stories</div>
