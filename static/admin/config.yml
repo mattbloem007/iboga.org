@@ -94,7 +94,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More"]
+          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and more"]
         }
 
 
@@ -1025,7 +1025,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More"],
+          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and more"],
         }
 
   - name: "library_detailed_pages"
