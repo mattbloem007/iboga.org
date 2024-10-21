@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: 8 indigenous wisdom practices which MUST be integrated into western
-  studies of psychadelics, according to researchers
+title: "From Ancient Knowledge to Modern Healing: 8 Sacred Indigenous Rules for
+  Psychedelic Research"
 slug: /articleindigenousethics
 date: 2024-10-18 13:00
 postType:
