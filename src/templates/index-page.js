@@ -157,6 +157,7 @@ export const pageQuery = graphql`
      edges {
        node {
          rawMarkdownBody
+         html
          frontmatter {
            title
            description
@@ -219,6 +220,7 @@ export const pageQuery = graphql`
        edges {
          node {
            rawMarkdownBody
+           html
            frontmatter {
              title
              description

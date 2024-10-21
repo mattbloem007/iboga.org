@@ -94,7 +94,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Published Articles", "Studies & Clinical Trials"]
+          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More"]
         }
 
 
@@ -1025,7 +1025,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Published Articles", "Studies & Clinical Trials"],
+          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More"],
         }
 
   - name: "library_detailed_pages"

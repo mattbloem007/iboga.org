@@ -26,11 +26,12 @@ export const pageQuery = graphql`
     }
 
     posts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: $title}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
            rawMarkdownBody
+           html
            frontmatter {
              title
              postType
@@ -49,7 +50,7 @@ export const pageQuery = graphql`
      }
 
      cards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "slider-card"}}}
+      filter: {frontmatter: {tags: {eq: $title}, template: {eq: "slider-card"}}}
     ) {
       edges {
         node {

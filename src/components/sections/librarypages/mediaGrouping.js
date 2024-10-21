@@ -10,16 +10,17 @@ const MediaGrouping = ({posts}) => {
         <div class="max-width">
           <div class="flex">
             <LargeArticleItem post={posts.edges[0]} />
+            <div class="side-media">
             {posts && posts.edges.map((post, index) => {
               if (index >= 1 && index < posts.edges.length) {
                 console.log("POSTS", post)
                 return (
-                  <div class="side-media">
+
                     <SideArticleItem post={post} />
-                  </div>
                 )
               }
             })}
+            </div>
           </div>
         </div>
     </section>

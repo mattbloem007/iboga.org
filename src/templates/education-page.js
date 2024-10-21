@@ -53,6 +53,7 @@ export const pageQuery = graphql`
        edges {
          node {
            rawMarkdownBody
+           html
            frontmatter {
              title
              postType

@@ -19,6 +19,7 @@ export const pageQuery = graphql`
   query ArticleQuery($template: String!, $title: String!) {
     markdownRemark(frontmatter: {title: {eq: $title}, template: {eq: $template}}) {
       rawMarkdownBody
+      html
       frontmatter {
         title
         description
@@ -60,7 +61,7 @@ const ArticlePage = ({ data }) => {
           </div>
       </div>
       <div class="article-content">
-          <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.rawMarkdownBody}}>
+          <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}>
           </div>
       </div>
       <NewsletterSection title="Join our Newsletter to receive important updates" newsletter_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."/>
