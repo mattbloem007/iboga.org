@@ -64,4 +64,6 @@ The paper emphasises that while these medicines may offer powerful solutions to 
 
 As Western science continues to confirm the power of these plant teachers, we have both an opportunity and an obligation to move forward with respect, reciprocity, and recognition of Indigenous wisdom traditions. The message is clear: the future of psychedelic medicine must honour its roots.
 
-Read the original journal article here: <https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00227-7/fulltext>Citation: Ethical principles of traditional Indigenous medicine to guide western psychedelic research and practice, Celidwen, Yuria et al., The Lancet Regional Health – Americas, Volume 18, 100410
+Read the original journal article here: <https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00227-7/fulltext>\
+\
+Citation: Ethical principles of traditional Indigenous medicine to guide western psychedelic research and practice, Celidwen, Yuria et al., The Lancet Regional Health – Americas, Volume 18, 100410
