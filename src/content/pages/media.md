@@ -8,7 +8,7 @@ media_banner:
     reviews**, insightful **books**, thought-provoking **films**, and **more**
 media_section2:
   slider1_title: Journal Articles
-  slider1_info: Access reviews of published research articles from peer-reviewed journals
+  slider1_info: Access reviews of published articles from peer-reviewed journals
 media_section3:
   slider2_title: Books, Films, and more
   slider2_info: Browse collections of books, films, and other media
