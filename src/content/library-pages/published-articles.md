@@ -1,7 +1,7 @@
 ---
 template: library-page
 title: Journal Articles
-excerpt: Access published research articles about iboga from peer-reviewed journals
+excerpt: Access reviews of published articles about iboga from peer-reviewed journals
 donate_title: Donate to the Legal Challenge Fund
 donate_info: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

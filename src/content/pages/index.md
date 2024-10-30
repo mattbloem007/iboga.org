@@ -28,13 +28,13 @@ header_slides:
       ctaText: "Read Essays by Practitioners "
       ctaLink: /
 section1:
-  section1_paragraph: What is Iboga?  Indigenously it is the Holy Wood - an agent
-    of deep initiation and transformation.  In treatment its alkaloids are the
-    addiction cure which not only interrupts your withdrawals but helps you deal
-    with the roots of your trauma. In medical science it is one of the few
-    compounds discovered which can regenerate the brain - potentially life
-    saving.  This small shrub from the African rainforest contains within its
-    rootbark true magic - not only for healing but for realignment and
+  section1_paragraph: What is Iboga?  Indigenously, it is the Holy Wood - an agent
+    of deep initiation and transformation.  In treatment, its alkaloids are the
+    addiction cure which not only interrupts your withdrawals but also helps you
+    deal with the roots of your trauma. In medical science, it is one of the few
+    compounds discovered which can regenerate the brain - making it potentially
+    life saving.  This small shrub from the African rainforest contains within
+    its rootbark true magic - not only for healing but for realignment and
     reconnection of our lives
   section1_title: <strong class=\"heading-bold\">What</strong> Is Iboga
   cta:
@@ -81,11 +81,12 @@ section4:
       btn_text: ""
       btn_link: /
     title: Our Mission
-    excerpt: We individuals with the knowledge and resources they need to navigate
-      their iboga journey safely and respectfully. We curate and share balanced
-      information from traditional wisdom, scientific research, and personal
-      experiences.&nbsp; We foster a global community dedicated to responsible
-      integration practices and advocate for the sustainable future of iboga.
+    excerpt: We empower individuals with the knowledge and resources they need to
+      navigate their iboga journey safely and respectfully. We curate and share
+      balanced information from traditional wisdom, scientific research, and
+      personal experiences. We foster a global community dedicated to
+      responsible integration practices and advocate for the sustainable future
+      of iboga.
 section5:
   title: <strong className="heading-bold">Application</strong> of <br/> Iboga and
     Ibogaine
