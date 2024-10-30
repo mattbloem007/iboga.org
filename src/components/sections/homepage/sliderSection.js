@@ -63,7 +63,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
           console.log("SLider data", slider)
           return (
             slider.node.frontmatter.featuredImage ?
-            <a href="" className="card-holder article-card" tabindex="0">
+            <a href={`/${slider.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
               <GatsbyImage
                 image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
                 alt={slider.node.frontmatter.title + " - Featured image"}
@@ -80,7 +80,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
                 </div>
             </a>
             :
-            <a href="" className="card-holder article-card-v2" tabindex="-1">
+            <a href={`${slider.node.frontmatter.slug}`} className="card-holder article-card-v2" tabindex="-1">
                 <div className="article-card-inner">
                     <h4>{slider.node.frontmatter.title}</h4>
                     <p className="p-small">{slider.node.frontmatter.description}</p>

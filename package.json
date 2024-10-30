@@ -13,7 +13,7 @@
     "url": "https://github.com/mattbloem007/iboga.org/issues"
   },
   "scripts": {
-    "build": "gatsby build --log-pages",
+    "build": "gatsby clean && gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",

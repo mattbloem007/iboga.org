@@ -46,6 +46,7 @@ export const pageQuery = graphql`
              title
              description
              tags
+             slug
              featuredImage {
                childImageSharp {
                  gatsbyImageData
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
             description
             card_type
             tags
+            slug
             resources {
               link
               label

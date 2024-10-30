@@ -61,6 +61,7 @@ export const pageQuery = graphql`
              audio
              description
              tags
+             slug
              featuredImage {
                childImageSharp {
                  gatsbyImageData
@@ -81,6 +82,7 @@ export const pageQuery = graphql`
             description
             card_type
             tags
+            slug
             resources {
               link
               label
