@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react"
 import Slider from "react-slick";
 import { GatsbyImage } from "gatsby-plugin-image"
 
+
 import arrow from '../../../assets/vectors/arrow-next-black.svg'
 import arrowWhite from '../../../assets/vectors/arrow-next-white.svg'
 import PlayBtn from '../../../assets/vectors/play-btn.svg'
@@ -43,6 +44,13 @@ const SliderSection = ({ title, info, posts, cards }) => {
     sliderRef.slickPrev();
   };
 
+  const slugify = str =>
+  str
+    .trim()
+    .replace(/["]+/g, '')
+    .replace(/\s+/g, '-');
+
+
 
   return (
     <section className="research-media-slider">
@@ -63,7 +71,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
           console.log("SLider data", slider)
           return (
             slider.node.frontmatter.featuredImage ?
-            <a href={`/${slider.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
+            <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
               <GatsbyImage
                 image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
                 alt={slider.node.frontmatter.title + " - Featured image"}
@@ -80,7 +88,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
                 </div>
             </a>
             :
-            <a href={`${slider.node.frontmatter.slug}`} className="card-holder article-card-v2" tabindex="-1">
+            <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
                 <div className="article-card-inner">
                     <h4>{slider.node.frontmatter.title}</h4>
                     <p className="p-small">{slider.node.frontmatter.description}</p>

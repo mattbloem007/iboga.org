@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import BackArrow from '../assets/vectors/black-back-arrow.svg'
@@ -38,13 +38,14 @@ const ArticlePage = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
+
   console.log ("DAATA", data)
 
   return (
     <Layout className="page" page="Article">
       <div class="article-headline">
           <div class="max-width">
-              <a href="/library"><img class="icon arrow-icon" src={BackArrow}></img>Back To Library</a>
+              <Link to={'..'}><img class="icon arrow-icon" src={BackArrow}></img>Back To Library</Link>
               <h1>{frontmatter.title}</h1>
               <p>
                   {frontmatter.description}
