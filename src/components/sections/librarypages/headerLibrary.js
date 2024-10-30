@@ -1,5 +1,5 @@
 import React from "react"
-import {useStaticQuery, graphql} from 'gatsby';
+import {useStaticQuery, graphql, Link} from 'gatsby';
 import BackArrow from '../../../assets/vectors/back-arrow.svg'
 import SearchIcon from "../../../assets/vectors/SearchIcon_x2.svg"
 
@@ -9,7 +9,7 @@ const HeaderLibrary = ({ children, page, data }) => {
     return (
       <section class="page-banner media-grid-banner">
           <div class="max-width">
-            <a href=""><img src={BackArrow} class="icon arrow-icon"></img>Back To Library</a>
+            <Link to={'..'}><img src={BackArrow} class="icon arrow-icon"></img>Back To Library</Link>
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
               <p>{HeaderData.excerpt}</p>
               <form action="" class="content-search">

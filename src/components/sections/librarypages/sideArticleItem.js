@@ -5,9 +5,15 @@ import arrow from '../../../assets/vectors/arrow-next-black.svg'
 const SideArticleItem = ({post}) => {
   const {postType} = post.node.frontmatter
 
+  const slugify = str =>
+  str
+    .trim()
+    .replace(/["]+/g, '')
+    .replace(/\s+/g, '-');
+
   if (postType == "Blog Post") {
     return (
-      <a href="" class="article-video-card">
+      <a href={`/library/${slugify(post.node.frontmatter.title)}`} class="article-video-card">
       {
       post.node.frontmatter.featuredImage &&
         <GatsbyImage
@@ -34,14 +40,14 @@ const SideArticleItem = ({post}) => {
           <div class="article-audio">
             <iframe style={{borderRadius: "12px"}} src={post.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <h5>{post.node.frontmatter.title}</h5>
-            <a href="" className="podcast-link" tabindex="-1">View Podcast</a>
+            <a href={`/library/${slugify(post.node.frontmatter.title)}`} className="podcast-link" tabindex="-1">View Podcast</a>
           </div>
       </div>
     )
   }
   else if (postType == "Video") {
     return (
-      <a href="" class="article-video-card">
+      <a href={`/library/${slugify(post.node.frontmatter.title)}`} class="article-video-card">
           <div class="thumbnail">
             <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={post.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
