@@ -247,12 +247,12 @@ const HomePage = ({ data }) => {
       <Seo />
       <Header data={frontmatter.header_slides} />
       <TitleAndInfo title={frontmatter.section1.section1_title} info={frontmatter.section1.section1_paragraph} cta={frontmatter.section1.cta}/>
-      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} cards={cards}/>
+      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} cards={cards} link='/library'/>
       <ImageBreak image={frontmatter.section2.image_break.childImageSharp.gatsbyImageData}/>
       <TitleAndInfo title={frontmatter.section3.about_title} info={frontmatter.section3.about_paragraph} cta={frontmatter.section3.cta}/>
       <TextCards data={frontmatter.section4}/>
       <InfoAndImage data={frontmatter.section5} />
-      <SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} cards={researchCards} />
+      <SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} cards={researchCards} link='/library'/>
       <Donate data={frontmatter.section6}/>
       <TextCards data={frontmatter.section7} />
       <ContactSection title={frontmatter.section8.title} newsletter_title={frontmatter.section8.newsletter_title}/>

@@ -2,10 +2,10 @@ import React from "react"
 import blackArrow from "../../assets/vectors/arrow-icon-black.svg"
 
 
-const WhiteButton = () => {
+const WhiteButton = ({ link }) => {
 
   return (
-        <a href="" class="button-secondary">Visit Directory <img src="icon arrow-icon" src={blackArrow}></img></a>
+        <a href={link} class="button-secondary">Visit Directory <img src="icon arrow-icon" src={blackArrow}></img></a>
   )
 }
 

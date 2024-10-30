@@ -62,7 +62,7 @@ section3:
     btn: true
     btn_text: Visit Directory
     btn_type: button-secondary
-    btn_link: /directory
+    btn_link: /about
 section4:
   - cta:
       btn: false

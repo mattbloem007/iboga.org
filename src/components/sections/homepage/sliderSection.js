@@ -5,6 +5,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 import arrow from '../../../assets/vectors/arrow-next-black.svg'
 import arrowWhite from '../../../assets/vectors/arrow-next-white.svg'
+import blackArrow from "../../../assets/vectors/arrow-icon-black.svg"
+
 import PlayBtn from '../../../assets/vectors/play-btn.svg'
 import SkipBack from '../../../assets/vectors/skip-prev.svg'
 import PrevRepeat from '../../../assets/vectors/prev-15sec.svg'
@@ -18,7 +20,7 @@ import PrevSliderButton from '../../buttons/prevSliderButton'
 import NextSliderButton from '../../buttons/nextSliderButton'
 import WhiteButton from '../../buttons/whiteButton'
 
-const SliderSection = ({ title, info, posts, cards }) => {
+const SliderSection = ({ title, info, posts, cards, link }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
@@ -48,6 +50,7 @@ const SliderSection = ({ title, info, posts, cards }) => {
   str
     .trim()
     .replace(/["]+/g, '')
+    .replace(/[,]+/g, '')
     .replace(/\s+/g, '-');
 
 
@@ -62,7 +65,14 @@ const SliderSection = ({ title, info, posts, cards }) => {
                     {info}
                 </p>
             </div>
-            <WhiteButton />
+            {
+              link ?
+              <a href={link} class="button-secondary">Visit Directory <img src="icon arrow-icon" src={blackArrow}></img></a>
+              :
+              <WhiteButton link={`${slugify(title)}`}/>
+
+
+            }
         </div>
       </div>
         <div className="margin-left-width">
