@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: "Iboga: The Root Of All Healing | A book by Daniel Brett"
+title: "Iboga: The Root Of All Healing by Daniel Brett"
 slug: /danielbrettbook
 date: 2024-11-04 16:33
 postType:
