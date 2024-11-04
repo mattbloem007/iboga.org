@@ -8,7 +8,8 @@ const SideArticleItem = ({post}) => {
   const slugify = str =>
   str
     .trim()
-    .replace(/["]+/g, '')
+    .replace("|", 'or')
+    .replace(/[,]+/g, '')
     .replace(/\s+/g, '-');
 
   if (postType == "Blog Post") {

@@ -7,10 +7,11 @@ const LargeArticleItem = ({post}) => {
   const slugify = str =>
   str
     .trim()
-    .replace(/["]+/g, '')
+    .replace("|", 'or')
+    .replace(/[,]+/g, '')
     .replace(/\s+/g, '-');
 
-    
+
   if (post) {
     const {postType} = post.node.frontmatter
     if (postType == "Blog Post") {
