@@ -6,7 +6,7 @@ slug: /thomaskingsleybrowntedx
 date: 2024-11-04 16:16
 postType:
   - Video
-video: https://www.youtube.com/watch?v=-fvdjhLJxV4&ab_channel=TEDxTalks
+video: https://www.youtube.com/embed/-fvdjhLJxV4?si=yJ4WbIUIX3glRvgN
 description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
   discovery by Howard Lotsof that ibogaine therapy is a highly effective
   treatment for opioid addiction. He discusses present treatments and their lack
