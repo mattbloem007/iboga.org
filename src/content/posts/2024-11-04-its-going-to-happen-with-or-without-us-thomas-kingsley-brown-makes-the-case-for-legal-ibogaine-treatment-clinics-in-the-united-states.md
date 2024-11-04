@@ -9,9 +9,9 @@ postType:
 video: https://www.youtube.com/watch?v=-fvdjhLJxV4&ab_channel=TEDxTalks
 description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
   discovery by Howard Lotsof that ibogaine therapy is a highly effective
-  treatment for opioid addiction. He talks about present treatments and their
-  lack of efficacy, as well as the possible reasons why Big Pharma hasn't been
-  interested in researching ibogaine. He discusses his own remarkable research
+  treatment for opioid addiction. He discusses present treatments and their lack
+  of efficacy, as well as the possible reasons why Big Pharma hasn't been
+  interested in researching ibogaine. He shares his own remarkable research
   results and makes a strong case for why ibogaine should be made legal in the
   United States. "
 tags:
@@ -23,8 +23,7 @@ tags:
 
 Paper 1: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802>Paper 2: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1310218>
 
-#### \
-Transcript - formatted and gently proofread for ease of reading. 
+#### Transcript - formatted and gently proofread for ease of reading. 
 
 \[0:22] What if the best treatment for getting people off of opioids like heroin and oxycodone was discovered over fifty years ago by a 19-year-old heroin junkie in Brooklyn, but we're not using that treatment right now in this country because it's illegal here? Well, that'd be a tragedy given the devastating magnitude of the opioid crisis right now. In recent years, the death rates have been increasing, and those death rates are led by things like heroin and synthetic opioids like fentanyl.
 
