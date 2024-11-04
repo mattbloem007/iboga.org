@@ -49,7 +49,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
   const slugify = str =>
   str
     .trim()
-    .replace(/["]+/g, '')
+    .replace("|", 'or')
     .replace(/[,]+/g, '')
     .replace(/\s+/g, '-');
 
@@ -79,38 +79,77 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
         <Slider classNameName="article-slider" {...settings} ref={slider => { sliderRef = slider; }}>
         {posts && posts.edges.map((slider) => {
           console.log("SLider data", slider)
-          return (
-            slider.node.frontmatter.featuredImage ?
-            <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
-              <GatsbyImage
-                image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-                alt={slider.node.frontmatter.title + " - Featured image"}
-              />
-                <div className="article-card-inner">
-                    <h4>{slider.node.frontmatter.title}</h4>
-                    <p className="p-small">{slider.node.frontmatter.description}</p>
-                </div>
-                <div className="article-button-container">
-                    <div className="article-button">Read More Stories</div>
-                    <div className="article-icon">
-                        <img className="icon arrow-icon" src={arrow}></img>
-                    </div>
-                </div>
-            </a>
-            :
-            <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
-                <div className="article-card-inner">
-                    <h4>{slider.node.frontmatter.title}</h4>
-                    <p className="p-small">{slider.node.frontmatter.description}</p>
-                </div>
-                <div className="article-button-container">
-                    <div className="article-button">Read More Stories</div>
-                    <div className="article-icon">
-                        <img className="icon arrow-icon" src={arrowWhite}></img>
-                    </div>
-                </div>
-            </a>
-          )
+          if (slider.node.frontmatter.postType == "Video") {
+            return (
+              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-video-card" tabindex="-1">
+                  <div className="thumbnail">
+                      <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={slider.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div className="article-card-inner">
+                      <h5>{slider.node.frontmatter.title}</h5>
+                      <p className="p-small">
+                          {slider.node.frontmatter.description}
+                      </p>
+                  </div>
+              </a>
+            )
+          }
+
+          if (slider.node.frontmatter.postType == "Audio") {
+            return (
+              <div className="card-holder article-audio-card">
+                  <div className="article-audio">
+                      <iframe style={{borderRadius: "12px"}} src={slider.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <h5>{slider.node.frontmatter.title}</h5>
+                  <a href="" className="podcast-link" tabindex="-1">View Podcast</a>
+                  </div>
+              </div>
+            )
+          }
+          if (slider.node.frontmatter.featuredImage) {
+            return (
+              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
+                <GatsbyImage
+                  image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                  alt={slider.node.frontmatter.title + " - Featured image"}
+                />
+                  <div className="article-card-inner">
+                      <h4>{slider.node.frontmatter.title}</h4>
+                      <p className="p-small">{slider.node.frontmatter.description}</p>
+                  </div>
+                  <div className="article-button-container">
+                      <div className="article-button">Read More Stories</div>
+                      <div className="article-icon">
+                          <img className="icon arrow-icon" src={arrow}></img>
+                      </div>
+                  </div>
+              </a>
+            )
+          }
+          else {
+            return (
+              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
+                  <div className="article-card-inner">
+                      <h4>{slider.node.frontmatter.title}</h4>
+                      <p className="p-small">{slider.node.frontmatter.description}</p>
+                  </div>
+                  <div className="article-button-container">
+                      <div className="article-button">Read More Stories</div>
+                      <div className="article-icon">
+                          <img className="icon arrow-icon" src={arrowWhite}></img>
+                      </div>
+                  </div>
+              </a>
+            )
+          }
+
+
+          // return (
+          //   slider.node.frontmatter.featuredImage ?
+          //
+          //   :
+          //
+          // )
         })}
         {cards && cards.edges.map((card) => {
           console.log("CARDS", card.node.frontmatter.audio)

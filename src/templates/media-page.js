@@ -47,6 +47,9 @@ export const pageQuery = graphql`
              description
              tags
              slug
+             postType
+             video
+             audio
              featuredImage {
                childImageSharp {
                  gatsbyImageData
@@ -91,6 +94,9 @@ export const pageQuery = graphql`
              description
              tags
              slug
+             postType
+             video
+             audio
              featuredImage {
                childImageSharp {
                  gatsbyImageData
