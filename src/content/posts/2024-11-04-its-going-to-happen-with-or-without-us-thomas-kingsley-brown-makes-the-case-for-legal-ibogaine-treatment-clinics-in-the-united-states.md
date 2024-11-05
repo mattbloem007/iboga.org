@@ -21,9 +21,11 @@ tags:
 ---
 #### Links to the research papers mentioned in the video
 
-Paper 1: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802>Paper 2: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1310218>
+Paper 1: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802>
 
-#### Transcript - formatted and gently proofread for ease of reading. 
+[](https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802)Paper 2: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1310218>
+
+#### Transcript - formatted and gently proofread for ease of reading.
 
 \[0:22] What if the best treatment for getting people off of opioids like heroin and oxycodone was discovered over fifty years ago by a 19-year-old heroin junkie in Brooklyn, but we're not using that treatment right now in this country because it's illegal here? Well, that'd be a tragedy given the devastating magnitude of the opioid crisis right now. In recent years, the death rates have been increasing, and those death rates are led by things like heroin and synthetic opioids like fentanyl.
 
