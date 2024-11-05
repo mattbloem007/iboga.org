@@ -109,10 +109,13 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
           if (slider.node.frontmatter.featuredImage) {
             return (
               <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
-                <GatsbyImage
-                  image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-                  alt={slider.node.frontmatter.title + " - Featured image"}
-                />
+                <div className="thumbnail">
+                  <GatsbyImage
+                    style={{width: "100%", height: "100%"}}
+                    image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                    alt={slider.node.frontmatter.title + " - Featured image"}
+                  />
+                </div>
                   <div className="article-card-inner">
                       <h4>{slider.node.frontmatter.title}</h4>
                       <p className="p-small">{slider.node.frontmatter.description}</p>

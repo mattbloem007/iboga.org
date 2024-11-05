@@ -67,6 +67,11 @@
     margin-right: 24px;
 }
 
+.card-holder .thumbnail {
+  width: 421px;
+  height: 250px;
+}
+
 /* --- ARTICLE CARD --- */
 
 .article-slider {
@@ -351,6 +356,11 @@
     .card-holder {
         max-width: 320px;
         margin-right: 16px;
+    }
+
+    .card-holder .thumbnail {
+      width: 332px;
+      height: 250px;
     }
 }
 
