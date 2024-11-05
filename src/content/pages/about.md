@@ -34,6 +34,7 @@ about_section2:
     excerpt: Salvia is an experienced psychonaut who first found their way to the
       wood as part of a holistic healing process. They teach languages and music
       by day and serve cacao and iboga by night.
+    team_image: /assets/dsc_0842-2-.jpg
 about_section3:
   - title: Connecting with the Spirit of Iboga and Providing Balanced Information
     excerpt: Iboga.org's primary focus is providing a connection to the spirit of
