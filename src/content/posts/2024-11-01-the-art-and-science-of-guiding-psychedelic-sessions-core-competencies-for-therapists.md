@@ -79,10 +79,7 @@ The implications extend beyond individual treatment rooms. As Dr. Phelps rightly
 
 The challenge now lies in expanding training programs while maintaining the high standards these powerful medicines demand. As the field moves forward, these core competencies provide a foundation for ensuring that psychedelic therapy fulfills its promising potential for addressing mental health challenges that have long resisted conventional treatment approaches.
 
-
-
-
-
-Click here to read the whole article: <https://www.researchgate.net/publication/318022461_Developing_Guidelines_and_Competencies_for_the_Training_of_Psychedelic_Therapists>
+Click here to read the whole article: \
+<https://www.researchgate.net/publication/318022461_Developing_Guidelines_and_Competencies_for_the_Training_of_Psychedelic_Therapists>
 
 [](https://www.researchgate.net/publication/318022461_Developing_Guidelines_and_Competencies_for_the_Training_of_Psychedelic_Therapists)Citation: Phelps, Janis. (2017). Developing Guidelines and Competencies for the Training of Psychedelic Therapists. Journal of Humanistic Psychology. 57. 002216781771130. 10.1177/0022167817711304. [](https://www.researchgate.net/publication/318022461_Developing_Guidelines_and_Competencies_for_the_Training_of_Psychedelic_Therapists)
