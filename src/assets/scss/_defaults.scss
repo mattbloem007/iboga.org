@@ -79,6 +79,17 @@ p {
   text-justify: inter-word;
 }
 
+li {
+  font-family: "Epilogue";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 .p-reg-weight {
   font-weight: 400;
 }
@@ -91,7 +102,7 @@ p {
 
 @media screen and (max-width: 992px) {
   h1 {
-     font-size: 40px; 
+     font-size: 40px;
   }
 
   h2 {

@@ -65,7 +65,7 @@ const ArticlePage = ({ data }) => {
               )
   }
   else if (frontmatter.postType == "Blog Post" && !frontmatter.featuredImage){
-    feature = (<div></div>)
+    feature = (<div className="margin-left"><hr width="80%" color="black" size="5"/></div>)
   }
 
   return (

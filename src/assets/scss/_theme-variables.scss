@@ -26,6 +26,10 @@ $breakpoint-xl: 1200px;
   margin-left: calc((100vw - ( 1440px - 112px )) / 2);
 }
 
+.margin-left {
+  margin-left: calc((100vw - ( 1440px - 112px )) / 2);
+}
+
 .flex {
   display: flex;
 }
