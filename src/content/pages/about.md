@@ -30,6 +30,10 @@ about_section2:
       for iboga...
   - title: Editor - Jadhe
     excerpt: Jadhe is writer, an angelic healing trainer and a shaman
+  - title: Editor in Chief - Salvia
+    excerpt: Salvia is an experienced psychonaut who first found their way to the
+      wood as part of a holistic healing process. They teach languages and music
+      by day and serve cacao and iboga by night.
 about_section3:
   - title: Connecting with the Spirit of Iboga and Providing Balanced Information
     excerpt: Iboga.org's primary focus is providing a connection to the spirit of
