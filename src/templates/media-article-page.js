@@ -24,6 +24,9 @@ export const pageQuery = graphql`
         title
         description
         slug
+        postType
+        video
+        audio
         featuredImage {
           childImageSharp {
             gatsbyImageData
@@ -37,9 +40,33 @@ const ArticlePage = ({ data }) => {
 
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-
+  let feature;
 
   console.log ("DAATA", data)
+
+  if (frontmatter.postType == "Video") {
+    feature = (<div class="margin-left-width" style={{marginRight: "20%"}}>
+                <iframe style={{width: "100%", height: "100%"}} src={frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>)
+  }
+  else if (frontmatter.postType == "Audio") {
+    feature = (<div class="margin-left-width" style={{marginRight: "20%"}}>
+                <iframe style={{borderRadius: "12px"}} src={frontmatter.audio} width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>)
+  }
+  else if (frontmatter.postType == "Blog Post" && frontmatter.featuredImage){
+    feature = ( <div class="margin-left-width" style={{marginRight: "20%"}}>
+                  <GatsbyImage
+                  style={{width: "100%", height: "100%"}}
+                  image={frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                  alt={frontmatter.title + " - Featured image"}
+                  />
+                </div>
+              )
+  }
+  else if (frontmatter.postType == "Blog Post" && !frontmatter.featuredImage){
+    feature = (<div></div>)
+  }
 
   return (
     <Layout className="page" page="Article">
@@ -51,15 +78,7 @@ const ArticlePage = ({ data }) => {
                   {frontmatter.description}
               </p>
           </div>
-          <div class="margin-left-width">
-          {frontmatter.featuredImage &&
-            <GatsbyImage
-            style={{width: "100%", height: "100%"}}
-              image={frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-              alt={frontmatter.title + " - Featured image"}
-            />
-          }
-          </div>
+            {feature}
       </div>
       <div class="article-content">
           <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}>
