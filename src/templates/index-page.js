@@ -180,14 +180,8 @@ export const pageQuery = graphql`
         frontmatter {
           title
           description
-          card_type
           tags
-          resources {
-            link
-            label
-          }
           video
-          audio
         }
       }
     }
@@ -201,14 +195,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            card_type
             tags
-            resources {
-              link
-              label
-            }
             video
-            audio
           }
         }
       }

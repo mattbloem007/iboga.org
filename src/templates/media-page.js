@@ -36,7 +36,7 @@ export const pageQuery = graphql`
     }
 
     posts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Books, Films, and More"}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
@@ -49,7 +49,6 @@ export const pageQuery = graphql`
              slug
              postType
              video
-             audio
              featuredImage {
                childImageSharp {
                  gatsbyImageData
@@ -61,29 +60,23 @@ export const pageQuery = graphql`
      }
 
      cards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "slider-card"}}}
+      filter: {frontmatter: {tags: {eq: "Books, Films, and More"}, template: {eq: "slider-card"}}}
     ) {
       edges {
         node {
           frontmatter {
             title
             description
-            card_type
             tags
             slug
-            resources {
-              link
-              label
-            }
             video
-            audio
           }
         }
       }
     }
 
     journalPosts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Journal Articles"}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
@@ -96,7 +89,6 @@ export const pageQuery = graphql`
              slug
              postType
              video
-             audio
              featuredImage {
                childImageSharp {
                  gatsbyImageData
@@ -108,22 +100,17 @@ export const pageQuery = graphql`
      }
 
      journalCards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "slider-card"}}}
+      filter: {frontmatter: {tags: {eq: "Journal Articles"}, template: {eq: "slider-card"}}}
     ) {
       edges {
         node {
           frontmatter {
             title
             description
-            card_type
             tags
             slug
-            resources {
-              link
-              label
-            }
             video
-            audio
+
           }
         }
       }

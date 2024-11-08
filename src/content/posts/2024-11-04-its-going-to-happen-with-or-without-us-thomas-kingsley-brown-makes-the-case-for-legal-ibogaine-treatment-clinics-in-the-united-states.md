@@ -17,7 +17,7 @@ description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
 tags:
   - Research And Media
   - Home
-  - Library Books, Films, and More
+  - Books, Films, and More
 ---
 #### Links to the research papers mentioned in the video
 

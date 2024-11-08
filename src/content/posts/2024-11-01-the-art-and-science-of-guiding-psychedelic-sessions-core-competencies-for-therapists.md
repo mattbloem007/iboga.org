@@ -16,7 +16,7 @@ description: As psychedelic medicines approach FDA approval, researchers have
 featuredImage: /assets/jr-korpa-stwhypwntbi-unsplash.jpg
 tags:
   - Research And Media
-  - Library Journal Articles
+  - Journal Articles
 ---
 #### A new framework for training psychedelic therapists
 

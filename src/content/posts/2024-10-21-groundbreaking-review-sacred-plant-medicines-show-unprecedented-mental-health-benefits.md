@@ -13,7 +13,7 @@ featuredImage: /assets/austin-schmid-hrdvsypffas-unsplash.jpg
 tags:
   - Home
   - Research And Media
-  - Library Journal Articles
+  - Journal Articles
 ---
 ##### A New Dawn in Mental Health: The Resurgence of Psychedelic Medicine
 

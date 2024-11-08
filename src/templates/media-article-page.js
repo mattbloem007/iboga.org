@@ -26,7 +26,6 @@ export const pageQuery = graphql`
         slug
         postType
         video
-        audio
         featuredImage {
           childImageSharp {
             gatsbyImageData

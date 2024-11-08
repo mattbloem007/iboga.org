@@ -1,8 +1,8 @@
 ---
 template: education-page
-slug: /discussion
+slug: /education
 education_banner:
-  title: Discussion
+  title: Education
   excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet,
     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

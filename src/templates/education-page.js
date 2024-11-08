@@ -58,7 +58,6 @@ export const pageQuery = graphql`
              title
              postType
              video
-             audio
              description
              tags
              slug
@@ -80,15 +79,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            card_type
             tags
             slug
-            resources {
-              link
-              label
-            }
             video
-            audio
           }
         }
       }
