@@ -3,10 +3,11 @@ template: library-page
 title: Books, Films, and more
 excerpt: Browse collections of books, films, and other media about iboga
 donate_title: Donate to the Legal Challenge Fund
-donate_info: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua.
-newsletter_title: Join our Newsletter to receive important updates
-newsletter_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore.
+donate_info: Join us in expanding access to life-saving addiction treatment by
+  contributing to our legal challenge fund, which supports advocacy efforts to
+  reform outdated drug laws and make ibogaine therapy legally available to those
+  who need it most.
+newsletter_title: Newsletter
+newsletter_info: "Sign up to our newsletter to receive regular updates about the
+  latest iboga research, news from the community, and more. "
 ---
