@@ -36,7 +36,7 @@ export const pageQuery = graphql`
     }
 
     posts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Books, Films, and more"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
      }
 
      cards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Books, Films, and more"}, template: {eq: "slider-card"}}}
+      filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "slider-card"}}}
     ) {
       edges {
         node {
@@ -83,7 +83,7 @@ export const pageQuery = graphql`
     }
 
     journalPosts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Journal Articles"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
@@ -108,7 +108,7 @@ export const pageQuery = graphql`
      }
 
      journalCards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Journal Articles"}, template: {eq: "slider-card"}}}
+      filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "slider-card"}}}
     ) {
       edges {
         node {

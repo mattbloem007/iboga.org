@@ -94,7 +94,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and more"]
+          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"]
         }
 
 
@@ -204,18 +204,6 @@ collections:
                   required: false,
                   default: ""
                 }
-              - {
-                  label: "Slider Cards for Slider 1",
-                  name: "home_slider_cards1",
-                  widget: "relation",
-                  collection: "slider_cards",
-                  multiple: true,
-                  search_fields: ["title"],
-                  display_fields: [ "title" ],
-                  value_field: "{{title}}" #["description, "card_type", "tags", "resources.*", "video", "audio"],
-                }
-
-
           - label: 'Image Break (Section 2)'
             name: section2
             widget: 'object'
@@ -373,26 +361,6 @@ collections:
                   required: false,
                   default: ""
                 }
-              - {
-                  label: "Slider Cards for Slider 2",
-                  name: "home_slider_cards2",
-                  widget: "relation",
-                  collection: "slider_cards",
-                  multiple: true,
-                  search_fields: ["title"],
-                  display_fields: [ "title" ],
-                  value_field: "{{title}}",
-                }
-              # - {
-              #     label: "Blog post Cards for Slider 2",
-              #     name: "home_slider_post_cards2",
-              #     widget: "relation",
-              #     collection: "posts",
-              #     multiple: true,
-              #     search_fields: ["title"],
-              #     display_fields: [ "title" ],
-              #     value_field: "{{title}}",
-              #   }
 
           - label: 'Donate Section (Section 6)'
             name: section6
@@ -1025,7 +993,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and more"],
+          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"],
         }
 
   - name: "library_detailed_pages"
