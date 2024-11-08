@@ -3,16 +3,16 @@ template: about-page
 slug: /about
 about_banner:
   title: About Iboga.org
-  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+  excerpt: Welcome to your home for up-to-date information about iboga research,
+    news from the community, personal accounts of the Holy Wood, and more.
   header_image: /assets/bg_about.png
 about_section1:
-  title: Heartfelt Intro
+  title: We experienced firsthand
   paragraph: >-
-    We experienced firsthand the profound healing and transformation iboga
-    offers when used responsibly. Inspired by this, we founded Iboga.org. Our
-    mission is to facilitate a respectful and responsible integration of iboga
-    into the world, empowering individuals to make informed choices.
+    the profound healing and transformation iboga offers when used responsibly.
+    Inspired by this, we founded Iboga.org. Our mission is to facilitate a
+    respectful and responsible integration of iboga into the world, empowering
+    individuals to make informed choices.
 
 
     From brain healing to discovering our true calling, iboga's potential benefits are as diverse as the people seeking them. It works holistically, not simply masking symptoms, but guiding individuals to uncover the roots of their challenges and higher potential.
@@ -107,8 +107,8 @@ about_section5:
       responsible integration practices and advocate for the sustainable future
       of iboga.
 about_section6:
-  title: Join our Newsletter to receive important updates
-  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore.
+  title: Newsletter
+  excerpt: Sign up to our newsletter to receive updates about iboga research, news
+    from the community, and more.
 title: About Foundation
 ---
