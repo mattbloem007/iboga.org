@@ -24,7 +24,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
-  let numSlides = posts.edges.length + cards.edges.length
+  let numSlides = posts.edges.length
   numSlides = numSlides - 1
 
   var settings = {

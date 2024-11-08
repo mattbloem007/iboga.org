@@ -14,10 +14,12 @@ description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
   interested in researching ibogaine. He shares his own remarkable research
   results and makes a strong case for why ibogaine should be made legal in the
   United States. "
+audio: ""
+resources: []
 tags:
   - Research And Media
   - Home
-  - Books, Films, and More
+  - Library Books, Films, and More
 ---
 #### Links to the research papers mentioned in the video
 

@@ -94,7 +94,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More", "Discussion Stories and Conversations"]
+          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"]
         }
 
 
@@ -972,6 +972,7 @@ collections:
           fields: [{ label: "Label", name: "label", widget: "string" }, { label: "Link", name: "link", widget: "string", default: "https://"}],
           hint: "List URL for resource links here (For Article List card only)",
           required: false,
+          default: [],
         }
       - {
           label: "Video Source",
@@ -979,6 +980,7 @@ collections:
           widget: "text",
           hint: "Provide embed URL for video link here (For Video Card only)",
           required: false,
+          default: "",
         }
       - {
           label: "Audio Source",
@@ -986,6 +988,7 @@ collections:
           widget: "text",
           hint: "Provide embed URL for audio link here (For Audio Card only)",
           required: false,
+          default: "",
         }
       - {
           label: "Tags",
@@ -993,7 +996,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Journal Articles", "Books, Films, and More", "Discussion Stories and Conversations"],
+          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"],
         }
 
   - name: "library_detailed_pages"

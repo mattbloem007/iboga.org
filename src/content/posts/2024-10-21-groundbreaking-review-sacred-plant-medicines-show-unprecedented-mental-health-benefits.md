@@ -10,10 +10,13 @@ description: New scientific review reveals how psilocybin, ibogaine, and DMT
   could transform mental health treatment through their unique serotonergic
   mechanisms and long-lasting effects
 featuredImage: /assets/austin-schmid-hrdvsypffas-unsplash.jpg
+video: ""
+audio: ""
+resources: []
 tags:
   - Home
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 ##### A New Dawn in Mental Health: The Resurgence of Psychedelic Medicine
 

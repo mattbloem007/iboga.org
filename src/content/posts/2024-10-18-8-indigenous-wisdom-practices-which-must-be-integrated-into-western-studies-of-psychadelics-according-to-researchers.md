@@ -9,10 +9,13 @@ postType:
 description: Researchers have brought together voices from both indigenous and
   scientific communities to name 8 necessary ethical principles that they say
   should be included in all western scientific psychadelic research.
+video: ""
+audio: ""
+resources: []
 tags:
   - Home
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 A landmark paper published in The Lancet Regional Health-Americas has established eight essential principles for ethical engagement with Indigenous peoples in psychedelic research and practice. This groundbreaking framework emerges at a critical moment, as Western science and commerce increasingly intersect with ancient healing traditions.
 

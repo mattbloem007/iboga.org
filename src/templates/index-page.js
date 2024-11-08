@@ -172,35 +172,6 @@ export const pageQuery = graphql`
      }
    }
 
-   cards: allMarkdownRemark(
-    filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "slider-card"}}}
-  ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          description
-          tags
-          video
-        }
-      }
-    }
-  }
-
-  researchCards: allMarkdownRemark(
-    filter: {frontmatter: {tags: {eq: "Research And Media"}, template: {eq: "slider-card"}}}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            tags
-            video
-          }
-        }
-      }
-    }
 
     researchPosts:  allMarkdownRemark(
        filter: {frontmatter: {tags: {eq: "Research And Media"}, template: {eq: "blog-post"}}}
@@ -227,7 +198,7 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark, posts, cards, researchPosts, researchCards } = data
+  const { markdownRemark, posts, researchPosts } = data
   const { frontmatter } = markdownRemark
 
   return (
@@ -235,12 +206,12 @@ const HomePage = ({ data }) => {
       <Seo />
       <Header data={frontmatter.header_slides} />
       <TitleAndInfo title={frontmatter.section1.section1_title} info={frontmatter.section1.section1_paragraph} cta={frontmatter.section1.cta}/>
-      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} cards={cards} link='/library'/>
+      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} link='/library'/>
       <ImageBreak image={frontmatter.section2.image_break.childImageSharp.gatsbyImageData}/>
       <TitleAndInfo title={frontmatter.section3.about_title} info={frontmatter.section3.about_paragraph} cta={frontmatter.section3.cta}/>
       <TextCards data={frontmatter.section4}/>
       <InfoAndImage data={frontmatter.section5} />
-      <SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} cards={researchCards} link='/library'/>
+      <SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} link='/library'/>
       <Donate data={frontmatter.section6}/>
       <TextCards data={frontmatter.section7} />
       <ContactSection title={frontmatter.section8.title} newsletter_title={frontmatter.section8.newsletter_title}/>
@@ -249,3 +220,42 @@ const HomePage = ({ data }) => {
 }
 
 export default HomePage
+
+// researchCards: allMarkdownRemark(
+//   filter: {frontmatter: {tags: {eq: "Research And Media"}, template: {eq: "slider-card"}}}
+//   ) {
+//     edges {
+//       node {
+//         frontmatter {
+//           title
+//           description
+//           tags
+//           resources {
+//             link
+//             label
+//           }
+//           video
+//           audio
+//         }
+//       }
+//     }
+//   }
+// cards: allMarkdownRemark(
+//  filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "slider-card"}}}
+// ) {
+//  edges {
+//    node {
+//      frontmatter {
+//        title
+//        description
+//        tags
+//        resources {
+//          link
+//          label
+//        }
+//        video
+//        audio
+//      }
+//    }
+//  }
+// }

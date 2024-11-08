@@ -8,9 +8,12 @@ postType:
 description: "A book by Daniel Brett which talks about iboga's many profound
   benefits for both addicts and spiritual seekers. "
 featuredImage: /assets/daniel-brett.png
+video: ""
+audio: ""
+resources: []
 tags:
   - Home
-  - Books, Films, and More
+  - Library Books, Films, and More
 ---
 From the back cover:\
 \

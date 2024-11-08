@@ -13,9 +13,6 @@ const Footer = () => (
                     <div class="footer-logo">
                         <h5>Iboga.org</h5>
                     </div>
-                    <p class="p-small">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                    </p>
                 </div>
                 <div class="footer-right-col">
 

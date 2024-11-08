@@ -36,6 +36,7 @@ export const pageQuery = graphql`
              title
              postType
              video
+             audio
              description
              tags
              slug
@@ -49,25 +50,11 @@ export const pageQuery = graphql`
        }
      }
 
-     cards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: $title}, template: {eq: "slider-card"}}}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            tags
-            slug
-            video
-          }
-        }
-      }
-    }
+
   }
 `
 const MediaDetailPage = ({ data }) => {
-  const { markdownRemark, posts, cards } = data
+  const { markdownRemark, posts } = data
   const { frontmatter } = markdownRemark
   console.log("DATA", frontmatter)
 
@@ -75,7 +62,7 @@ const MediaDetailPage = ({ data }) => {
     <Layout className="page" page="library">
       <HeaderLibrary data={frontmatter} />
       <MediaGrouping posts={posts} />
-      <CardGrouping cards={cards} />
+      <CardGrouping cards={posts} />
       <ArticleGrouping />
       <Donate data={frontmatter}/>
       <NewsletterSection title={frontmatter.newsletter_title} newsletter_title={frontmatter.newsletter_info} />
@@ -84,3 +71,24 @@ const MediaDetailPage = ({ data }) => {
 }
 
 export default MediaDetailPage
+
+// cards: allMarkdownRemark(
+//  filter: {frontmatter: {tags: {eq: $title}, template: {eq: "slider-card"}}}
+// ) {
+//  edges {
+//    node {
+//      frontmatter {
+//        title
+//        description
+//        tags
+//        slug
+//        resources {
+//          link
+//          label
+//        }
+//        video
+//        audio
+//      }
+//    }
+//  }
+// }

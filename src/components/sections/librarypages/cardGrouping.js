@@ -1,6 +1,7 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import arrow from '../../../assets/vectors/arrow-next-black.svg'
+import arrowWhite from '../../../assets/vectors/arrow-next-white.svg'
 
 
 const CardGrouping = ({cards}) => {
@@ -12,30 +13,52 @@ const CardGrouping = ({cards}) => {
     .replace(/\s+/g, '-');
 
   return (
-    <section class="media-grid">
+    <section class="media-grid" style={{height: "990px"}}>  {/** temporary height */}
         <div class="max-width">
             <div class="grid-container">
             {cards && cards.edges.map((card) => {
-              if (card.node.frontmatter.card_type == "Article List") {
-                return (
-                  <div className="card-holder article-card-v3">
-                      <div className="article-card-inner">
-                          <h4>{card.node.frontmatter.title}</h4>
-                          <p className="p-small">{card.node.frontmatter.description}</p>
-                          <div className="multi-link-box">
-                              <ul>
-                              {card.node.frontmatter.resources && card.node.frontmatter.resources.map((resource) => {
-                                return (
-                                  <li><a href={resource.link} tabindex="-1">{resource.label} <img className="icon arrow-icon" src={arrow}></img></a></li>
-                                )
-                              })}
-                              </ul>
-                          </div>
+              if (card.node.frontmatter.postType == "Blog Post") {
+                if (card.node.frontmatter.featuredImage) {
+                  return (
+                    <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
+                      <div className="thumbnail">
+                        <GatsbyImage
+                          style={{width: "100%", height: "100%"}}
+                          image={card.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                          alt={card.node.frontmatter.title + " - Featured image"}
+                        />
                       </div>
-                  </div>
-                )
+                        <div className="article-card-inner">
+                            <h4>{card.node.frontmatter.title}</h4>
+                            <p className="p-small">{card.node.frontmatter.description}</p>
+                        </div>
+                        <div className="article-button-container">
+                            <div className="article-button">Read More Stories</div>
+                            <div className="article-icon">
+                                <img className="icon arrow-icon" src={arrow}></img>
+                            </div>
+                        </div>
+                    </a>
+                  )
+                }
+                else {
+                  return (
+                    <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
+                        <div className="article-card-inner">
+                            <h4>{card.node.frontmatter.title}</h4>
+                            <p className="p-small">{card.node.frontmatter.description}</p>
+                        </div>
+                        <div className="article-button-container">
+                            <div className="article-button">Read More Stories</div>
+                            <div className="article-icon">
+                                <img className="icon arrow-icon" src={arrowWhite}></img>
+                            </div>
+                        </div>
+                    </a>
+                  )
+                }
               }
-              else if (card.node.frontmatter.card_type == "Audio Card") {
+              else if (card.node.frontmatter.postType == "Audio") {
                 return (
                   <div className="card-holder article-audio-card">
                       <div className="article-audio">
@@ -46,7 +69,7 @@ const CardGrouping = ({cards}) => {
                   </div>
                 )
               }
-              else if (card.node.frontmatter.card_type == "Video Card") {
+              else if (card.node.frontmatter.postType == "Video") {
                 return(
                   <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-video-card" tabindex="-1">
                       <div className="thumbnail">

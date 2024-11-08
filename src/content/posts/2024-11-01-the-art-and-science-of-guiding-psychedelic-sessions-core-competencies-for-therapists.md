@@ -14,9 +14,12 @@ description: As psychedelic medicines approach FDA approval, researchers have
   next generation of psychedelic therapists, ensuring these powerful medicines
   can be administered safely and effectively.
 featuredImage: /assets/jr-korpa-stwhypwntbi-unsplash.jpg
+video: ""
+audio: ""
+resources: []
 tags:
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 #### A new framework for training psychedelic therapists
 
