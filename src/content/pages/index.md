@@ -144,7 +144,7 @@ section7:
       community.
 section8:
   title: <strong className="heading-bold">Connect</strong> with Us or Collaborate
-  newsletter_title: Sign up to our Newsletter  to receive important updates
+  newsletter_title: Sign up to our Newsletter to receive important updates
 title: Root of Revelation from the Heart of Africa
 ---
 
