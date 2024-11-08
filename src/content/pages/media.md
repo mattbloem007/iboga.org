@@ -11,7 +11,7 @@ media_section2:
   slider1_info: Access reviews of published articles from peer-reviewed journals
 media_section3:
   slider2_title: Books, Films, and more
-  slider2_info: Browse collections of books, films, and other media
+  slider2_info: Browse collections of books, films, and other educational media
 media_section4:
   title: Join our Newsletter to receive important updates
   excerpt: "Our newsletter will keep you fully informed of the most up-to-date
