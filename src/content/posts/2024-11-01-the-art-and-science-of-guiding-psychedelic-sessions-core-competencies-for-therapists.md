@@ -16,7 +16,7 @@ description: As psychedelic medicines approach FDA approval, researchers have
 featuredImage: /assets/jr-korpa-stwhypwntbi-unsplash.jpg
 tags:
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 #### A new framework for training psychedelic therapists
 
@@ -38,7 +38,7 @@ However, this focus on proving the medicines' effectiveness has left a crucial g
 
 #### The six essential competencies
 
-Through extensive review of clinical literature, case studies, and training manuals spanning decades of psychedelic research, Dr. Phelps identified six fundamental competencies that consistently emerged as essential for effective psychedelic therapy. 
+Through extensive review of clinical literature, case studies, and training manuals spanning decades of psychedelic research, Dr. Phelps identified six fundamental competencies that consistently emerged as essential for effective psychedelic therapy.
 
 **Empathetic Abiding Presence**: At the heart of psychedelic therapy lies the therapist's ability to maintain what researchers call an "empathetic abiding presence." This goes beyond traditional therapeutic empathy, requiring a cultivated capacity to remain fully present and steady during intense emotional experiences. The therapist must embody a calm, witnessing presence that can hold space for whatever emerges, from profound spiritual experiences to challenging emotional episodes.
 

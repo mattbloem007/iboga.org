@@ -12,7 +12,7 @@ description: Researchers have brought together voices from both indigenous and
 tags:
   - Home
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 A landmark paper published in The Lancet Regional Health-Americas has established eight essential principles for ethical engagement with Indigenous peoples in psychedelic research and practice. This groundbreaking framework emerges at a critical moment, as Western science and commerce increasingly intersect with ancient healing traditions.
 
@@ -37,7 +37,7 @@ Through a global Indigenous consensus process, the research team identified eigh
 
 ##### Acknowledgment
 
-Acknowledgment addresses the fundamental need to recognize Indigenous traditional knowledge as the root of Western psychedelic medicine. This category encompasses two principles: **Reverence** - honouring Mother Nature with a focus on collective care and ecosystem protection, and **Respect** - following Indigenous protocols and building relationships with Indigenous scholars and practitioners before any engagement with their traditions. 
+Acknowledgment addresses the fundamental need to recognize Indigenous traditional knowledge as the root of Western psychedelic medicine. This category encompasses two principles: **Reverence** - honouring Mother Nature with a focus on collective care and ecosystem protection, and **Respect** - following Indigenous protocols and building relationships with Indigenous scholars and practitioners before any engagement with their traditions.
 
 ##### Knowledge Translation and Education
 

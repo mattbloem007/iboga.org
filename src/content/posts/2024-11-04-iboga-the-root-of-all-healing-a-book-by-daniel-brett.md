@@ -10,7 +10,7 @@ description: "A book by Daniel Brett which talks about iboga's many profound
 featuredImage: /assets/daniel-brett.png
 tags:
   - Home
-  - Books, Films, and more
+  - Library Books, Films, and More
 ---
 From the back cover:\
 \

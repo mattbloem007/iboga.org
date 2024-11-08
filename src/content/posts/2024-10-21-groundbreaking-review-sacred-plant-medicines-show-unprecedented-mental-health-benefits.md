@@ -13,11 +13,11 @@ featuredImage: /assets/austin-schmid-hrdvsypffas-unsplash.jpg
 tags:
   - Home
   - Research And Media
-  - Journal Articles
+  - Library Journal Articles
 ---
 ##### A New Dawn in Mental Health: The Resurgence of Psychedelic Medicine
 
-The scientific world is finally catching up to what traditional wisdom holders and modern psychonauts have long known: classical psychedelics hold remarkable potential for healing. A comprehensive review published in Frontiers in Psychology has analyzed decades of research on three of nature's most intriguing medicines - psilocybin, ibogaine, and DMT - revealing both their profound therapeutic potential and their impressive safety profiles when properly administered. The research examines these three compounds as they emerge into mainstream psychiatric medicine, where they're showing promise in treating conditions that have long challenged conventional approaches - from depression and anxiety to addiction and PTSD. 
+The scientific world is finally catching up to what traditional wisdom holders and modern psychonauts have long known: classical psychedelics hold remarkable potential for healing. A comprehensive review published in Frontiers in Psychology has analyzed decades of research on three of nature's most intriguing medicines - psilocybin, ibogaine, and DMT - revealing both their profound therapeutic potential and their impressive safety profiles when properly administered. The research examines these three compounds as they emerge into mainstream psychiatric medicine, where they're showing promise in treating conditions that have long challenged conventional approaches - from depression and anxiety to addiction and PTSD.
 
 ##### Psilocybin: Nature's Neural Reset Button
 
