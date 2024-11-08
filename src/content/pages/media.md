@@ -13,7 +13,7 @@ media_section3:
   slider2_title: Books, Films, and more
   slider2_info: Browse collections of books, films, and other educational media
 media_section4:
-  title: Join our Newsletter to receive important updates
-  excerpt: "Our newsletter will keep you fully informed of the most up-to-date
-    research, publications, courses, practitioners, and iboga events. "
+  title: Newsletter
+  excerpt: "Sign up to our newsletter to receive regular updates about the latest
+    iboga research, news from the community, and more. "
 ---
