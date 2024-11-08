@@ -4,8 +4,9 @@ template: index-page
 header_slides:
   - title: <strong class="heading-bold">Root of Revelation</strong> from the Heart
       of Africa
-    excerpt: Learn about iboga's potential for recovery & healing, personal growth,
-      spiritual insight and discovering your true purpose.
+    excerpt: Learn about iboga's potential for supporting your journey to recovery &
+      healing, personal growth, spiritual insight and discovery of your true
+      purpose.
     cta:
       ctaType: button
       ctaText: "Explore Our Directory of Experienced Guides "
@@ -13,7 +14,7 @@ header_slides:
     header_images: /assets/hero-banner-1.png
     header_image: /assets/hero-banner-1.png
   - title: <strong class="heading-bold">Learn about</strong> using Iboga
-    excerpt: Gain insights from experienced modern and traditional practitioners
+    excerpt: Gain insights from experienced modern and traditional practitioners.
     header_image: /assets/hero-banner-2.png
     cta:
       ctaType: button
@@ -21,21 +22,21 @@ header_slides:
       ctaLink: /
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
-      Scientific viewpoints
+      Scientific viewpoints.
     header_image: /assets/hero-banner-3.png
     cta:
       ctaType: button
       ctaText: "Read Essays by Practitioners "
       ctaLink: /
 section1:
-  section1_paragraph: What is Iboga?  Indigenously, it is the Holy Wood - an agent
+  section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent
     of deep initiation and transformation.  In treatment, its alkaloids are the
     addiction cure which not only interrupts your withdrawals but also helps you
     deal with the roots of your trauma. In medical science, it is one of the few
-    compounds discovered which can regenerate the brain - making it potentially
+    compounds discovered which can regenerate the brain, making it potentially
     life saving.  This small shrub from the African rainforest contains within
-    its rootbark true magic - not only for healing but for realignment and
-    reconnection of our lives
+    its rootbark true magic - not only for healing, but for realignment and
+    reconnection of our lives."
   section1_title: <strong class=\"heading-bold\">What</strong> Is Iboga
   cta:
     btn: false
@@ -114,8 +115,10 @@ section6:
     btn_text: Contact Us
     btn_type: button-secondary
     btn_link: /
-  donate_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  donate_info: Join us in expanding access to life-saving addiction treatment by
+    contributing to our legal challenge fund, which supports advocacy efforts to
+    reform outdated drug laws and make iboga therapy legally available to those
+    who need it most.
 section7:
   - cta:
       btn: true
@@ -133,15 +136,15 @@ section7:
       btn_type: button-secondary
       btn_text: Visit Directory
       btn_link: /
-    title: Speak at the Summit Conference
-    excerpt: Join the conversation and become a speaker at our upcoming Summit
-      Conference. Share your expertise, experiences, and insights with a global
-      audience. Whether you are a seasoned practitioner, researcher, or
+    title: Speak at the Symposium
+    excerpt: Join the conversation and become a speaker at our upcoming biennial
+      Wood Symposium. Share your expertise, experiences, and insights with a
+      global audience. Whether you are a seasoned practitioner, researcher, or
       advocate, your voice can inspire and educate others in the Iboga
       community.
 section8:
   title: <strong className="heading-bold">Connect</strong> with Us or Collaborate
-  newsletter_title: Join our Newsletter  to receive important updates
+  newsletter_title: Sign up to our Newsletter  to receive important updates
 title: Root of Revelation from the Heart of Africa
 ---
 
