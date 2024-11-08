@@ -108,7 +108,7 @@ about_section5:
       of iboga.
 about_section6:
   title: Newsletter
-  excerpt: Sign up to our newsletter to receive updates about iboga research, news
-    from the community, and more.
+  excerpt: "Sign up to our newsletter to receive regular updates about the latest
+    iboga research, news from the community, and more. "
 title: About Foundation
 ---
