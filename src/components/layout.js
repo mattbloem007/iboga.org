@@ -10,27 +10,29 @@ import Footer from "./footer"
 import Search from "../components/search"
 
 const query = graphql`
-  query LayoutQuery {
-    site {
-      siteMetadata {
-        siteTitle: title
-      }
-    }
-    siteSearchIndex {
-      index
+query LayoutQuery {
+  site {
+    siteMetadata {
+      siteTitle: title
     }
   }
-`
+  siteSearchIndex {
+    index
+  }
 
-const Layout = ({ children, className, props, page }) => {
+}
+`
+const Layout = ({ children, className, props, page, footer }) => {
   const { site, siteSearchIndex } = useStaticQuery(query)
   const { siteTitle } = site.siteMetadata
+
+  console.log("Markdown", footer)
 
   return (
     <div className="primary-container">
       <NavBar page={page}/>
       {children}
-      <Footer />
+      <Footer footer={footer}/>
     </div>
   )
 }

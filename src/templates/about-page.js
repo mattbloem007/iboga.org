@@ -66,14 +66,21 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
+        frontmatter {
+          title
+          description
+        }
+    }
   }
 `
 const AboutPage = ({ data }) => {
-  const { markdownRemark } = data
+  const { markdownRemark, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
-    <Layout className="page" page="about">
+    <Layout className="page" page="about" footer={footer}>
       {/**<Seo title={frontmatter.about_section1.title} description={frontmatter.about_section1.paragraph} />
       <Header data={frontmatter.about_header_slides}/>
       <TitleAndInfo title={frontmatter.about_section1.title} info={frontmatter.about_section1.paragraph} cta={frontmatter.about_section1.cta} />*/}

@@ -87,15 +87,21 @@ export const pageQuery = graphql`
        }
      }
 
+     footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
+         frontmatter {
+           title
+           description
+         }
+     }
 
   }
 `
 const MediaPage = ({ data }) => {
-  const { markdownRemark, posts, journalPosts } = data
+  const { markdownRemark, posts, journalPosts, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
-    <Layout className="page" page="library">
+    <Layout className="page" page="library" footer={footer}>
       <Header data={frontmatter.media_banner} />
       <MediaGrouping posts={posts} />
       <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} />

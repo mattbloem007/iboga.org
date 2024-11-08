@@ -934,6 +934,30 @@ collections:
                   widget: string
                 }
 
+      - label: "Footer"
+        name: "footer"
+        file: "src/content/pages/footer.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "footer",
+            }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "text",
+              default: "",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "markdown",
+              default: "",
+              required: false,
+            }
+
 
   - name: "slider_cards"
     label: "Slider Cards"

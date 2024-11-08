@@ -38,14 +38,21 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
+        frontmatter {
+          title
+          description
+        }
+    }
   }
 `
 const ContactPage = ({ data }) => {
-  const { markdownRemark } = data
+  const { markdownRemark, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
-    <Layout className="page" page="contact">
+    <Layout className="page" page="contact" footer={footer}>
       <Header data={frontmatter.contact_banner} />
       <ContactForm data={frontmatter.reasons_form} />
       <TextCards data={frontmatter.contact_section2} />

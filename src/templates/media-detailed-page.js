@@ -50,16 +50,22 @@ export const pageQuery = graphql`
        }
      }
 
+     footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
+         frontmatter {
+           title
+           description
+         }
+     }
 
   }
 `
 const MediaDetailPage = ({ data }) => {
-  const { markdownRemark, posts } = data
+  const { markdownRemark, posts, footer } = data
   const { frontmatter } = markdownRemark
   console.log("DATA", frontmatter)
 
   return (
-    <Layout className="page" page="library">
+    <Layout className="page" page="library" footer={footer}>
       <HeaderLibrary data={frontmatter} />
       <MediaGrouping posts={posts} />
       <CardGrouping cards={posts} />

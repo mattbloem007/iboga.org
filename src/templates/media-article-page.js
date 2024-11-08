@@ -33,15 +33,19 @@ export const pageQuery = graphql`
         }
       }
     }
+    footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
+        frontmatter {
+          title
+          description
+        }
+    }
   }
 `
 const ArticlePage = ({ data }) => {
 
-  const { markdownRemark } = data
+  const { markdownRemark, footer } = data
   const { frontmatter } = markdownRemark
   let feature;
-
-  console.log ("DAATA", data)
 
   if (frontmatter.postType == "Video") {
     feature = (<div class="margin-left-width" style={{marginRight: "20%"}}>
@@ -68,7 +72,7 @@ const ArticlePage = ({ data }) => {
   }
 
   return (
-    <Layout className="page" page="Article">
+    <Layout className="page" page="Article" footer={footer}>
       <div class="article-headline">
           <div class="max-width">
               <Link to={'..'}><img class="icon arrow-icon" src={BackArrow}></img>Back To Library</Link>

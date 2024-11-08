@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiHeart2Line } from "react-icons/ri"
 
-const Footer = () => (
+const Footer = ({footer}) => (
   <footer>
         <div class="margin-left-width">
             <div></div>
@@ -11,8 +11,9 @@ const Footer = () => (
             <div class="flex">
                 <div class="footer-left-col">
                     <div class="footer-logo">
-                        <h5>Iboga.org</h5>
+                      {footer ?  <h5> {footer.frontmatter.title}</h5> : <h5>Iboga.org..</h5>}
                     </div>
+                    {footer ? <div class="p-small" dangerouslySetInnerHTML={{__html: footer.frontmatter.description}} />: <div></div>}
                 </div>
                 <div class="footer-right-col">
 
