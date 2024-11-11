@@ -48,7 +48,7 @@ export const pageQuery = graphql`
     }
 
     posts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Discussion Stories and Conversations"}, template: {eq: "blog-post"}}}
      ) {
        edges {
          node {
@@ -71,21 +71,6 @@ export const pageQuery = graphql`
        }
      }
 
-     cards: allMarkdownRemark(
-      filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "slider-card"}}}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            tags
-            slug
-            video
-          }
-        }
-      }
-    }
     footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
         frontmatter {
           title
@@ -95,7 +80,7 @@ export const pageQuery = graphql`
   }
 `
 const EducationPage = ({ data }) => {
-  const { markdownRemark, posts, cards, footer } = data
+  const { markdownRemark, posts,  footer } = data
   const { frontmatter } = markdownRemark
 
   return (
@@ -103,7 +88,7 @@ const EducationPage = ({ data }) => {
       <Header data={frontmatter.education_banner} />
       <ShareWithUs data={frontmatter.education_section1} />
       <MediaGrouping posts={posts} />
-      <SliderSection title={frontmatter.education_section2.slider1_title} info={frontmatter.education_section2.slider1_info} posts={posts} cards={cards}/>
+      <SliderSection title={frontmatter.education_section2.slider1_title} info={frontmatter.education_section2.slider1_info} posts={posts} />
       <TextCards data={frontmatter.education_section3} />
       <NewsletterSection title={frontmatter.education_section4.title} newsletter_title={frontmatter.education_section4.excerpt}/>
     </Layout>

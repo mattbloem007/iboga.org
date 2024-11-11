@@ -152,7 +152,9 @@ export const pageQuery = graphql`
       }
     }
   posts:  allMarkdownRemark(
-     filter: {frontmatter: {tags: {eq: "Home"}, template: {eq: "blog-post"}}}
+     filter: {frontmatter: {template: {eq: "blog-post"}}},
+     limit: 6,
+     sort: {frontmatter: {date: DESC}}
    ) {
      edges {
        node {
@@ -217,9 +219,9 @@ const HomePage = ({ data }) => {
       <TitleAndInfo title={frontmatter.section3.about_title} info={frontmatter.section3.about_paragraph} cta={frontmatter.section3.cta}/>
       <TextCards data={frontmatter.section4}/>
       <InfoAndImage data={frontmatter.section5} />
-      <SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} link='/library'/>
-      <Donate data={frontmatter.section6}/>
+      {/**<SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} link='/library'/>*/}
       <TextCards data={frontmatter.section7} />
+      <Donate data={frontmatter.section6}/>
       <ContactSection title={frontmatter.section8.title} newsletter_title={frontmatter.section8.newsletter_title}/>
     </Layout>
   )

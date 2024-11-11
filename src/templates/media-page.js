@@ -36,7 +36,9 @@ export const pageQuery = graphql`
     }
 
     posts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}},
+       limit: 6,
+       sort: {frontmatter: {date: DESC}}
      ) {
        edges {
          node {
@@ -63,7 +65,9 @@ export const pageQuery = graphql`
 
 
     journalPosts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "blog-post"}}}
+       filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "blog-post"}}},
+       limit: 6,
+       sort: {frontmatter: {date: DESC}}
      ) {
        edges {
          node {
