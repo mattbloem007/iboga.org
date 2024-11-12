@@ -3,8 +3,8 @@ template: education-page
 slug: /discussion
 education_banner:
   title: Discussion
-  excerpt: Explore personal stories and eye-opening podcasts shared by fellow
-    travelers on their iboga journeys
+  excerpt: Explore eye-opening podcasts, advice from experienced servers, and
+    personal stories shared by fellow travelers on their iboga journeys.
 education_section1:
   title: Share Your Insights With Us
   paragraph: Share your unique iboga journey. Help others by contributing your
