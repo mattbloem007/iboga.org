@@ -94,7 +94,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"]
+          options: ["Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"]
         }
 
 
@@ -1020,7 +1020,7 @@ collections:
           widget: "select",
           multiple: true,
           create: true,
-          options: ["Home", "Research And Media", "Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"],
+          options: ["Library Journal Articles", "Library Books, Films, and More", "Discussion Stories and Conversations"],
         }
 
   - name: "library_detailed_pages"

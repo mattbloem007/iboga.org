@@ -107,12 +107,14 @@ const Header = ({ children, page, data }) => {
     )
   }
   else if (HeaderData.header_image === undefined) {
+    let newExcerpt = HeaderData.excerpt.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+    console.log("EDITIED", newExcerpt)
     return (
       <div className="hero-slider-container">
       <section class="page-banner media-banner">
           <div class="max-width">
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
-              <p>{HeaderData.excerpt}</p>
+              <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
               <form action="" class="content-search">
                   <input type="text" placeholder="Search Media..." />
                   <button>

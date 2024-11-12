@@ -28,8 +28,8 @@ const ShareWithUs = ({ data }) => {
                         {data.paragraph}
                     </p>
                     <div class="share-with-us-buttons">
-                        <a href="" class="button-secondary">Submit a Journal Entry <img src={arrow} class="icon arrow-icon"></img></a>
-                        <a href="" class="button-secondary">Apply to Speak <img src={arrow} class="icon arrow-icon"></img></a>
+                        <a href="" class="button-secondary">Submit Your Story <img src={arrow} class="icon arrow-icon"></img></a>
+                        <a href="" class="button-secondary">Be Our Podcast Guest <img src={arrow} class="icon arrow-icon"></img></a>
                     </div>
                 </div>
             </div>

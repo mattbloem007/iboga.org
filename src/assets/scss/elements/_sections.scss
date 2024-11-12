@@ -1355,12 +1355,17 @@ input[type="checkbox"]:checked::before {
 }
 
 .share-with-us-2 .left-col {
+
     width: 600px;
     padding: 60px 48px;
     background-size: cover;
     color: var(--white-text);
     display: flex;
     align-items: center;
+    font-size: 56px;
+    font-weight: bold;
+    font-family: 'CabinetGrotesk-med';
+
 }
 
 .share-with-us-2 .right-col {
@@ -1370,8 +1375,11 @@ input[type="checkbox"]:checked::before {
     color: var(--white-text);
 }
 
+
+
 .share-with-us-2 .share-with-us-buttons {
     margin-top: 36px;
+    display: flex;
 }
 
 .share-with-us-2 .share-with-us-buttons a {

@@ -175,26 +175,7 @@ export const pageQuery = graphql`
    }
 
 
-    researchPosts:  allMarkdownRemark(
-       filter: {frontmatter: {tags: {eq: "Research And Media"}, template: {eq: "blog-post"}}}
-     ) {
-       edges {
-         node {
-           rawMarkdownBody
-           html
-           frontmatter {
-             title
-             description
-             tags
-             featuredImage {
-               childImageSharp {
-                 gatsbyImageData
-               }
-             }
-           }
-         }
-       }
-     }
+
      footer: markdownRemark(frontmatter: {template: {eq: "footer"}}) {
          frontmatter {
            title
@@ -205,8 +186,29 @@ export const pageQuery = graphql`
   }
 `
 
+// researchPosts:  allMarkdownRemark(
+//    filter: {frontmatter: {tags: {eq: "Research And Media"}, template: {eq: "blog-post"}}}
+//  ) {
+//    edges {
+//      node {
+//        rawMarkdownBody
+//        html
+//        frontmatter {
+//          title
+//          description
+//          tags
+//          featuredImage {
+//            childImageSharp {
+//              gatsbyImageData
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+
 const HomePage = ({ data }) => {
-  const { markdownRemark, posts, researchPosts, footer } = data
+  const { markdownRemark, posts, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
