@@ -3,8 +3,9 @@ template: about-page
 slug: /about
 about_banner:
   title: About Iboga.org
-  excerpt: Welcome to your home for up-to-date information about iboga research,
-    news from the community, personal accounts of the Holy Wood, and more.
+  excerpt: Learn about who we are, why we're here, and how we approach our mission
+    to support safe, informed, and sustainable iboga use by empowering our
+    community with varied personal accounts, up-to-date research, and more.
   header_image: /assets/bg_about.png
 about_section1:
   title: We experienced firsthand...
