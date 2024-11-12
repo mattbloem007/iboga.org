@@ -8,6 +8,7 @@ contact_banner:
     information or ready to contribute, we're here to connect.
   header_image: /assets/contact_bg.png
 reasons_form:
+  - reason: I would like to subit my details to the iboga provider directory
   - reason: I have written an article I would like to subit to the website or journal
   - reason: I am interested in speaking at the biennial Wood Symposium, or I am
       suggesting someone I would like to hear speak there
