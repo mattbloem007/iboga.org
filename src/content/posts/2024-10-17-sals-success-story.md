@@ -1,18 +1,19 @@
 ---
+resources: []
 template: blog-post
 title: Sal's success story
 slug: /salsuccess
 date: 2024-10-17 11:13
 postType:
   - Blog Post
+video: ""
+audio: ""
 description: "Salvia writes about their journey with Iboga and how the sacred
   Wood impacted their life. "
 featuredImage: /assets/dsc_0860-2-.jpg
-video: ""
-audio: ""
-resources: []
 tags:
   - Home
+  - Discussion Stories and Conversations
 ---
 Success with Iboga, for some of us, is a relatively nebulous concept. Surely it’s clearer for those, for example, with severe addictions: did the Wood help them stop drinking? Have they used opioids again since their flood?
 
