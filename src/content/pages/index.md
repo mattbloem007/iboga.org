@@ -4,9 +4,8 @@ template: index-page
 header_slides:
   - title: <strong class="heading-bold">Root of Revelation</strong> from the Heart
       of Africa
-    excerpt: Learn about iboga's potential for supporting your journey to recovery &
-      healing, personal growth, spiritual insight and discovery of your true
-      purpose.
+    excerpt: Learn how iboga can support your path to healing, addiction recovery,
+      personal transformation, spiritual wisdom, and finding your true purpose.
     cta:
       ctaType: button
       ctaText: "Explore Our Directory of Experienced Guides "
@@ -18,7 +17,7 @@ header_slides:
     header_image: /assets/hero-banner-2.png
     cta:
       ctaType: button
-      ctaText: "Read Accounts of Iboga use Guides "
+      ctaText: Read personal accounts of people's experiences with iboga
       ctaLink: /
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
@@ -26,7 +25,7 @@ header_slides:
     header_image: /assets/hero-banner-3.png
     cta:
       ctaType: button
-      ctaText: "Read Essays by Practitioners "
+      ctaText: Read reviews of scientific journal articles
       ctaLink: /
 section1:
   section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent

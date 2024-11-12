@@ -4,14 +4,15 @@ slug: /contact
 title: Get in touch
 contact_banner:
   title: Connect with Us or Collaborate
-  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+  excerpt: Your insights and inquiries matter to us. Whether you're seeking
+    information or ready to contribute, we're here to connect.
   header_image: /assets/contact_bg.png
 reasons_form:
-  - reason: This is a placeholder reason for contacting...
-  - reason: This is a reason for contacting...
-  - reason: This is a placeholder reason for contacting...
-  - reason: This is a placeholder for contacting...
+  - reason: I have written an article I would like to subit to the website or journal
+  - reason: I am interested in speaking at the biennial Wood Symposium, or I am
+      suggesting someone I would like to hear speak there
+  - reason: I have a question or complaint about some of the content on the website
+  - reason: Other
 contact_section2:
   - title: Share Your Insights with Iboga.org's Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
@@ -29,9 +30,9 @@ contact_section2:
       btn_text: Apply to Speak
       btn_type: button-secondary
       btn_link: /
-    title: Speak at the Summit Conference
-    excerpt: Join the conversation and become a speaker at our upcoming Summit
-      Conference. Share your expertise, experiences, and insights with a global
+    title: Speak at the biennial Symposium
+    excerpt: Join the conversation and become a speaker at our upcoming Wood
+      Symposium. Share your expertise, experiences, and insights with a global
       audience. Whether you are a seasoned practitioner, researcher, or
       advocate, your voice can inspire and educate others in the Iboga
       community.

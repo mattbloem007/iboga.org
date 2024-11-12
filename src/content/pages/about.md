@@ -3,24 +3,23 @@ template: about-page
 slug: /about
 about_banner:
   title: About Iboga.org
-  excerpt: Welcome to your home for up-to-date information about iboga research,
-    news from the community, personal accounts of the Holy Wood, and more.
+  excerpt: Learn about who we are, why we're here, and how we approach our mission
+    to support safe, informed, and sustainable iboga use by empowering our
+    community with varied personal accounts, up-to-date research, and more.
   header_image: /assets/bg_about.png
 about_section1:
-  title: We experienced firsthand
-  paragraph: >-
-    the profound healing and transformation iboga offers when used responsibly.
-    Inspired by this, we founded Iboga.org. Our mission is to facilitate a
-    respectful and responsible integration of iboga into the world, empowering
-    individuals to make informed choices.
-
-
-    From brain healing to discovering our true calling, iboga's potential benefits are as diverse as the people seeking them. It works holistically, not simply masking symptoms, but guiding individuals to uncover the roots of their challenges and higher potential.
-
-
-    Iboga is a gift for all humanity. We honor those who've paved the way while advocating for accessible, responsible sharing of this knowledge globally.\
-
-    Join us in building a community dedicated to wisdom sharing and impeccable practice with the Holy wood.
+  title: We experienced firsthand...
+  paragraph: ...the profound healing and transformation iboga offers when used
+    responsibly. Inspired by this, we founded Iboga.org. Our mission is to
+    facilitate a respectful and responsible integration of iboga into the world,
+    empowering individuals to make informed choices. From brain healing to
+    discovering our true calling, iboga's potential benefits are as diverse as
+    the people seeking them. It works holistically, not simply masking symptoms,
+    but guiding individuals to uncover the roots of their challenges and their
+    higher potential. Iboga is a gift for all humanity. We honor those who've
+    paved the way while advocating for accessible, responsible sharing of this
+    knowledge globally. Join us in building a community dedicated to wisdom
+    sharing and impeccable practice with the Holy wood.
   cta:
     btn: false
 about_section2:

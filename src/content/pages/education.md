@@ -3,20 +3,17 @@ template: education-page
 slug: /discussion
 education_banner:
   title: Discussion
-  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-    dolore.
+  excerpt: Explore personal stories and eye-opening podcasts shared by fellow
+    travelers on their iboga journeys
 education_section1:
   title: Share Your Insights With Us
-  paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore. elit, sed do eiusmod tempor
-    incididunt
+  paragraph: Share your unique iboga journey. Help others by contributing your
+    story or joining our podcast to add your personal experience to our growing
+    community of voices.
   image: /assets/sharewithus.png
 education_section2:
-  slider1_title: Published Articles
-  slider1_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
+  slider1_title: Stories and Conversations
+  slider1_info: ""
 education_section3:
   - title: Share Your Insights with Iboga.org's Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
