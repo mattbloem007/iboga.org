@@ -4,8 +4,8 @@ slug: /contact
 title: Get in touch
 contact_banner:
   title: Connect with Us or Collaborate
-  excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+  excerpt: Your insights and inquiries matter to us. Whether you're seeking
+    information or ready to contribute, we're here to connect.
   header_image: /assets/contact_bg.png
 reasons_form:
   - reason: I have written an article I would like to subit to the website or journal
