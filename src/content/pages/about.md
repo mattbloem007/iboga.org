@@ -7,12 +7,12 @@ about_banner:
     news from the community, personal accounts of the Holy Wood, and more.
   header_image: /assets/bg_about.png
 about_section1:
-  title: We experienced firsthand
+  title: We experienced firsthand...
   paragraph: >-
-    the profound healing and transformation iboga offers when used responsibly.
-    Inspired by this, we founded Iboga.org. Our mission is to facilitate a
-    respectful and responsible integration of iboga into the world, empowering
-    individuals to make informed choices.
+    ...the profound healing and transformation iboga offers when used
+    responsibly. Inspired by this, we founded Iboga.org. Our mission is to
+    facilitate a respectful and responsible integration of iboga into the world,
+    empowering individuals to make informed choices.
 
 
     From brain healing to discovering our true calling, iboga's potential benefits are as diverse as the people seeking them. It works holistically, not simply masking symptoms, but guiding individuals to uncover the roots of their challenges and higher potential.
