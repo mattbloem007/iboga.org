@@ -5,7 +5,7 @@ media_banner:
   title: " Research and Media"
   excerpt: Discover the latest scientific findings and cultural perspectives on
     iboga through our curated and accessible collection of **journal article
-    reviews**, insightful **books**, thought-provoking **films**, and **more**
+    reviews**, insightful **books**, thought-provoking **films**, and **more.**
 media_section2:
   slider1_title: Journal Articles
   slider1_info: Access reviews of published articles from peer-reviewed journals
