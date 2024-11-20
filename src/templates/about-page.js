@@ -37,6 +37,11 @@ export const pageQuery = graphql`
         about_section2 {
           title
           excerpt
+          team_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
 
         about_section3 {

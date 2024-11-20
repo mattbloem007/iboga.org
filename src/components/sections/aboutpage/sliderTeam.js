@@ -10,10 +10,15 @@ import closeBurger from '../../../assets/vectors/close-burger.svg'
 import PrevSliderButton from '../../buttons/prevSliderButton'
 import NextSliderButton from '../../buttons/nextSliderButton'
 
+import { getImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
+import BackgroundImage from 'gatsby-background-image'
+
 const SliderTeam = ({ data }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
+  let image, backgroundImage;
 
   var settings = {
     swipe: true,
@@ -58,20 +63,46 @@ const SliderTeam = ({ data }) => {
         <div className="margin-left-width">
         <Slider classNameName="our-team-slider" {...settings} ref={slider => { sliderRef = slider; }}>
         {data && data.map((team, i) => {
-          return (
-            <div class="team-card-holder">
-              <div class="team-member-box" id={i}>
-                  <h3>{team.title}</h3>
-                  <p className="p-small">{team.excerpt}</p>
-                  <div class="read-more-display" id={i} onClick={(e) => handleReadMore(e)}>
-                      <p id={i}>Read More</p>
-                      <div class="arrow-container" id={i}>
-                          <img className="icon arrow-icon" id={i} src={arrow}></img>
-                      </div>
-                  </div>
+          image = getImage(team.team_image)
+          backgroundImage= convertToBgImage(image)
+          if (team.team_image){
+            return (
+              <BackgroundImage
+                 Tag="div"
+                 {...backgroundImage}
+                 preserveStackingContext
+               >
+              <div class="team-card-holder">
+                <div class="team-member-box" id={i} style={{background: "none"}}>
+                    <h3>{team.title}</h3>
+                    <p className="p-small">{team.excerpt}</p>
+                    <div class="read-more-display" id={i} onClick={(e) => handleReadMore(e)}>
+                        <p id={i}>Read More</p>
+                        <div class="arrow-container" id={i}>
+                            <img className="icon arrow-icon" id={i} src={arrow}></img>
+                        </div>
+                    </div>
+                </div>
               </div>
-            </div>
-          )
+              </BackgroundImage>
+            )
+          }
+          else {
+            return (
+              <div class="team-card-holder">
+                <div class="team-member-box" id={i}>
+                    <h3>{team.title}</h3>
+                    <p className="p-small">{team.excerpt}</p>
+                    <div class="read-more-display" id={i} onClick={(e) => handleReadMore(e)}>
+                        <p id={i}>Read More</p>
+                        <div class="arrow-container" id={i}>
+                            <img className="icon arrow-icon" id={i} src={arrow}></img>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            )
+          }
         })}
     </Slider>
         </div>
