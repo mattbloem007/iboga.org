@@ -7,7 +7,7 @@ slug: /thedrugclassroomvideo
 date: 2024-11-26 12:28
 postType:
   - Video
-video: https://www.youtube.com/watch?v=MJd2KElznqY&ab_channel=TheDrugClassroom
+video: https://www.youtube.com/embed/MJd2KElznqY?si=yZMU_C_0yK0ImPOA
 description: An in-depth exploration of iboga and ibogaine, covering its
   traditional use, pharmacology, addiction treatment potential, and safety
   considerations. Learn about dosing, effects, and medical research. This
