@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: '"What Life? I Just Lived Trauma - Until Dr. Iboga." Zani Chi Chi Sophia
+title: '"What life? I just lived trauma - until Dr. Iboga." Zani Chi Chi Sophia
   talks with iboga.org about her epic journey with the Sacred Wood'
 slug: /interviewzanichichisophia
 date: 2024-11-28 16:31
