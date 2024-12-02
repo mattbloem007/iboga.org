@@ -6,7 +6,7 @@ slug: /ferrantivideo
 date: 2024-11-12 16:20
 postType:
   - Video
-video: https://www.youtube.com/watch?v=QJX5ypZ0eV4&ab_channel=TabulaRasaRetreat
+video: https://www.youtube.com/embed/QJX5ypZ0eV4?si=gqEK3aUSgZ1RQ5rY
 description: Alvaro De Ferranti, a former high-functioning crack cocaine addict
   and successful business professional in England, shares his transformative
   journey with iboga. After initially seeking ibogaine treatment and

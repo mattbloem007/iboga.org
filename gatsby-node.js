@@ -29,6 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
            node {
              frontmatter {
                title
+               slug
                excerpt
                template
              }
@@ -102,11 +103,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const id = libraryPage.node.id
     const template = libraryPage.node.frontmatter.template
     const title = libraryPage.node.frontmatter.title
+    const slug = libraryPage.node.frontmatter.slug
 
     console.log("TITLE", title)
 
     createPage({
-      path: `/library/${slugify(title)}`,
+      path: `/library${slug}`,
       component: path.resolve(
         `src/templates/media-detailed-page.js`
       ),
@@ -125,9 +127,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const id = postPage.node.id
     const template = postPage.node.frontmatter.template
     const title = postPage.node.frontmatter.title
+    const slug = postPage.node.frontmatter.slug
 
     createPage({
-      path: `/library/${slugify(title)}`,
+      path: `/library${slug}`,
       component: path.resolve(
         `src/templates/media-article-page.js`
       ),

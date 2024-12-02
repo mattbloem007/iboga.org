@@ -70,7 +70,7 @@ const Header = ({ children, page, data }) => {
                         <p>
                             {headerSlide.excerpt}
                         </p>
-                        {headerSlide.cta && <a href="" class="hero-button" tabindex="-1">{headerSlide.cta.ctaText} <img className="icon arrow-icon" src={ButtonArrow}></img></a>}
+                        {headerSlide.cta && <a href={headerSlide.cta.ctaLink} class="hero-button" tabindex="-1">{headerSlide.cta.ctaText} <img className="icon arrow-icon" src={ButtonArrow}></img></a>}
                       </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const Header = ({ children, page, data }) => {
               <p>
                   {HeaderData.excerpt}
               </p>
-              {HeaderData.cta && <a href="" class="hero-button" tabindex="-1">{HeaderData.cta.ctaText} <img className="icon arrow-icon" src={ButtonArrow}></img></a>}
+              {HeaderData.cta && <a href={HeaderData.cta.ctaLink} class="hero-button" tabindex="-1">{HeaderData.cta.ctaText} <img className="icon arrow-icon" src={ButtonArrow}></img></a>}
           </div>
         </section>
       </BackgroundImage>

@@ -162,6 +162,7 @@ export const pageQuery = graphql`
          html
          frontmatter {
            title
+           slug
            description
            tags
            featuredImage {

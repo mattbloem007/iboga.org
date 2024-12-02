@@ -46,12 +46,16 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
     sliderRef.slickPrev();
   };
 
-  const slugify = str =>
+  const slugify = str => {
+  console.log("String", str)
   str
     .trim()
     .replace("|", 'or')
+    .replace(/[?]+/g, '')
     .replace(/[,]+/g, '')
     .replace(/\s+/g, '-');
+    console.log("String Convert", str)
+  }
 
 
 
@@ -81,7 +85,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
           console.log("SLider data", slider)
           if (slider.node.frontmatter.postType == "Video") {
             return (
-              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-video-card" tabindex="-1">
+              <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-video-card" tabindex="-1">
                   <div className="thumbnail">
                       <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={slider.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
@@ -108,7 +112,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
           }
           if (slider.node.frontmatter.featuredImage) {
             return (
-              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
+              <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
                 <div className="thumbnail">
                   <GatsbyImage
                     style={{width: "100%", height: "100%"}}
@@ -131,7 +135,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
           }
           else {
             return (
-              <a href={`/library/${slugify(slider.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
+              <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-card-v2" tabindex="-1">
                   <div className="article-card-inner">
                       <h4>{slider.node.frontmatter.title}</h4>
                       <p className="p-small">{slider.node.frontmatter.description}</p>

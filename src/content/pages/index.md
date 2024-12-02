@@ -18,7 +18,7 @@ header_slides:
     cta:
       ctaType: button
       ctaText: Read personal accounts of people's experiences with iboga
-      ctaLink: /
+      ctaLink: /discussion
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
       Scientific viewpoints.
@@ -26,7 +26,7 @@ header_slides:
     cta:
       ctaType: button
       ctaText: Read reviews of scientific journal articles
-      ctaLink: /
+      ctaLink: /library
 section1:
   section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent
     of deep initiation and transformation.  In treatment, its alkaloids are the

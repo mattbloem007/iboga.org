@@ -20,7 +20,7 @@ const CardGrouping = ({cards}) => {
               if (card.node.frontmatter.postType == "Blog Post") {
                 if (card.node.frontmatter.featuredImage) {
                   return (
-                    <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-card" tabindex="0">
+                    <a href={`/library${card.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
                       <div className="thumbnail">
                         <GatsbyImage
                           style={{width: "100%", height: "100%"}}
@@ -43,7 +43,7 @@ const CardGrouping = ({cards}) => {
                 }
                 else {
                   return (
-                    <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-card-v2" tabindex="-1">
+                    <a href={`/library${card.node.frontmatter.slug}`} className="card-holder article-card-v2" tabindex="-1">
                         <div className="article-card-inner">
                             <h4>{card.node.frontmatter.title}</h4>
                             <p className="p-small">{card.node.frontmatter.description}</p>
@@ -64,14 +64,14 @@ const CardGrouping = ({cards}) => {
                       <div className="article-audio">
                           <iframe style={{borderRadius: "12px"}} src={card.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                       <h5>{card.node.frontmatter.title}</h5>
-                      <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="podcast-link" tabindex="-1">View Podcast</a>
+                      <a href={`/library${card.node.frontmatter.slug}`} className="podcast-link" tabindex="-1">View Podcast</a>
                       </div>
                   </div>
                 )
               }
               else if (card.node.frontmatter.postType == "Video") {
                 return(
-                  <a href={`/library/${slugify(card.node.frontmatter.title)}`} className="card-holder article-video-card" tabindex="-1">
+                  <a href={`/library${card.node.frontmatter.slug}`} className="card-holder article-video-card" tabindex="-1">
                       <div className="thumbnail">
                           <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={card.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
