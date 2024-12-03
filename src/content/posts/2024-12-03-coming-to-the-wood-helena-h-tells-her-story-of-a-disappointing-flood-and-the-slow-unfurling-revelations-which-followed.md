@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Coming to the Wood - Helena H tells her story of a disappointing flood
-  and the slow unfurling revelations which followed
+  and the unfurling revelations which followed
 slug: /bloghelenah
 date: 2024-12-03 16:20
 postType:
