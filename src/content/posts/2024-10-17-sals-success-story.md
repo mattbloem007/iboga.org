@@ -1,15 +1,19 @@
 ---
 resources: []
 template: blog-post
-title: Sal's success story
+title: Salvia's success with the Sacred Wood
 slug: /salsuccess
 date: 2024-10-17 11:13
 postType:
   - Blog Post
 video: ""
 audio: ""
-description: "Salvia writes about their journey with Iboga and how the sacred
-  Wood impacted their life. "
+description: A decade after their first iboga journey, Salvia reflects on how
+  success with sacred medicines transcends our initial expectations, weaving
+  together their experiences with chronic illness, heart healing, and the wisdom
+  gained from multiple floods. Their story challenges conventional metrics of
+  plant medicine "success" while acknowledging the subtle yet life-changing
+  transformations that unfold over time.
 featuredImage: /assets/dsc_0860-2-.jpg
 tags:
   - Home
