@@ -2,7 +2,7 @@
 resources: []
 template: blog-post
 title: Salvia's success with the Sacred Wood
-slug: /salsuccess
+slug: /blogsalsuccess
 date: 2024-10-17 11:13
 postType:
   - Blog Post
