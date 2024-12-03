@@ -13,7 +13,7 @@ const Footer = ({footer}) => (
                     <div class="footer-logo">
                       {footer ?  <h5> {footer.frontmatter.title}</h5> : <h5>Iboga.org..</h5>}
                     </div>
-                    {footer ? <div class="p-small" dangerouslySetInnerHTML={{__html: footer.frontmatter.description}} />: <div></div>}
+                    {footer ? <p class="p-small" dangerouslySetInnerHTML={{__html: footer.frontmatter.description}} />: <p></p>}
                 </div>
                 <div class="footer-right-col">
 

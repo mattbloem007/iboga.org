@@ -1466,3 +1466,676 @@ input[type="checkbox"]:checked::before {
 }
 
 /* ========= /CONTACT PAGE ========= */
+/* ========= DIRECTORY APPLICATION ========= */
+
+.directory-application p,
+.directory-application h1 {
+    max-width: 750px;
+}
+
+.directory-application-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tracker-numbers,
+.tracker-numbers span {
+    font-family: "CabinetGrotesk-med";
+    font-size: 72px;
+}
+
+.tracker-numbers {
+    margin-bottom: 16px;
+}
+
+.directory-application-container {
+    margin-top: 92px;
+}
+
+.form-section .form-button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section .form-button-row .button-primary {
+    background-color: var(--orange);
+    border: none;
+}
+
+.form-section .form-button-row .button-secondary i {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+
+@media screen and (max-width: 1250px) {
+    .directory-application-flex {
+        flex-direction: column;
+    }
+
+    .form-tracker {
+        margin-bottom: 36px;
+    }
+
+    .tracker-numbers {
+        margin-bottom: 4px;
+        font-size: 48px;
+    }
+}
+
+/* ========= /DIRECTORY APPLICATION ========= */
+
+
+/* ========= JOURNAL SUBMISSION ========= */
+
+.journal-submission-banner {
+    margin-bottom: 80px;
+}
+
+.journal-submission-banner {
+    margin-bottom: 80px;
+}
+
+.journal-submission-banner p,
+.journal-submission-banner h1 {
+    max-width: 944px;
+}
+
+.upload-button {
+    display: inline-block;
+    position: relative;
+  }
+
+#upload-input {
+    display: none;
+}
+
+form .button-secondary.upload-input-label {
+    font-size: 18px !important;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.keywords-input-container {
+    position: relative;
+}
+
+.form-section .form-row input, .contact-us-form .form-row .keywords-list-input {
+
+}
+
+.add-keyword {
+    font-family: "Epilogue";
+    height: 50px;
+    background-color: var(--black-bg);
+    display: inline-flex;
+    color: var(--white-text);
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px 14px 24px;
+    gap: 14px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.add-keyword i {
+    background-color: var(--white-text
+    );
+}
+
+.keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.keywords-list li {
+    font-family: "Epilogue";
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-section .form-row .keywords-list li button {
+    background-color: var(--orange);
+    border: none;
+    font-family: "Epilogue";
+    color: var(--white-bg);
+    font-size: 30px;
+    padding: 6px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+
+}
+
+/* ========= /JOURNAL SUBMISSION ========= */
+
+
+/* ========= CONFERENCE SUBMISSION ========= */
+
+.conference-submission-banner {
+    margin-bottom: 80px;
+}
+
+.conference-submission p,
+.conference-submission h1 {
+    max-width: 944px;
+}
+
+.conference-form-section .form-section {
+    width: 820px;
+}
+
+.optional-text {
+    opacity: 50%;
+}
+
+.form-section .form-row input, .contact-us-form .form-row input.date-picker {
+    display: block;
+}
+
+@media screen and (max-width: 460px) {
+    .conference-submission-banner h1 br {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .form-section .form-row .flex, .contact-us-form .form-row .flex {
+        flex-direction: column;
+    }
+}
+
+/* ========= /CONFERENCE SUBMISSION ========= */
+
+
+/* ========= DIRECTORY ========= */
+
+.directory-banner {
+  //  background: url(../assets/images/banners-images/directory-banner.png) no-repeatcenter/cover;
+    color: var(--white-text);
+}
+
+.directory-banner.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .directory-banner.coming-soon h1 {
+        font-size: 64px;
+        text-align: center;
+    }
+
+
+    .directory-banner.coming-soon h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .directory-banner.coming-soon .content-search input {
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+
+    .directory-banner.coming-soon h1 {
+        font-size: 48px;
+    }
+
+
+    .directory-banner.coming-soon h3 {
+        font-size: 28px;
+    }
+
+    .directory-banner.coming-soon .content-search input {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 410px) {
+
+    .directory-banner.coming-soon h1 {
+        font-size: 48px;
+    }
+
+
+    .directory-banner.coming-soon h3 {
+        font-size: 26px;
+    }
+
+    .directory-banner.coming-soon .content-search input {
+        width: 250px;
+    }
+}
+
+
+.directory-banner.coming-soon .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.directory-banner p,
+.directory-banner h1 {
+    max-width: 735px;
+}
+
+.directory-actions {
+    margin-top: 32px;
+}
+
+.directory-actions .flex {
+    align-items: center;
+}
+
+.directory-actions .content-search input {
+    margin: 0px;
+}
+
+.directory-actions .button-primary {
+    margin-right: 32px;
+    background-color: var(--orange);
+}
+
+.ceremonial-practitioner-card,
+.teacher-card {
+    font-family: "Epilogue";
+}
+
+.ceremonial-practitioner-card .profile-card-banner,
+.teacher-card .profile-card-banner {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ceremonial-practitioner-card .profile-name,
+.teacher-card .profile-name {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 3;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ceremonial-practitioner-card .flex,
+.teacher-card .flex {
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.ceremonial-practitioner-card h5,
+.teacher-card h5 {
+    margin-bottom: 16px;
+}
+
+.ceremonial-practitioner-card ul,
+.teacher-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.ceremonial-practitioner-card ul li,
+.teacher-card ul li {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgba(51,131,75,0.30);
+}
+
+.ceremonial-practitioner-card .approach-excerpt,
+.teacher-card .approach-excerpt {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.organisations-card {
+    font-family: "Epilogue";
+}
+
+.organisations-card .organisation-logo {
+    margin-bottom: 32px;
+}
+
+.organisations-card .organisation-logo img {
+    max-height: 420px;
+}
+
+.established-date,
+.organisation-location {
+    margin-bottom: 16px;
+}
+
+.organisations-card h5 {
+    margin-bottom: 12px;
+}
+
+.organisations-card ul {
+    margin-left: 32px;
+}
+
+.organisations-card ul li {
+    margin-bottom: 12px;
+    position: relative;
+
+}
+
+.organisations-card ul li::before {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: var(--black-text);
+    position: absolute;
+    left: -32px;
+    top: 35%;
+}
+
+.organisations-card .approach-excerpt {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.modal-disclaimer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: rgba(000,000,000,0.50);
+}
+
+.modal-disclaimer .modal-contents {
+    max-width: 750px;
+    background-color: var(--orange);
+    padding: 32px 36px;
+}
+
+.modal-disclaimer .modal-contents h5 {
+    font-family: "Epilogue";
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.modal-disclaimer .modal-contents p {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .directory-actions .flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+/* ========= /DIRECTORY ========= */
+
+
+/* ========= DIRECTORY DETAIL ========= */
+
+.directory-detail-banner {
+    //background: url(../assets/images/banners-images/directory-detail-banner.png) no-repeat center/cover;
+    color: var(--white-text);
+}
+
+.directory-detail-banner p,
+.directory-detail-banner h1 {
+    max-width: 800px;
+}
+
+/* ========= /DIRECTORY DETAIL ========= */
+
+
+/* ========= PRACTITIONER ========= */
+
+.practitioner-profile-banner h1 {
+    font-size: 64px;
+}
+
+.practitioner-profile-banner p {
+    margin-bottom: 24px;
+}
+
+.practitioner-profile-banner .practitioner-title {
+    margin-bottom: 16px;
+}
+
+.practitioner-profile-banner h5 {
+    margin-bottom: 16px;
+}
+
+.practitioner-details {
+    margin-left: 60px;
+}
+
+.practitioner-profile-banner li {
+    margin-bottom: 20px;
+    font-family: "Epilogue";
+}
+
+.practitioner-profile-banner li a {
+    color: var(--light-yellow);
+}
+
+.practitioner-profile-banner .flex img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.practioner-service-tags {
+    display: flex;
+    gap: 16px;
+}
+
+.practioner-service-tags li {
+    background-color: rgba(255,255,255,0.25);
+    display: inline-block;
+    padding: 8.5px 11px;
+    border-radius: 4px;
+}
+
+.practitioner-info {
+    padding-top: 120px;
+}
+
+.practitioner-info h2 {
+    margin-bottom: 48px;
+}
+
+.practitioner-info h4 {
+    margin-bottom: 24px;
+}
+
+.practitioner-info div {
+    margin-bottom: 48px;
+}
+
+.testimonial-slider .card-holder {
+    max-width: 644px;
+}
+
+.testimonial-card {
+    padding: 28px 24px;
+    background-color: var(--med-green);
+    color: var(--light-yellow);
+    height: 345px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card .testimonial-author {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 900px) {
+    .practitioner-profile-banner .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .practitioner-profile-banner .flex img {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .practitioner-details {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-card {
+
+        max-width: 340px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .testimonial-card {
+
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+/* ========= /PRACTITIONER ========= */
+/* ========= DONATE ========= */
+
+.donate-page-banner {
+    margin-bottom: 80px;
+}
+
+.donate-page-banner p,
+.donate-page-banner h1 {
+    max-width: 890px;
+}
+
+.donate-page-banner p {
+    margin-bottom: 24px;
+}
+
+.text-block p strong {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.text-block .disclaimer p strong {
+    margin-bottom: 0px;
+}
+
+.support-us-block {
+    background-color: rgba(51,131,75,0.30);
+    padding: 36px;
+}
+
+.support-us-block div {
+    margin-bottom: 36px;
+}
+
+.support-rows {
+    flex-direction: column;
+    gap: 48px;
+}
+
+.support-us-block-action {
+    margin-left: 48px;
+}
+
+.support-us-block-action .donate-buttons-container {
+    margin-top: 24px;
+}
+
+.support-w-socials .flex {
+    margin-top: 24px;
+}
+
+.support-w-socials a {
+    display: flex;
+    margin-right: 24px;
+}
+
+.support-w-socials a i {
+    background-color: var(--light-yellow
+    );
+}
+
+.support-us-block-action .donate-buttons-container .button-primary {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.disclaimer-card .d-card-contents {
+    color: var(--white-text);
+    padding: 40px;
+    background-color: var(--orange);
+}
+
+.disclaimer-card .d-card-contents h2 {
+    margin-bottom: 20px;
+}
+
+.donate-page-cta-form {
+    background-color: var(--med-green);
+    padding: 32px;
+    max-width: 460px;
+    color: var(--light-yellow);
+    margin-top: 26px;
+}
+
+.donate-page-cta-form h4 {
+    margin-bottom: 24px;
+}
+
+.donate-page-cta-form .donate-btn input {
+    width: 230px;
+    height: 60px;
+    border: none;
+    font-family: "Epilogue";
+    font-size: 24px;
+}
+
+.donate-page-cta-form .donate-btn button {
+    border: none;
+}
+
+.donate-page-cta-form .donate-buttons-container {
+    margin-top: 40px;
+}
+
+.donate-page-cta-form .donate-buttons-container .form-row {
+    margin: 0px;
+    width: 100%;
+}
+
+.donate-page-cta-form .donate-buttons-container a.button-secondary {
+    width: 100%;
+    margin: 0px 0px 24px 0px;
+}
+
+/* ========= /DONATE ========= */

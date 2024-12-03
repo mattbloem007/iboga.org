@@ -113,6 +113,7 @@ const Header = ({ children, page, data }) => {
       <div className="hero-slider-container">
       <section class="page-banner media-banner">
           <div class="max-width">
+          {HeaderData.subtitle ? <h4 dangerouslySetInnerHTML={{ __html: HeaderData.subtitle }}></h4> : <div></div>}
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
               <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
               <form action="" class="content-search">

@@ -11,7 +11,7 @@ const NavMenu = ({scroll, page}) => (
           <a href="/about" class={page == "about" ? "active-page" : ''}>About</a>
         </li>
         <li>
-          <a href="/">Directory</a>
+          <a href="/directory" class={page == "directory" ? "active-page" : ''}>Directory</a>
         </li>
         <li>
           <a href="/library" class={page == "library" ? "active-page" : ''}>Library</a>
@@ -27,7 +27,7 @@ const NavMenu = ({scroll, page}) => (
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/">Directory</a></li>
+        <li><a href="/directory">Directory</a></li>
         <li><a href="/library">Library</a></li>
         <li><a href="/discussion">Discussion</a></li>
         <li><a href="/contact">Contact Us</a></li>

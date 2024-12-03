@@ -610,6 +610,117 @@ collections:
                   widget: string
                 }
 
+      - label: "Directory"
+        name: "directory"
+        file: "src/content/pages/directory.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "directory-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/directory",
+            }
+          - label: "Directory Banner"
+            name: "directory_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
+
+      - label: "Conference Submission"
+        name: "conference"
+        file: "src/content/pages/conference.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "conference-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/conference-submission",
+            }
+          - label: "Conference Banner"
+            name: "conference_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "string"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
+          - label: "Types of Participation"
+            name: "types_of_participation"
+            label_singular: "Type of Participation"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "string"
+
+          - label: "Time slots available"
+            name: "time_slots"
+            label_singular: "Time Slot"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Time Slots"
+                name: "time_slot"
+                widget: "string"
+
+      - label: "Journal Submission"
+        name: "journal"
+        file: "src/content/pages/journal.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "journal-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/journal-submission",
+            }
+          - label: "Journal Banner"
+            name: "journal_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "string"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
+          - label: "Submission Categories"
+            name: "submission_categories"
+            label_singular: "Submission Category"
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Category"
+                name: "category"
+                widget: "string"
+
       - label: "Library"
         name: "media"
         file: "src/content/pages/media.md"
@@ -957,6 +1068,8 @@ collections:
               default: "",
               required: false,
             }
+
+
 
 
   - name: "slider_cards"

@@ -70,7 +70,7 @@ return (
                 <ul>
                     <li><a href="/" onClick={() => toggleLinks()}>Home</a></li>
                     <li><a href="/about" onClick={() => toggleLinks()}>About</a></li>
-                    <li><a href="/" onClick={() => toggleLinks()}>Directory</a></li>
+                    <li><a href="/directory" onClick={() => toggleLinks()}>Directory</a></li>
                     <li><a href="/library" onClick={() => toggleLinks()}>Library</a></li>
                     <li><a href="/education" onClick={() => toggleLinks()}>Education</a></li>
                     <li><a href="/contact" onClick={() => toggleLinks()}>Contact Us</a></li>
