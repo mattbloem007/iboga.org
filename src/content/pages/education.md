@@ -31,7 +31,7 @@ education_section3:
       btn_text: Apply to Speak
       btn_type: button-secondary
       btn_link: /
-    title: Speak at the Summit Conference
+    title: Speak at the biennial Symposium
     excerpt: Join the conversation and become a speaker at our upcoming Summit
       Conference. Share your expertise, experiences, and insights with a global
       audience. Whether you are a seasoned practitioner, researcher, or
