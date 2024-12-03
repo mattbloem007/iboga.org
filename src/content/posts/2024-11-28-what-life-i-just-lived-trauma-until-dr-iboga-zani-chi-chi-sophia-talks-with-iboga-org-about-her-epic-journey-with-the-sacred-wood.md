@@ -20,7 +20,7 @@ tags:
 ---
 *Editor's note: This is an interview that I had with Zani Chi Chi Sophia about her journey with iboga. She is a sangoma in the traditional South African medicine worker lineage and a kuchina of ixCacao. She speaks Afrikaans, so there are a few places where I have inserted a translation in square brackets like \[this]. It was a very joyful interview, so I’ve also used those square brackets to include moments of laughter. Finally, I have added a couple of clarifications in the same way.*
 
-*Interview with Sal Starling*
+*Interview with Salvia Starling*
 
 #### Namaste, Zani Chi Chi Sophia! How wonderful to talk to you today. So tell me, what was your life like before iboga?
 
