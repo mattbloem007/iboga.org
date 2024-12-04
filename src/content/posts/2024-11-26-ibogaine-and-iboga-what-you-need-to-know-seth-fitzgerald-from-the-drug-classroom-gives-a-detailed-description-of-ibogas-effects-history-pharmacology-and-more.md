@@ -1,8 +1,7 @@
 ---
 template: blog-post
 title: "\"Ibogaine and Iboga: What You Need To Know.\" Seth Fitzgerald from The
-  Drug Classroom gives a detailed description of Iboga's effects, history,
-  pharmacology, and more. "
+  Drug Classroom talks about Iboga's effects, history, pharmacology, and more. "
 slug: /thedrugclassroomvideo
 date: 2024-11-26 12:28
 postType:
