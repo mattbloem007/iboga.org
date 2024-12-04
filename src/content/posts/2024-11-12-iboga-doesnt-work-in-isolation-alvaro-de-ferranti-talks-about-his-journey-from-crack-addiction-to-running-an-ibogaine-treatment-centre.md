@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: "\"Iboga doesn't work in isolation.\" Alvaro de Ferranti talks about his
-  journey from crack addiction to running an ibogaine treatment centre. "
+title: "\"Iboga doesn't work in isolation.\" Alvaro de Ferranti's journey from
+  crack addiction to running an ibogaine treatment centre. "
 slug: /ferrantivideo
 date: 2024-11-12 16:20
 postType:
