@@ -1,8 +1,7 @@
 ---
 template: blog-post
-title: '"I wanted to die because I had nothing left." Kia Elfström tells her
-  vulnerable tale of how iboga helped take her from a terminal cancer diagnosis
-  to total remission.'
+title: '"I wanted to die because I had nothing left." How iboga helped take Kia
+  Elfström from a terminal cancer diagnosis to total remission.'
 slug: /interviewkiaelfström
 date: 2024-12-02 22:05
 postType:
