@@ -67,11 +67,6 @@
     margin-right: 24px;
 }
 
-.card-holder .thumbnail {
-  width: 421px;
-  height: 250px;
-}
-
 /* --- ARTICLE CARD --- */
 
 .article-slider {
@@ -81,8 +76,16 @@
 
 .article-card {
     max-width: 420px;
-    height: 490px;
+    height: auto;
     color: var(--black-text);
+}
+
+.article-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .article-card-inner {
@@ -94,7 +97,14 @@
 }
 
 .article-card img {
-    max-width: 100%;
+    /* max-width: 100%; */
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+
+.card-holder h4 {
+    font-size: 26px;
 }
 
 /* --- /ARTICLE CARD --- */
@@ -103,13 +113,23 @@
 
 .article-card-v2 {
     max-width: 420px;
-    height: 490px;
+    height: auto;
     background-color: var(--med-green);
     color: var(--light-yellow);
     padding: 24px 16px 10px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+.article-card-v2 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 24px;
 }
 
 .article-card-v2 h4 {
@@ -136,7 +156,7 @@
 
 .article-card-v3 {
     max-width: 420px;
-    height: 490px;
+    height: auto;
     background-color: var(--light-green);
     color: var(--black-text);
 }
@@ -147,6 +167,14 @@
 
 .article-card-v3 p {
     margin-bottom: 34px;
+}
+
+.article-card-v3 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .multi-link-box {
@@ -195,12 +223,21 @@
 
 .article-video-card {
     max-width: 420px;
-    height: 490px;
+    height: auto;
     color: var(--black-text);
+    display: inline-block;
 }
 
 .article-video-card .thumbnail {
     position: relative;
+}
+
+.article-video-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .thumb-icon {
@@ -356,11 +393,6 @@
     .card-holder {
         max-width: 320px;
         margin-right: 16px;
-    }
-
-    .card-holder .thumbnail {
-      width: 332px;
-      height: 250px;
     }
 }
 

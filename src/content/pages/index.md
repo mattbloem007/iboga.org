@@ -122,8 +122,8 @@ section7:
   - cta:
       btn: true
       btn_type: button-secondary
-      btn_text: Visit Directory
-      btn_link: /
+      btn_text: Submit a Journal
+      btn_link: /journal-submission
     title: Share Your Insights with Iboga.org's Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
@@ -133,8 +133,8 @@ section7:
   - cta:
       btn: true
       btn_type: button-secondary
-      btn_text: Visit Directory
-      btn_link: /
+      btn_text: Submit for the conference
+      btn_link: /conference-submission
     title: Speak at the Symposium
     excerpt: Join the conversation and become a speaker at our upcoming biennial
       Wood Symposium. Share your expertise, experiences, and insights with a

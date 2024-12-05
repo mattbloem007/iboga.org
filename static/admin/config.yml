@@ -36,7 +36,13 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+        label: "Title",
+        name: "title",
+        widget: "string",
+        tagname: "h1",
+        pattern: ['^.{20,120}$', "Must have at least 20 characters and no more than 80"],
+        }
       - {
           label: "Slug",
           name: "slug",

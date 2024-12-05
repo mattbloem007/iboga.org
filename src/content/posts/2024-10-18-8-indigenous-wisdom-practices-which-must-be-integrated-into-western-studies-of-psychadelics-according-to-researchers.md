@@ -1,4 +1,5 @@
 ---
+resources: []
 template: blog-post
 title: Researchers and indigenous leaders have developed 8 sacred principles for
   psychedelic research
@@ -6,12 +7,11 @@ slug: /articleindigenousethics
 date: 2024-10-18 13:00
 postType:
   - Blog Post
+video: ""
+audio: ""
 description: Researchers have brought together voices from both indigenous and
   scientific communities to name 8 necessary ethical principles that they say
   should be included in all western scientific psychadelic research.
-video: ""
-audio: ""
-resources: []
 tags:
   - Home
   - Research And Media

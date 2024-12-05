@@ -1145,6 +1145,7 @@ input[type="checkbox"]:checked::before {
 
 /* ========= /MEDIA PAGE STYLES ========= */
 
+
 /* ========= MEDIA GRID DETAIL ========= */
 
 .media-grid-banner a {
@@ -1156,7 +1157,9 @@ input[type="checkbox"]:checked::before {
     align-items: center;
 }
 
-.media-grid-banner a img {
+.media-grid-banner a i {
+    background-color: var(--light-yellow);
+    transform: rotate(180deg);
     margin-right: 16px;
 }
 
@@ -1268,7 +1271,8 @@ input[type="checkbox"]:checked::before {
     align-items: center;
 }
 
-.article-headline a img {
+.article-headline a i {
+    transform: rotate(180deg);
     margin-right: 10px
 }
 
@@ -1283,7 +1287,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .article-headline .margin-left-width {
-    // background: url(./images/article-placeholder-images/article-detail.png) no-repeat;
+  //  background: url(./images/article-placeholder-images/article-detail.png) no-repeat;
     background-size: cover;
     height: 530px;
 }
