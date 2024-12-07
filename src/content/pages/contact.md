@@ -31,7 +31,7 @@ contact_section2:
       btn: true
       btn_text: Apply to Speak
       btn_type: button-secondary
-      btn_link: /
+      btn_link: /conference-submission
     title: Speak at the biennial Symposium
     excerpt: Join the conversation and become a speaker at our upcoming Wood
       Symposium. Share your expertise, experiences, and insights with a global
