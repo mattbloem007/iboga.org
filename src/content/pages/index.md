@@ -9,7 +9,7 @@ header_slides:
     cta:
       ctaType: button
       ctaText: "Explore Our Directory of Experienced Guides "
-      ctaLink: /
+      ctaLink: /directory
     header_images: /assets/hero-banner-1.png
     header_image: /assets/hero-banner-1.png
   - title: <strong class="heading-bold">Learn about</strong> using Iboga
