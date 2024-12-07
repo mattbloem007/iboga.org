@@ -9,6 +9,8 @@ contact_banner:
   header_image: /assets/contact_bg.png
 reasons_form:
   - reason: I have written an article I would like to subit to the website or journal
+  - reason: "I would like to be a guest on your podcast, or I have someone I would
+      like to suggest as a podcast guest. "
   - reason: I am interested in speaking at the biennial Wood Symposium, or I am
       suggesting someone I would like to hear speak there
   - reason: I have a question or complaint about some of the content on the website
