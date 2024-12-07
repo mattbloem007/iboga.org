@@ -26,7 +26,7 @@ contact_section2:
       btn: true
       btn_text: Submit a Journal Entry
       btn_type: button-secondary
-      btn_link: /
+      btn_link: /journal-submission
   - cta:
       btn: true
       btn_text: Apply to Speak
