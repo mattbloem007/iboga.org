@@ -24,7 +24,7 @@ const Donate = ({ data }) => {
                         <a href="/" className="button-secondary">Contact Us <img className="icon send-icon" src={arrow}></img></a>
                         <div>
                             <form action="">
-                                <input type="text" placeholder="R 100" />
+                                <input type="text" placeholder="$ 100" />
                                 <button className="button-primary">Donate <img className="icon money-icon" src={dollar}></img></button>
                             </form>
                         </div>

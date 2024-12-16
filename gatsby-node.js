@@ -70,7 +70,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const next = index === 0 ? null : posts[index - 1].node
     const template = post.node.frontmatter.template
 
-    if (post.node.frontmatter.slug && post.node.frontmatter.template !== "blog-post"){
+    if (post.node.frontmatter.slug && post.node.frontmatter.template !== "blog-post" && post.node.frontmatter.slug && post.node.frontmatter.template !== "media-page"){
       createPage({
         path: post.node.frontmatter.slug,
         component: path.resolve(
