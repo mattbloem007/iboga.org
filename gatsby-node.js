@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
       libraryPages: allMarkdownRemark(
-        filter: {frontmatter: {template: {eq: "media-page"}}}
+        filter: {frontmatter: {template: {eq: "library-page"}}}
       ) {
         edges {
           node {
@@ -70,7 +70,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const next = index === 0 ? null : posts[index - 1].node
     const template = post.node.frontmatter.template
 
-    if (post.node.frontmatter.slug && post.node.frontmatter.template !== "blog-post" && post.node.frontmatter.slug && post.node.frontmatter.template !== "media-page"){
+    if (post.node.frontmatter.slug && post.node.frontmatter.template !== "blog-post" && post.node.frontmatter.slug && post.node.frontmatter.template !== "library-page" ){
       createPage({
         path: post.node.frontmatter.slug,
         component: path.resolve(

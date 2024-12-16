@@ -1,5 +1,5 @@
 ---
-template: media-page
+template: library-page
 slug: journal-articles
 title: Journal Articles
 excerpt: Access reviews of published articles about iboga from peer-reviewed journals
