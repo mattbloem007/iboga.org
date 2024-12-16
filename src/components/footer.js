@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiHeart2Line } from "react-icons/ri"
 
-const Footer = ({footer}) => (
+const Footer = ({footer}) =>
+(
   <footer>
         <div class="margin-left-width">
             <div></div>
@@ -20,43 +21,65 @@ const Footer = ({footer}) => (
                     <div class="footer-link-col">
                         <h6>Useful Links</h6>
                         <ul>
-                            <li><a href="/">Directory</a></li>
-                            <li><a href="/library">Library</a></li>
-                            <li><a href="/education">Education</a></li>
+                        {
+                          footer.frontmatter.useful_links.map(link => {
+                            return(
+                            <li><a href={link.slug}>{link.title}</a></li>
+                          )
+                          })
+                        }
                         </ul>
                     </div>
 
                     <div class="footer-link-col">
                         <h6>About</h6>
                         <ul>
-                            <li><a href="/about">About Iboga.org</a></li>
-                            <li><a href="">What is iboga</a></li>
+                            {
+                              footer.frontmatter.about_links.map(link => {
+                                return(
+                                <li><a href={link.slug}>{link.title}</a></li>
+                              )
+                              })
+                            }
                         </ul>
                     </div>
 
                     <div class="footer-link-col">
                         <h6>Media</h6>
                         <ul>
-                            <li><a href="">Research</a></li>
-                            <li><a href="">Podcast</a></li>
-                            <li><a href="">Blog</a></li>
+                            {
+                              footer.frontmatter.media_links.map(link => {
+                                return(
+                                <li><a href={link.slug}>{link.title}</a></li>
+                              )
+                              })
+                            }
                         </ul>
                     </div>
 
                     <div class="footer-link-col">
                         <h6>Legal</h6>
                         <ul>
-                            <li><a href="">Terms &amp; Conditions</a></li>
-                            <li><a href="">Privacy Policy</a></li>
+                            {
+                              footer.frontmatter.legal_links.map(link => {
+                                return(
+                                <li><a href={link.slug}>{link.title}</a></li>
+                              )
+                              })
+                            }
                         </ul>
                     </div>
 
                     <div class="footer-link-col">
                         <h6>Contact</h6>
                         <ul>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="">Newsletter</a></li>
-                            <li><a href="">Donate</a></li>
+                            {
+                              footer.frontmatter.contact_links.map(link => {
+                                return(
+                                <li><a href={link.slug}>{link.title}</a></li>
+                              )
+                              })
+                            }
                         </ul>
                     </div>
 

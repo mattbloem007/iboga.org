@@ -1,5 +1,6 @@
 ---
-template: library-page
+template: media-page
+slug: journal-articles
 title: Journal Articles
 excerpt: Access reviews of published articles about iboga from peer-reviewed journals
 donate_title: Donate to the Legal Challenge Fund

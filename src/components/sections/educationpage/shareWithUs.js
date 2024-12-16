@@ -19,17 +19,17 @@ const ShareWithUs = ({ data }) => {
                  {...backgroundImage}
                  preserveStackingContext
                >
-                <div class="left-col">
+                <h2 class="left-col">
                     {data.title}
-                </div>
+                </h2>
               </BackgroundImage>
                 <div class="right-col">
                     <p>
                         {data.paragraph}
                     </p>
                     <div class="share-with-us-buttons">
-                        <a href="" class="button-secondary">Submit Your Story <img src={arrow} class="icon arrow-icon"></img></a>
-                        <a href="" class="button-secondary">Be Our Podcast Guest <img src={arrow} class="icon arrow-icon"></img></a>
+                        <a href="/contact" class="button-secondary">Submit Your Story <img src={arrow} class="icon arrow-icon"></img></a>
+                        <a href="/contact" class="button-secondary">Be Our Podcast Guest <img src={arrow} class="icon arrow-icon"></img></a>
                     </div>
                 </div>
             </div>

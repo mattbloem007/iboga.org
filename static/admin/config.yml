@@ -348,25 +348,25 @@ collections:
                       hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
                     }
 
-          - label: 'Slider 2'
-            name: slider2
-            widget: 'object'
-            collapsed: true
-            fields:
-              - {
-                  label: 'Title',
-                  name: slider2_title,
-                  widget: string,
-                  required: false,
-                  default: ""
-                }
-              - {
-                  label: 'Info',
-                  name: slider2_info,
-                  widget: string,
-                  required: false,
-                  default: ""
-                }
+          # - label: 'Slider 2'
+          #   name: slider2
+          #   widget: 'object'
+          #   collapsed: true
+          #   fields:
+          #     - {
+          #         label: 'Title',
+          #         name: slider2_title,
+          #         widget: string,
+          #         required: false,
+          #         default: ""
+          #       }
+          #     - {
+          #         label: 'Info',
+          #         name: slider2_info,
+          #         widget: string,
+          #         required: false,
+          #         default: ""
+          #       }
 
           - label: 'Donate Section (Section 6)'
             name: section6
@@ -1074,9 +1074,56 @@ collections:
               default: "",
               required: false,
             }
-
-
-
+          - label: "Useful Links"
+            name: "useful_links"
+            label_singular: 'Useful Link'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Slug", name: "slug", widget: "string" }
+          - label: "About Links"
+            name: "about_links"
+            label_singular: 'about_links'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Slug", name: "slug", widget: "string" }
+          - label: "Media Links"
+            name: "media_links"
+            label_singular: 'Media Link'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Slug", name: "slug", widget: "string" }
+          - label: "Legal Links"
+            name: "legal_links"
+            label_singular: 'Legal Link'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Slug", name: "slug", widget: "string" }
+          - label: "Contact Links"
+            name: "contact_links"
+            label_singular: 'Contact Link'
+            widget: "list"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Slug", name: "slug", widget: "string" }
 
   - name: "slider_cards"
     label: "Slider Cards"
@@ -1155,8 +1202,9 @@ collections:
           label: "Template",
           name: "template",
           widget: "hidden",
-          default: "library-page",
+          default: "media-page",
         }
+      - { label: "Slug", name: "slug", widget: "string", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
       - { label: "Donate Title", name: "donate_title", widget: "text", required: true }

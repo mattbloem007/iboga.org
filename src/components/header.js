@@ -116,12 +116,12 @@ const Header = ({ children, page, data }) => {
           {HeaderData.subtitle ? <h4 dangerouslySetInnerHTML={{ __html: HeaderData.subtitle }}></h4> : <div></div>}
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
               <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
-              <form action="" class="content-search">
+              {/**<form action="" class="content-search">
                   <input type="text" placeholder="Search Media..." />
                   <button>
                       <img className="icon search-icon" src={SearchIcon} />
                   </button>
-              </form>
+              </form>*/}
           </div>
       </section>
       </div>

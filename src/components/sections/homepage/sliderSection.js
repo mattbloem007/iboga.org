@@ -73,7 +73,8 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
               link ?
               <a href={link} class="button-secondary">Visit Directory <img src="icon arrow-icon" src={blackArrow}></img></a>
               :
-              <WhiteButton link={`${slugify(title)}`}/>
+              <div></div>
+              /**<WhiteButton link={`${slugify(title)}`}/>*/
 
 
             }
@@ -124,12 +125,12 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
                       <h4>{slider.node.frontmatter.title}</h4>
                       <p className="p-small">{slider.node.frontmatter.description}</p>
                   </div>
-                  <div className="article-button-container">
+                  {/**<div className="article-button-container">
                       <div className="article-button">Read More Stories</div>
                       <div className="article-icon">
                           <img className="icon arrow-icon" src={arrow}></img>
                       </div>
-                  </div>
+                  </div>*/}
               </a>
             )
           }
@@ -140,12 +141,12 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
                       <h4>{slider.node.frontmatter.title}</h4>
                       <p className="p-small">{slider.node.frontmatter.description}</p>
                   </div>
-                  <div className="article-button-container">
+                  {/**<div className="article-button-container">
                       <div className="article-button">Read More Stories</div>
                       <div className="article-icon">
                           <img className="icon arrow-icon" src={arrowWhite}></img>
                       </div>
-                  </div>
+                  </div>*/}
               </a>
             )
           }

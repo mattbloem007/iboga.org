@@ -1,5 +1,6 @@
 ---
-template: library-page
+template: media-page
+slug: books-film-and-more
 title: Books, Films, and more
 excerpt: Browse collections of books, films, and other media about iboga
 donate_title: Donate to the Legal Challenge Fund

@@ -181,6 +181,26 @@ export const pageQuery = graphql`
          frontmatter {
            title
            description
+           useful_links {
+             title
+             slug
+           }
+           about_links {
+             title
+             slug
+           }
+           media_links {
+             title
+             slug
+           }
+           legal_links {
+             title
+             slug
+           }
+           contact_links {
+             title
+             slug
+           }
          }
      }
 
@@ -217,7 +237,7 @@ const HomePage = ({ data }) => {
       <Seo />
       <Header data={frontmatter.header_slides} />
       <TitleAndInfo title={frontmatter.section1.section1_title} info={frontmatter.section1.section1_paragraph} cta={frontmatter.section1.cta}/>
-      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} link='/library'/>
+      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} />
       <ImageBreak image={frontmatter.section2.image_break.childImageSharp.gatsbyImageData}/>
       <TitleAndInfo title={frontmatter.section3.about_title} info={frontmatter.section3.about_paragraph} cta={frontmatter.section3.cta}/>
       <TextCards data={frontmatter.section4}/>

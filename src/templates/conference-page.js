@@ -31,6 +31,26 @@ export const pageQuery = graphql`
         frontmatter {
           title
           description
+          useful_links {
+            title
+            slug
+          }
+          about_links {
+            title
+            slug
+          }
+          media_links {
+            title
+            slug
+          }
+          legal_links {
+            title
+            slug
+          }
+          contact_links {
+            title
+            slug
+          }
         }
     }
   }

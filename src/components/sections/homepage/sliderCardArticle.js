@@ -15,12 +15,12 @@ const SliderCardArticle = ({data, btn}) => {
                 “Meeting with the Sacred, Ancient and Wise African medicine of Iboga has been a journey that has taken me deeper into profound and...
             </p>
         </div>
-        <div className="article-button-container">
+        {/**<div className="article-button-container">
             <div className="article-button">Read More Stories</div>
             <div className="article-icon">
                 <img className="icon arrow-icon" src={arrow}></img>
             </div>
-        </div>
+        </div>*/}
     </a>
   )
 }

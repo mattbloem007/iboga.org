@@ -9,7 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
         edges {
           node {
             id
@@ -21,37 +21,33 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-
-      libraryPages:  allMarkdownRemark(
-         filter: {frontmatter: {template: {eq: "library-page"}}}
-       ) {
-         edges {
-           node {
-             frontmatter {
-               title
-               slug
-               excerpt
-               template
-             }
-           }
-         }
-       }
-
-       postPages:  allMarkdownRemark(
-          filter: {frontmatter: {template: {eq: "blog-post"}}}
-        ) {
-          edges {
-            node {
-              frontmatter {
-                title
-                slug
-                template
-              }
+      libraryPages: allMarkdownRemark(
+        filter: {frontmatter: {template: {eq: "media-page"}}}
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
+              excerpt
+              template
             }
           }
         }
-
-
+      }
+      postPages: allMarkdownRemark(
+        filter: {frontmatter: {template: {eq: "blog-post"}}}
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
+              template
+            }
+          }
+        }
+      }
     }
   `)
 
@@ -108,7 +104,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     console.log("TITLE", title)
 
     createPage({
-      path: `/library${slug}`,
+      path: `/library/${slug}`,
       component: path.resolve(
         `src/templates/media-detailed-page.js`
       ),

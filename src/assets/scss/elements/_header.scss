@@ -3,9 +3,9 @@
 /* ------ Hero Section ------ */
 
 .hero-slide {
-    padding: 280px 0px 185px 0px;
+    padding: 230px 0px 120px 0px;
     color: var(--white-text);
-    height: 838px;
+    height: 700px;
 }
 
 .hero-slide h1 {
@@ -17,11 +17,7 @@
 }
 
 .hero-content-slide-1 {
-    background: url(../vectors/banners-images/hero-banner-1.png) center center no-repeat;
-    background-size: cover;
-}
-
-.hero-content-slide {
+  //  background: url(./images/banners-images/hero-banner-1.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -34,7 +30,7 @@
 }
 
 .hero-content-slide-2 {
-    background: url(../vectors/banners-images/hero-banner-2.png) center center no-repeat;
+  //  background: url(./images/banners-images/hero-banner-2.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -44,7 +40,7 @@
 
 
 .hero-content-slide-3 {
-    background: url(../vectors/banners-images/hero-banner-3.png) center center no-repeat;
+  //  background: url(./images/banners-images/hero-banner-3.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -100,9 +96,20 @@
 
 .page-banner {
     padding: 275px 0px 120px 0px;
+    background: var(--dark-green);
+    color: var(--light-yellow);
 }
 
 .page-banner h1 {
+    margin-bottom: 16px;
+}
+
+.header-banner {
+    padding: 275px 0px 120px 0px;
+    color: var(--light-yellow);
+}
+
+.header-banner h1 {
     margin-bottom: 16px;
 }
 
@@ -119,6 +126,7 @@
 }
 
 .about-banner {
+  //  background: url(../assets/images/banners-images/About-page-banner.png) no-repeat;
     background-size: cover;
     object-fit: cover;
 }
@@ -128,4 +136,5 @@
         padding-top: 190px;
     }
 }
+
 /* ------ /About Banner ------ */

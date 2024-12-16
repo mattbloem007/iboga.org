@@ -44,6 +44,7 @@
 
 /* ------ /Image Break ------ */
 
+
 /* ------ About Iboga Section ------ */
 
 .about-iboga {
@@ -103,10 +104,6 @@
     margin-bottom: 16px;
 }
 
-.card-paragraphs {
-  padding-bottom: 20px;
-}
-
 
 @media screen and (max-width: 768px) {
     .vision-mission-cards .flex {
@@ -119,6 +116,18 @@
 
 /* ------ Applications Of Iboga ------ */
 
+.applications-of-iboga-banner {
+    margin-bottom: 80px;
+}
+
+.text-block {
+    margin-bottom: 80px;
+}
+
+.text-block h2 {
+    margin-bottom: 24px;
+}
+
 .application-of-iboga .section-container {
     padding: 80px 0px;
     background-color: var(--dark-green);
@@ -129,9 +138,10 @@
     align-items: center;
 }
 
-// .application-of-iboga .flex img {
-//     margin-left: -64px;
-// }
+.application-of-iboga .flex img {
+    margin-left: -64px;
+    max-width: 600px;
+}
 
 .application-of-iboga .section-inner {
     max-width: 580px;
@@ -150,6 +160,78 @@
 .application-of-iboga .section-inner p {
     margin-bottom: 36px;
 }
+
+.applications-text-block-container p,
+.applications-text-block-container h2,
+.applications-text-block-container h3,
+.applications-text-block-container h4,
+.applications-text-block-container ul,
+.applications-text-block-container ol  {
+    max-width: 1020px;
+}
+
+.text-block ul {
+    margin-top: 42px;
+    padding-left: 48px;
+}
+
+.text-block ul li {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.text-block ul li::before {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: var(--black-bg);
+    position: absolute;
+    left: -48px;
+    top: 20px;
+}
+
+.text-block ul li h3 {
+    margin-bottom: 16px;
+}
+
+.text-block .ol-title {
+    position: relative;
+    margin-left: 48px;
+}
+
+.text-block .ol-title::before {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: var(--black-bg);
+    position: absolute;
+    left: -48px;
+    top: 20px;
+}
+
+.text-block ol {
+    margin-left: 60px;
+    margin: 16px 0px 16px 60px;
+}
+
+.text-block ol li {
+    font-family: "Epilogue";
+    margin-bottom: 16px;
+    line-height: 150%;
+    font-size: 20px;
+}
+
+.dark-text-block {
+    background-color: var(--dark-green);
+    color: var(--light-yellow);
+    padding: 80px 0px;
+}
+
+.dark-text-block .ol-title::before,
+.dark-text-block ul li::before {
+    background-color: var(--light-yellow);
+}
+
 
 @media screen and (max-width: 1360px) {
     .application-of-iboga .section-inner h2 {
@@ -177,6 +259,10 @@
     .application-of-iboga .section-inner h2 {
         font-size: 36px;
     }
+
+    .text-block h3 {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -194,8 +280,8 @@
     .application-of-iboga .flex img {
         max-width: 100%;
         height: 400px;
-        // object-fit: cover;
-        // margin-bottom: 32px;
+        object-fit: cover;
+        margin-bottom: 32px;
     }
     .application-of-iboga .flex img,
     .application-of-iboga .section-inner {
@@ -230,7 +316,7 @@
 .research-media-slider .flex {
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .slider-headline {
@@ -313,7 +399,6 @@
     height: 60px;
     padding: 18px 12px;
     font-family: "Epilogue";
-    margin-right: 24px;
 }
 
 .donate-buttons-container form input::placeholder {
@@ -362,7 +447,7 @@
 /* ------ Share With Iboga CTA ------ */
 
 .share-with-us-cta-section {
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 0px 0px;
 }
 
 .share-with-us-cta-section .flex {
@@ -387,7 +472,6 @@
 }
 
 /* ------ /Share With Iboga CTA ------ */
-
 
 /* ------ Contact Section ------ */
 
@@ -975,25 +1059,6 @@ input[type="checkbox"]:checked::before {
 
 /* ========= MEDIA PAGE STYLES ========= */
 
-/* ------ Page Banner ------ */
-
-.page-banner {
-    padding: 275px 0px 120px 0px;
-    background: var(--dark-green);
-    color: var(--light-yellow);
-}
-
-.page-banner h1 {
-    margin-bottom: 16px;
-}
-
-.header-banner {
-  padding: 275px 0px 120px 0px;
-  color: var(--light-yellow);
-}
-
-/* ------ /Page Banner ------ */
-
 .media-banner p {
     max-width: 565px;
 }
@@ -1033,9 +1098,21 @@ input[type="checkbox"]:checked::before {
     color: var(--black-text);
 }
 
-.large-article img {
+.large-article-img-holder {
     max-width: 100%;
+    height: 470px;
+    position: relative;
 }
+
+.large-article img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .large-article h3 {
     font-size: 40px;
@@ -1063,6 +1140,26 @@ input[type="checkbox"]:checked::before {
     gap: 24px;
     margin-left: 24px;
     min-width: 420px;
+}
+
+.side-media .article-card .media-img-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.side-media .article-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-media h4 {
+    font-size: 25px;
+    padding-bottom: 0px;
 }
 
 .media-grouping .article-video-card {
@@ -1352,24 +1449,25 @@ input[type="checkbox"]:checked::before {
 
 /* ========= /MEDIA DETAIL ========= */
 
+
 /* ========= EDUCATION MEDIA ========= */
+
+.education-banner p {
+    max-width: 800px;
+}
 
 .share-with-us-2 {
     margin-top: 80px;
 }
 
 .share-with-us-2 .left-col {
-
     width: 600px;
     padding: 60px 48px;
+//background: url(../assets/images/section-images/share-insights-bg.png) no-repeat;
     background-size: cover;
     color: var(--white-text);
     display: flex;
     align-items: center;
-    font-size: 56px;
-    font-weight: bold;
-    font-family: 'CabinetGrotesk-med';
-
 }
 
 .share-with-us-2 .right-col {
@@ -1379,11 +1477,9 @@ input[type="checkbox"]:checked::before {
     color: var(--white-text);
 }
 
-
-
 .share-with-us-2 .share-with-us-buttons {
-    margin-top: 36px;
     display: flex;
+    margin-top: 36px;
 }
 
 .share-with-us-2 .share-with-us-buttons a {
@@ -1391,7 +1487,8 @@ input[type="checkbox"]:checked::before {
     border-color: var(--white-bg);
 }
 
-.share-with-us-2 .share-with-us-buttons a img {
+.share-with-us-2 .share-with-us-buttons a i {
+    background-color: var(--white-bg);
 }
 
 .share-with-us-2 .share-with-us-buttons a:first-child {
@@ -1451,6 +1548,7 @@ input[type="checkbox"]:checked::before {
 /* ========= CONTACT PAGE ========= */
 
 .contact-banner {
+  //  background: url(./images/banners-images/contact-banner.png);
     color: var(--white-text);
 }
 
@@ -1470,6 +1568,8 @@ input[type="checkbox"]:checked::before {
 }
 
 /* ========= /CONTACT PAGE ========= */
+
+
 /* ========= DIRECTORY APPLICATION ========= */
 
 .directory-application p,
@@ -1664,7 +1764,8 @@ form .button-secondary.upload-input-label {
 /* ========= DIRECTORY ========= */
 
 .directory-banner {
-  //  background: url(../assets/images/banners-images/directory-banner.png) no-repeatcenter/cover;
+  //  background: url(../assets/images/banners-images/directory-banner.png) no-repeat
+  //  center/cover;
     color: var(--white-text);
 }
 
@@ -1782,12 +1883,13 @@ form .button-secondary.upload-input-label {
 .ceremonial-practitioner-card .flex,
 .teacher-card .flex {
     justify-content: flex-start;
-    gap: 24px;
+    gap: 16px;
 }
 
 .ceremonial-practitioner-card h5,
 .teacher-card h5 {
     margin-bottom: 16px;
+    font-size: 20px;
 }
 
 .ceremonial-practitioner-card ul,
@@ -1804,12 +1906,18 @@ form .button-secondary.upload-input-label {
     padding: 8px;
     border-radius: 4px;
     background-color: rgba(51,131,75,0.30);
+    font-size: 12px;
 }
 
 .ceremonial-practitioner-card .approach-excerpt,
 .teacher-card .approach-excerpt {
     margin-bottom: 24px;
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .organisations-card {
@@ -1831,6 +1939,7 @@ form .button-secondary.upload-input-label {
 
 .organisations-card h5 {
     margin-bottom: 12px;
+    font-size: 20px;
 }
 
 .organisations-card ul {
@@ -1840,7 +1949,7 @@ form .button-secondary.upload-input-label {
 .organisations-card ul li {
     margin-bottom: 12px;
     position: relative;
-
+    font-size: 13px;
 }
 
 .organisations-card ul li::before {
@@ -2029,6 +2138,7 @@ form .button-secondary.upload-input-label {
 }
 
 /* ========= /PRACTITIONER ========= */
+
 /* ========= DONATE ========= */
 
 .donate-page-banner {

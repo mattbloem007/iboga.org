@@ -95,6 +95,26 @@ export const pageQuery = graphql`
          frontmatter {
            title
            description
+           useful_links {
+             title
+             slug
+           }
+           about_links {
+             title
+             slug
+           }
+           media_links {
+             title
+             slug
+           }
+           legal_links {
+             title
+             slug
+           }
+           contact_links {
+             title
+             slug
+           }
          }
      }
 
@@ -108,8 +128,8 @@ const MediaPage = ({ data }) => {
     <Layout className="page" page="library" footer={footer}>
       <Header data={frontmatter.media_banner} />
       <MediaGrouping posts={posts} />
-      <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} />
-      <SliderSection title={frontmatter.media_section3.slider2_title} info={frontmatter.media_section3.slider2_info} posts={posts} />
+      <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} link="journal-articles" />
+      <SliderSection title={frontmatter.media_section3.slider2_title} info={frontmatter.media_section3.slider2_info} posts={posts} link="books-film-and-more"/>
       <NewsletterSection title={frontmatter.media_section4.title} newsletter_title={frontmatter.media_section4.excerpt}/>
     </Layout>
   )
