@@ -9,7 +9,7 @@ header_slides:
     cta:
       ctaType: button
       ctaText: "Explore Our Directory of Experienced Guides "
-      ctaLink: /
+      ctaLink: /directory
     header_images: /assets/hero-banner-1.png
     header_image: /assets/hero-banner-1.png
   - title: <strong class="heading-bold">Learn about</strong> using Iboga
@@ -62,7 +62,7 @@ section3:
     btn: true
     btn_text: Visit Directory
     btn_type: button-secondary
-    btn_link: /about
+    btn_link: /directory
 section4:
   - cta:
       btn: false
@@ -100,7 +100,7 @@ section5:
     btn: true
     btn_text: Explore Iboga Treatments & Application
     btn_type: button-primary
-    btn_link: /
+    btn_link: /directory
 slider2:
   slider2_title: <strong class=\"heading-bold\">Research</strong> and Media
   slider2_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -113,7 +113,7 @@ section6:
     btn: true
     btn_text: Contact Us
     btn_type: button-secondary
-    btn_link: /
+    btn_link: /contact
   donate_info: Join us in expanding access to life-saving addiction treatment by
     contributing to our legal challenge fund, which supports advocacy efforts to
     reform outdated drug laws and make iboga therapy legally available to those

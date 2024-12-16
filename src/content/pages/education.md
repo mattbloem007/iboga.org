@@ -25,15 +25,15 @@ education_section3:
       btn: true
       btn_text: Submit a Journal Entry
       btn_type: button-secondary
-      btn_link: /
+      btn_link: /journal-submission
   - cta:
       btn: true
       btn_text: Apply to Speak
       btn_type: button-secondary
-      btn_link: /
+      btn_link: /conference-submission
     title: Speak at the biennial Symposium
-    excerpt: Join the conversation and become a speaker at our upcoming Summit
-      Conference. Share your expertise, experiences, and insights with a global
+    excerpt: Join the conversation and become a speaker at our upcoming Wood
+      Symposium. Share your expertise, experiences, and insights with a global
       audience. Whether you are a seasoned practitioner, researcher, or
       advocate, your voice can inspire and educate others in the Iboga
       community.
