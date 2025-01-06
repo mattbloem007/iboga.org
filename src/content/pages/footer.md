@@ -22,7 +22,11 @@ media_links:
     slug: /discussion
   - title: Blog
     slug: /discussion
-legal_links: []
+legal_links:
+  - title: Terms & Conditions
+    slug: /
+  - title: Privacy Policy
+    slug: /
 contact_links:
   - title: Contact Us
     slug: /contact
