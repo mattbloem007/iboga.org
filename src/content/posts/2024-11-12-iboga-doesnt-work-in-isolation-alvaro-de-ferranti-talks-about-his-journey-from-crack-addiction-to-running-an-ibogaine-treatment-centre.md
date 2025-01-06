@@ -1,21 +1,21 @@
 ---
 template: blog-post
 title: "\"Iboga doesn't work in isolation.\" Alvaro de Ferranti's journey from
-  crack addiction to running an ibogaine treatment centre. "
+  crack addiction to running an ibogaine centre. "
 slug: /ferrantivideo
 date: 2024-11-12 16:20
 postType:
   - Video
 video: https://www.youtube.com/embed/QJX5ypZ0eV4?si=gqEK3aUSgZ1RQ5rY
 description: Alvaro De Ferranti, a former high-functioning crack cocaine addict
-  and successful business professional in England, shares his transformative
-  journey with iboga. After initially seeking ibogaine treatment and
-  experiencing a six-month period of sobriety - matching his previous attempts
-  with luxury rehab and hypnosis - De Ferranti came to understand that iboga
-  isn't a magic solution. De Ferranti emphasizes that successful recovery
-  through iboga requires more than just the medicine itself; it demands thorough
-  preparation, clear intentions, and a committed post-treatment plan
-  incorporating daily practices, fellowship programs, and lifestyle changes.
+  and businessman in England, shares his transformative journey with iboga.
+  After initially seeking ibogaine treatment and experiencing a six-month period
+  of sobriety - matching his previous attempts with luxury rehab and hypnosis -
+  De Ferranti came to understand that iboga isn't a magic solution. De Ferranti
+  emphasizes that successful recovery through iboga requires more than just the
+  medicine itself; it demands thorough preparation, clear intentions, and a
+  committed post-treatment plan incorporating daily practices, fellowship
+  programs, and lifestyle changes.
 tags:
   - Discussion Stories and Conversations
 ---
