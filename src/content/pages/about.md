@@ -27,8 +27,7 @@ about_section2:
     excerpt: With over a decade of experience, SY has significantly contributed to
       psychedelic facilitation and education. He developed successful protocols
       for iboga...
-  - title: Editor - Jadhe
-    excerpt: Jadhe is writer, an angelic healing trainer and a shaman
+    team_image: /assets/sy-picture-1.jpg
   - title: Editor in Chief - Salvia
     excerpt: Salvia is an experienced psychonaut who first found their way to the
       wood as part of a holistic healing process. They teach languages and music
