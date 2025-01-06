@@ -107,7 +107,7 @@ section6:
     btn: true
     btn_text: Contact Us
     btn_type: button-secondary
-    btn_link: /contact/
+    btn_link: /contact
   donate_info: Join us in expanding access to life-saving addiction treatment by
     contributing to our legal challenge fund, which supports advocacy efforts to
     reform outdated drug laws and make iboga therapy legally available to those
