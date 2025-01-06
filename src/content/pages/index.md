@@ -122,7 +122,7 @@ section7:
   - cta:
       btn: true
       btn_type: button-secondary
-      btn_text: Submit a Journal
+      btn_text: Submit a journal article
       btn_link: /journal-submission
     title: Share Your Insights with Iboga.org's Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
