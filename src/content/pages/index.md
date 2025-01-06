@@ -59,7 +59,7 @@ section3:
     promoting safety and transparency in all we do. Join us in exploring the
     profound potential of iboga.
   cta:
-    btn: true
+    btn: false
     btn_text: Visit Directory
     btn_type: button-secondary
     btn_link: /directory
@@ -101,12 +101,6 @@ section5:
     btn_text: Explore Iboga Treatments & Application
     btn_type: button-primary
     btn_link: /directory
-slider2:
-  slider2_title: <strong class=\"heading-bold\">Research</strong> and Media
-  slider2_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
-  home_slider_cards2:
-    - How Iboga Can Help - Reasearch and Media
 section6:
   donate_title: <strong className="heading-bold">Donate</strong> to the Legal Challenge Fund
   cta:
@@ -118,6 +112,12 @@ section6:
     contributing to our legal challenge fund, which supports advocacy efforts to
     reform outdated drug laws and make iboga therapy legally available to those
     who need it most.
+slider2:
+  slider2_title: <strong class=\"heading-bold\">Research</strong> and Media
+  slider2_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore.
+  home_slider_cards2:
+    - How Iboga Can Help - Reasearch and Media
 section7:
   - cta:
       btn: true
