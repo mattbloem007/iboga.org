@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import ChevronIcon from "../assets/vectors/Vector6_x2.svg"
+
 
 const LanguagePicker = () => {
 
+  const [ clicked, setClicked ] = useState(false);
+
+  const handlePicker = () => {
+    setClicked(!clicked)
+  }
+
   return (
-    <div class="language-picker">
+    <div class={`language-picker ${clicked ? "active" : ""}`} onClick={() => handlePicker()}>
         <div class="visible-choice" data-language-code="EN">
             EN <img className="icon down-arrow" src={ChevronIcon} />
         </div>

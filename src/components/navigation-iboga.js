@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby"
-import { isMobile } from 'react-device-detect'
+//import { isMobile, isTablet } from 'react-device-detect'
 import Logo from "./logo"
 import NavMenu from './navMenu'
 import MenuButtons from './menuButtons'
@@ -24,6 +24,8 @@ const NavBar = ({page}) => {
   const { site } = useStaticQuery(query)
   const { siteTitle } = site.siteMetadata
   console.log("PAGE", page)
+  const [isMobile, setIsMobile] = useState(false)
+
   let greenNav = false
   if (page == "Article") {
     greenNav = true
@@ -34,7 +36,20 @@ const NavBar = ({page}) => {
       window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 10)
       })
+      window.addEventListener("resize", handleResize)
   }, [])
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true)
+    } else if (window.innerWidth >= 720 && window.innerWidth <= 1192){
+        setIsMobile(true)
+    }
+    else {
+      setIsMobile(false)
+    }
+  }
 
   if (isMobile) {
     console.log("IN MOBILE")
@@ -45,7 +60,7 @@ const NavBar = ({page}) => {
   else {
     return (
       !scroll ?
-        <div className={greenNav ? 'navigation navigation-bg-color' : 'navigation'}>
+        <nav className={greenNav ? 'navigation navigation-bg-color' : 'navigation'}>
           <div className="nav-top-row">
             <div className="max-width">
               <div className="flex nav-top-row-flex">
@@ -61,7 +76,7 @@ const NavBar = ({page}) => {
           <div class="margin-left-width">
               <div class="line"></div>
           </div>
-        </div>
+        </nav>
         :
         <div className="scrolling-navigation active">
           <div className="max-width-scroll">

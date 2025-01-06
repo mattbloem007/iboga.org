@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import Send from '../../../assets/vectors/send.svg'
+import SendWhite from '../../../assets/vectors/send-white.svg'
 import Chevron from '../../../assets/vectors/chevron.svg'
 
 const ContactForm = ({ data }) => {
 
   const [dropdown, setDropDown] = useState(false)
+  const [hover, setHover] = useState(false)
   const [option, setOption] = useState('Reason for contacting us...')
 
   const configureDropDown = () => {
@@ -14,6 +16,14 @@ const ContactForm = ({ data }) => {
   const setReasonToContact = (e) => {
     setOption(e.reason)
     configureDropDown()
+  }
+
+  const handleHover = () => {
+    setHover(true)
+  }
+
+  const handleHoverLeave = () => {
+    setHover(false)
   }
 
   return (
@@ -73,7 +83,7 @@ const ContactForm = ({ data }) => {
                          </div>
 
                          <div className="form-row">
-                             <button className="button-secondary">Send Message <img className="icon send-icon" src={Send}></img></button>
+                             <button className="button-secondary" onMouseEnter={() => handleHover()} onMouseLeave={() => handleHoverLeave()}>Send Message {hover ? <img className="icon send-icon" src={SendWhite}></img> : <img className="icon send-icon" src={Send}></img>}</button>
                          </div>
 
                      </form>

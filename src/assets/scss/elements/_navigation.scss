@@ -102,6 +102,8 @@
 .language-picker .visible-choice img {
     // background-color: var(--white-bg);
     margin-left: 4px;
+    height: 10px;
+
 }
 
 .language-picker ul {
@@ -145,11 +147,14 @@
 
 .nav-bottom-row .nav-links {
     display: flex;
-    padding: 24px 0px;
+    padding: 11px 0px 1px 0px;
 }
 
 .nav-bottom-row .nav-links li {
     margin-right: 47px;
+    margin-left: unset;
+    margin-bottom: 10px;
+
 }
 
 .nav-bottom-row .nav-links li a {
@@ -411,7 +416,7 @@
 }
 
 .mobile-nav-links ul li {
-    padding: 22px 0px;
+    padding: 15px 0px;
     border-bottom: 1px solid rgba(000,000,000,0.20);
 }
 

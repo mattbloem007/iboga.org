@@ -72,13 +72,13 @@ return (
                     <li><a href="/about" onClick={() => toggleLinks()}>About</a></li>
                     <li><a href="/directory" onClick={() => toggleLinks()}>Directory</a></li>
                     <li><a href="/library" onClick={() => toggleLinks()}>Library</a></li>
-                    <li><a href="/education" onClick={() => toggleLinks()}>Education</a></li>
+                    <li><a href="/discussion" onClick={() => toggleLinks()}>Discussion</a></li>
                     <li><a href="/contact" onClick={() => toggleLinks()}>Contact Us</a></li>
                 </ul>
                 <div class="important-links">
                     <a href="" class="button-secondary">Donate <img class="icon money-icon" src={MoneyIcon}></img></a>
                     <div class="flex">
-                        <a href="" class="button-primary">Apply to Directory <img class="icon apply-icon" src={DirectoryIcon}></img></a>
+                        <a href="" class="button-primary">Apply to Directory <img class="icon apply-icon" style={{height: "18px"}} src={DirectoryIcon}></img></a>
                         <div class="language-picker">
                             <div class="visible-choice" data-language-code="EN">
                                 EN <img class="icon chevron-icon" src={ChevronIcon}></img>

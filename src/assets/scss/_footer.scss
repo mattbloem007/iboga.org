@@ -23,11 +23,20 @@ footer .flex {
     margin-bottom: 28px;
 }
 
+
+
 footer h6 {
     font-family: "Epilogue";
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 16px;
+}
+
+.footer-link-col li a {
+    font-family: "Epilogue";
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black-text);
 }
 
 .footer-right-col {

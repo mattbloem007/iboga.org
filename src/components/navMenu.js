@@ -20,7 +20,7 @@ const NavMenu = ({scroll, page}) => (
           <a href="/discussion" class={page == "discussion" ? "active-page" : ''}>Discussion</a>
         </li>
         <li>
-          <a href="/contact" class={page == "contact" ? "active-page" : ''}>Contact Us</a>
+          <a href="/contact" class={page == "contact" ? "active-page" : ''}>Contact</a>
         </li>
       </ul>
       :
@@ -30,7 +30,7 @@ const NavMenu = ({scroll, page}) => (
         <li><a href="/directory">Directory</a></li>
         <li><a href="/library">Library</a></li>
         <li><a href="/discussion">Discussion</a></li>
-        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     }
     </div>

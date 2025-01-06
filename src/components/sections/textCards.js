@@ -13,10 +13,10 @@ const TextCards = ({data, cta}) => {
               return (
                   <div className="vision-mission-card">
                       <h4>{info.title}</h4>
-                      <p className="card-paragraphs">
+                      <p>
                         {info.excerpt}
                       </p>
-                      {info.cta && <a href={info.cta.btn_link} class={info.cta.btn_type}>{info.cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>}
+                      {info.cta && info.cta.btn_text.length > 0 && <a href={info.cta.btn_link} class={info.cta.btn_type}>{info.cta.btn_text} <img src="icon arrow-icon" src={blackArrow}></img></a>}
                   </div>
               )
             })

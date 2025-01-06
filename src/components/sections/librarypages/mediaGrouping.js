@@ -12,7 +12,7 @@ const MediaGrouping = ({posts}) => {
             <LargeArticleItem post={posts.edges[0]} />
             <div class="side-media">
             {posts && posts.edges.map((post, index) => {
-              if (index >= 1 && index < posts.edges.length) {
+              if (index >= 1 && index <= 2) {
                 console.log("POSTS", post)
                 return (
 

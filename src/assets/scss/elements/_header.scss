@@ -16,7 +16,7 @@
     margin-top: 32px;
 }
 
-.hero-content-slide-1 {
+.hero-content-slide {
   //  background: url(./images/banners-images/hero-banner-1.png) center center no-repeat;
     background-size: cover;
 }
@@ -25,7 +25,7 @@
     max-width: 760px;
 }
 
-.hero-content-slide-1 p {
+.hero-content-slide p {
     max-width: 511px;
 }
 
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 992px) {
     .hero-slide {
-        height: 690px;
+        height: 560px;
         padding: 190px 0px 0px 0px;
     }
 }

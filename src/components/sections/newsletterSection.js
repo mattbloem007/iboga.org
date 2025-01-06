@@ -41,7 +41,7 @@ const NewsletterSection = ({ title, newsletter_title }) => {
                       <label for="">Email Address</label>
                       <input type="text" />
                   </div>
-                  <div className="form-row">
+                  <div className="form-row-check">
                       <div className="custom-checkbox">
                           <label className="custom-checkbox" for="newsletter-agreement">
                           <input type="checkbox" name="newsletter-agreement" id="newsletter-agreement"/>
