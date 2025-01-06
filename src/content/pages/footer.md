@@ -15,25 +15,15 @@ useful_links:
 about_links:
   - title: About Iboga.org
     slug: /about
-  - title: What is Iboga
-    slug: /
 media_links:
   - title: Research
-    slug: /
+    slug: /library
   - title: Podcast
-    slug: /
+    slug: /discussion
   - title: Blog
-    slug: /
-legal_links:
-  - title: Terms & Conditions
-    slug: /
-  - title: Privacy Policy
-    slug: /
+    slug: /discussion
+legal_links: []
 contact_links:
   - title: Contact Us
     slug: /contact
-  - title: Newsletter
-    slug: /
-  - title: Donate
-    slug: /
 ---
