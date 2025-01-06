@@ -98,7 +98,7 @@ section5:
   image: /assets/iboga-applications-section-image.png
   cta:
     btn: true
-    btn_text: Explore Iboga Treatments & Application
+    btn_text: Explore Iboga Treatments
     btn_type: button-primary
     btn_link: /directory
 section6:
