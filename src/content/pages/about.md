@@ -70,22 +70,36 @@ about_section4:
     supporting those seeking informed pathways to iboga.
 
 
+
+
     My journey with iboga began after witnessing the Iboga panel at the 2013 Khanyisa Conference at WITS university.  After a personal transformative experience with ibogaine, I was drawn to working with the rootbark itself.  With a background in spiritual practice, I approached iboga as a teacher, working with it through both flood doses and microdosing.  These experiences deepened my connection, even guiding me into completing training as a Sangoma.
+
+
 
 
     A difficult childhood and challenging early adulthood experiences left lasting scars.  While traditional spiritual practices had offered valuable tools, iboga brought a miraculous level of repair. It was as if we traveled back in time to mend those original wounds, transforming my life in unimaginable ways.
 
 
+
+
     Witnessing the transformation I was undergoing led to curiosity in my friends and community who desired to know more and experience firsthand this medicine, and so I was called into serving ceremony and supplying the wood.  Since beginning service in 2014, I have supported more than 250 people through iboga flood experiences and guided over 500 people through 7-week microdosing programs.
+
+
 
 
     My approach has transformed over time. What began as one-on-one, low-dose work has evolved into a collaborative model.  I'm honored to serve alongside my wife, herself a profound medicine woman and teacher, supported by our students and those seeking to study our protocols and approach to iboga.
 
 
+
+
     Initially, I intended the Iboga.org domain to support sustainable sourcing and supply. However, my years of serving the community, coupled with the growing interest in iboga through scientific studies, podcasts, and documentaries, highlighted the pressing need for a broader information platform.
 
 
+
+
     Over the past three years, I've had the privilege of connecting with others who share a similar mission of responsible knowledge-sharing and advocacy around iboga.  Together, we are entering a new era for Iboga.org.  Our expanded vision is to create a truly global, collaborative resource,  guided by the principles of integrity, inclusivity, and respect for this extraordinary medicine.
+
+
 
 
     While I am involved in a commercial venture focusing on iboga (Mpande Ethnomedicine), I am committed to ensuring Iboga.org operates with full editorial independence.  We strive for transparency about how my work may intersect with this informational resource.
