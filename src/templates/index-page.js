@@ -147,7 +147,10 @@ export const pageQuery = graphql`
 
         section8 {
           title
-          newsletter_title,
+          newsletter_title
+          reasons_form {
+            reason
+          }
         }
       }
     }
@@ -163,6 +166,8 @@ export const pageQuery = graphql`
          frontmatter {
            title
            slug
+           postType
+           video
            description
            tags
            featuredImage {
@@ -245,7 +250,7 @@ const HomePage = ({ data }) => {
       {/**<SliderSection title={frontmatter.slider2.slider2_title} info={frontmatter.slider2.slider2_info} posts={researchPosts} link='/library'/>*/}
       <TextCards data={frontmatter.section7} />
       <Donate data={frontmatter.section6}/>
-      <ContactSection title={frontmatter.section8.title} newsletter_title={frontmatter.section8.newsletter_title}/>
+      <ContactSection title={frontmatter.section8.title} newsletter_title={frontmatter.section8.newsletter_title} reasons={frontmatter.section8.reasons_form}/>
     </Layout>
   )
 }

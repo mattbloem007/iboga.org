@@ -1,12 +1,13 @@
 
 import React, { useState } from "react"
 import bgImage from '../../assets/vectors/section-images/donate-section-img.png'
-import send from '../../assets/vectors/send.svg'
-import sendWhite from '../../assets/vectors/send-white.svg'
+import Send from '../../assets/vectors/send.svg'
+import SendWhite from '../../assets/vectors/send-white.svg'
 import chev from '../../assets/vectors/chevron.svg'
 
-const ContactSection = ({ title, newsletter_title }) => {
+const ContactSection = ({ title, newsletter_title, reasons }) => {
   const [dropdown, setDropDown] = useState(false)
+  const [hover, setHover] = useState(false)
   const [option, setOption] = useState('Reason for contacting us...')
   const myValues = [
       {display: "This is a placeholder reason for contacting...", value: "This is a placeholder reason for contacting..."},
@@ -20,8 +21,16 @@ const ContactSection = ({ title, newsletter_title }) => {
   }
 
   const setReasonToContact = (e) => {
-    setOption(e.value)
+    setOption(e.reason)
     configureDropDown()
+  }
+
+  const handleHover = () => {
+    setHover(true)
+  }
+
+  const handleHoverLeave = () => {
+    setHover(false)
   }
 
   return (
@@ -57,8 +66,8 @@ const ContactSection = ({ title, newsletter_title }) => {
                                 {option} <img className="icon chevron-icon" src={chev}></img>
                             </div>
                             <ul className={dropdown ? "active" : ""}>
-                                {myValues.map(
-                                  (value, i) => (<li onClick={ () => setReasonToContact(value) } key={i} >{value.display}</li>)
+                                {reasons.map(
+                                  (value, i) => (<li onClick={ () => setReasonToContact(value) } key={i} >{value.reason}</li>)
                                 )}
                             </ul>
                             <input type="text" className="dropdown-input" hidden="" />
@@ -80,7 +89,7 @@ const ContactSection = ({ title, newsletter_title }) => {
                     </div>
 
                     <div className="form-row">
-                        <button className="button-secondary">Send Message <img className="icon send-icon" src={send}></img></button>
+                      <button className="button-secondary" onMouseEnter={() => handleHover()} onMouseLeave={() => handleHoverLeave()}>Send Message {hover ? <img className="icon send-icon" src={SendWhite}></img> : <img className="icon send-icon" src={Send}></img>}</button>
                     </div>
 
                 </form>
@@ -102,7 +111,7 @@ const ContactSection = ({ title, newsletter_title }) => {
                         </div>
                     </div>
                     <div className="form-row">
-                        <button className="button-primary">Subscribe <img className="icon send-icon" src={sendWhite}></img></button>
+                      <button className="button-secondary">Send Message <img className="icon send-icon" src={SendWhite}></img></button>
                     </div>
                 </form>
             </div>

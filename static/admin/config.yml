@@ -476,6 +476,15 @@ collections:
                   name: newsletter_title,
                   widget: string
                 }
+              - label: "Reasons for Contacting (Select on Form)"
+                name: "reasons_form"
+                label_singular: "Reason/Subject"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - label: "Reason"
+                    name: "reason"
+                    widget: "string"
 
       - label: "About"
         name: "about"
