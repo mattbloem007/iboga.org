@@ -8,7 +8,7 @@ header_slides:
       personal transformation, spiritual wisdom, and finding your true purpose.
     cta:
       ctaType: button
-      ctaText: "Explore Our Directory of Experienced Guides "
+      ctaText: Find an Experienced Guide
       ctaLink: /directory
     header_images: /assets/hero-banner-1.png
     header_image: /assets/hero-banner-1.png
@@ -17,7 +17,7 @@ header_slides:
     header_image: /assets/hero-banner-2.png
     cta:
       ctaType: button
-      ctaText: Read personal accounts of people's experiences with iboga
+      ctaText: Read firsthand accounts
       ctaLink: /discussion
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
@@ -25,7 +25,7 @@ header_slides:
     header_image: /assets/hero-banner-3.png
     cta:
       ctaType: button
-      ctaText: Read reviews of scientific journal articles
+      ctaText: Read journal article reviews
       ctaLink: /library
 section1:
   section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent
