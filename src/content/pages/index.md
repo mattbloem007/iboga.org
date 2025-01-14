@@ -124,7 +124,7 @@ section7:
       btn_type: button-secondary
       btn_text: Submit a journal article
       btn_link: /journal-submission
-    title: Share Your Insights with Iboga.org's Journal
+    title: Submit your work to our Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
