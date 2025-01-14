@@ -17,7 +17,7 @@ header_slides:
     header_image: /assets/hero-banner-2.png
     cta:
       ctaType: button
-      ctaText: Read firsthand accounts
+      ctaText: Read first-hand accounts
       ctaLink: /discussion
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
