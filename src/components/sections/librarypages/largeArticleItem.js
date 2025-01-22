@@ -29,12 +29,12 @@ const LargeArticleItem = ({post}) => {
                 <p className="p-small">
                     {post.node.frontmatter.description}
                 </p>
-                <div class="article-button-container">
+                {/**<div class="article-button-container">
                     <div class="article-button">Read More Stories</div>
                     <div class="article-icon">
                         <img className="icon arrow-icon" src={arrow}></img>
                     </div>
-                </div>
+                </div>*/}
             </a>
         </div>
       )
@@ -48,12 +48,12 @@ const LargeArticleItem = ({post}) => {
                 <p className="p-small">
                     {post.node.frontmatter.description}
                 </p>
-                <div class="article-button-container">
+                {/**<div class="article-button-container">
                     <div class="article-button">Read More Stories</div>
                     <div class="article-icon">
                         <img className="icon arrow-icon" src={arrow}></img>
                     </div>
-                </div>
+                </div>*/}
             </a>
         </div>
       )
@@ -67,12 +67,12 @@ const LargeArticleItem = ({post}) => {
                 <p className="p-small">
                     {post.node.frontmatter.description}
                 </p>
-                <div class="article-button-container">
+                {/**<div class="article-button-container">
                     <div class="article-button">Read More Stories</div>
                     <div class="article-icon">
                         <img className="icon arrow-icon" src={arrow}></img>
                     </div>
-                </div>
+                </div>*/}
             </a>
         </div>
       )

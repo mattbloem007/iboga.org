@@ -9,7 +9,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
 
-const Header = ({ children, page, data }) => {
+const Header = ({ children, page, data, sizing }) => {
 
   var settings = {
     draggable: true,
@@ -47,7 +47,7 @@ const Header = ({ children, page, data }) => {
   const HeaderData = data
   const headerImage = HeaderData.header_image
   let image, backgroundImage;
-  console.log("Header", HeaderData.header_image)
+  console.log("page", page)
   if (HeaderData.length) {
     return (
       <Slider className="hero-slider-container" {...settings}>
@@ -109,23 +109,45 @@ const Header = ({ children, page, data }) => {
   else if (HeaderData.header_image === undefined) {
     let newExcerpt = HeaderData.excerpt.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
     console.log("EDITIED", newExcerpt)
-    return (
-      <div className="hero-slider-container">
-      <section class="page-banner media-banner">
-          <div class="max-width">
-          {HeaderData.subtitle ? <h4 dangerouslySetInnerHTML={{ __html: HeaderData.subtitle }}></h4> : <div></div>}
-              <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
-              <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
-              {/**<form action="" class="content-search">
-                  <input type="text" placeholder="Search Media..." />
-                  <button>
-                      <img className="icon search-icon" src={SearchIcon} />
-                  </button>
-              </form>*/}
-          </div>
-      </section>
-      </div>
-    )
+
+    if(page == "donate") {
+      return (
+        <div className="hero-slider-container">
+        <section class="page-banner donate-page-banner">
+            <div class="max-width">
+            {HeaderData.subtitle ? <h4 dangerouslySetInnerHTML={{ __html: HeaderData.subtitle }}></h4> : <div></div>}
+                <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
+  {              sizing ? <p style={{maxWidth: "622px"}} dangerouslySetInnerHTML={{ __html: newExcerpt }}></p> : <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
+  }              {/**<form action="" class="content-search">
+                    <input type="text" placeholder="Search Media..." />
+                    <button>
+                        <img className="icon search-icon" src={SearchIcon} />
+                    </button>
+                </form>*/}
+            </div>
+        </section>
+        </div>
+      )
+    }
+    else {
+      return (
+        <div className="hero-slider-container">
+        <section class="page-banner media-banner">
+            <div class="max-width">
+            {HeaderData.subtitle ? <h4 dangerouslySetInnerHTML={{ __html: HeaderData.subtitle }}></h4> : <div></div>}
+                <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
+  {              sizing ? <p style={{maxWidth: "622px"}} dangerouslySetInnerHTML={{ __html: newExcerpt }}></p> : <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>
+  }              {/**<form action="" class="content-search">
+                    <input type="text" placeholder="Search Media..." />
+                    <button>
+                        <img className="icon search-icon" src={SearchIcon} />
+                    </button>
+                </form>*/}
+            </div>
+        </section>
+        </div>
+      )
+    }
   }
 
 

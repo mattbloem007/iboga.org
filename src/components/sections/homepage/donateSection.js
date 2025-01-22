@@ -20,12 +20,20 @@ const Donate = ({ data }) => {
                     <p>
                         {data.donate_info}
                     </p>
-                    <div className="donate-buttons-container">
-                        <a href="/contact" className="button-secondary">Contact Us <img className="icon send-icon" src={arrow}></img></a>
-                        <div className="donate-btn1">
+                    <div class="donate-buttons-container">
+                        <div>
                             <form action="">
-                                <input type="text" placeholder="$ 100" />
-                                <button className="button-primary">Donate <img className="icon money-icon" src={dollar}></img></button>
+                                <div class="form-row">
+                                    <div class="flex">
+                                        <a href="" class="button-secondary">Contact Us</a>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="flex">
+                                        <input type="text" placeholder="R 100" />
+                                        <button className="button-primary">Donate <i className="icon money-icon" style={{marginLeft: "10px"}}>BTC</i></button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>

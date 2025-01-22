@@ -84,7 +84,6 @@ const NavBar = ({page}) => {
               <Logo title={siteTitle} />
               <div className="scroll-nav-content">
                 <NavMenu scroll={scroll} page={page}/>
-                <SearchNavBar />
               </div>
               <LanguagePicker />
             </div>

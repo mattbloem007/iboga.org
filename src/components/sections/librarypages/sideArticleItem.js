@@ -23,7 +23,7 @@ const SideArticleItem = ({post}) => {
         alt={post.node.frontmatter.title + " - Featured image"}/>
       }
           <h3>{post.node.frontmatter.title}</h3>
-          <p className="p-small">
+          {/**<p className="p-small">
               {post.node.frontmatter.description}
           </p>
           <div class="article-button-container">
@@ -31,7 +31,7 @@ const SideArticleItem = ({post}) => {
               <div class="article-icon">
                   <img className="icon arrow-icon" src={arrow}></img>
               </div>
-          </div>
+          </div>*/}
       </a>
     )
   }
@@ -54,9 +54,9 @@ const SideArticleItem = ({post}) => {
           </div>
           <div class="article-card-inner">
               <h5>{post.node.frontmatter.title}</h5>
-              <p class="p-small">
+              {/**<p class="p-small">
                   {post.node.frontmatter.description}
-              </p>
+              </p>*/}
           </div>
       </a>
     )

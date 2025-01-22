@@ -1060,6 +1060,163 @@ collections:
                   widget: string
                 }
 
+
+      - label: "Donate"
+        name: "donate"
+        file: "src/content/pages/donate.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "string",
+              default: "donate-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "string",
+              default: "/donate",
+            }
+          - label: "Donate Banner"
+            name: "donate_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
+          - label: 'Text Block (Section 1)'
+            name: donate_section1
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Title',
+                  name: title,
+                  widget: string
+                }
+              - {
+                  label: 'Subtitle',
+                  name: subtitle,
+                  widget: string
+                }
+              - {
+                  label: 'List Title',
+                  name: list_title,
+                  widget: string
+                }
+              - label: 'List'
+                name: list
+                label_singular: 'List item'
+                widget: 'list'
+                collapsed: true
+                fields:
+                  - label: "List item"
+                    name: "list_item"
+                    widget: "string"
+              - {
+                  label: "Important Note",
+                  name: "disclaimer",
+                  widget: 'string'
+                }
+
+          - label: 'Text Block Dark(Section 2)'
+            name: donate_section2
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Title',
+                  name: title,
+                  widget: string
+                }
+              - label: 'List'
+                name: list
+                label_singular: 'List item'
+                widget: "list"
+                collapsed: true
+                fields:
+                  - label: "List item"
+                    name: "list_item"
+                    widget: "string"
+
+              - {
+                  label: "How you can help Title",
+                  name: "how_you_can_help_title",
+                  widget: "string"
+                }
+              - label: "How you can help List"
+                name: "how_you_can_help"
+                label_singular: 'List item'
+                widget: 'list'
+                collapsed: true
+                fields:
+                  - label: "List item"
+                    name: "list_item"
+                    widget: "string"
+
+              - label: "Title and Paragraphs"
+                name: "title_and_paragraphs"
+                label_singular: 'title_and_paragraph'
+                widget: 'list'
+                collapsed: true
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Paragraph"
+                    name: "paragraph"
+                    widget: "string"
+
+          - label: "Disclaimer section"
+            name: "donate_section3"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Paragraph"
+                name: "paragraph"
+                widget: "string"
+
+          - label: "Contact"
+            name: "donate_contact_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Reasons for Contacting (Select on Form)"
+                name: "reasons_form"
+                label_singular: "Reason/Subject"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - label: "Reason"
+                    name: "reason"
+                    widget: "string"
+
+          - label: 'Donate Section'
+            name: donate_section
+            widget: 'object'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Title',
+                  name: donate_title,
+                  widget: string
+                }
+              - {
+                  label: 'Info',
+                  name: donate_info,
+                  widget: string
+                }
+
       - label: "Footer"
         name: "footer"
         file: "src/content/pages/footer.md"

@@ -107,7 +107,7 @@ const ArticlePage = ({ data }) => {
           <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}>
           </div>
       </div>
-      <NewsletterSection title="Join our Newsletter to receive important updates" newsletter_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."/>
+      <NewsletterSection title="Newsletter" newsletter_title="Sign up to our newsletter to receive regular updates about the latest iboga research, news from the community, and more."/>
     </Layout>
   )
 }

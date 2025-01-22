@@ -126,7 +126,7 @@ const MediaPage = ({ data }) => {
 
   return (
     <Layout className="page" page="library" footer={footer}>
-      <Header data={frontmatter.media_banner} />
+      <Header data={frontmatter.media_banner} sizing={true}/>
       <MediaGrouping posts={posts} />
       <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} link="journal-articles" />
       <SliderSection title={frontmatter.media_section3.slider2_title} info={frontmatter.media_section3.slider2_info} posts={posts} link="books-film-and-more"/>

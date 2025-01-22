@@ -105,7 +105,7 @@ const EducationPage = ({ data }) => {
 
   return (
     <Layout className="page" page="discussion" footer={footer}>
-      <Header data={frontmatter.education_banner} />
+      <Header data={frontmatter.education_banner} sizing={false} />
       <ShareWithUs data={frontmatter.education_section1} />
       <MediaGrouping posts={posts} />
       <SliderSection title={frontmatter.education_section2.slider1_title} info={frontmatter.education_section2.slider1_info} posts={posts} />

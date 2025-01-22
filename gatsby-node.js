@@ -64,7 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   let blogPostsCount = 0
 
   posts.forEach((post, index) => {
-
+    console.log("Templates", post.node.frontmatter.template)
     const id = post.node.id
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
@@ -95,13 +95,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   libraryPages.edges.forEach((libraryPage, index) => {
-    console.log("Library page", libraryPage)
     const id = libraryPage.node.id
     const template = libraryPage.node.frontmatter.template
     const title = libraryPage.node.frontmatter.title
     const slug = libraryPage.node.frontmatter.slug
-
-    console.log("TITLE", title)
 
     createPage({
       path: `/library/${slug}`,
