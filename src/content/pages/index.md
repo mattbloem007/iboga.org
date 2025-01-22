@@ -8,7 +8,7 @@ header_slides:
       personal transformation, spiritual wisdom, and finding your true purpose.
     cta:
       ctaType: button
-      ctaText: "Explore Our Directory of Experienced Guides "
+      ctaText: Find an Experienced Guide
       ctaLink: /directory
     header_images: /assets/hero-banner-1.png
     header_image: /assets/hero-banner-1.png
@@ -17,7 +17,7 @@ header_slides:
     header_image: /assets/hero-banner-2.png
     cta:
       ctaType: button
-      ctaText: Read personal accounts of people's experiences with iboga
+      ctaText: Read first-hand accounts
       ctaLink: /discussion
   - title: <strong class="heading-bold">Find</strong> resources
     excerpt: Learn about the Holy Wood from Traditional Animist, Biomedical and
@@ -25,7 +25,7 @@ header_slides:
     header_image: /assets/hero-banner-3.png
     cta:
       ctaType: button
-      ctaText: Read reviews of scientific journal articles
+      ctaText: Read journal article reviews
       ctaLink: /library
 section1:
   section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent
@@ -124,7 +124,7 @@ section7:
       btn_type: button-secondary
       btn_text: Submit a journal article
       btn_link: /journal-submission
-    title: Share Your Insights with Iboga.org's Journal
+    title: Submit your work to our Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
