@@ -10,7 +10,7 @@ const MenuButtons = ({scroll}) => {
     <div class="nav-top-right-col">
         <div class="flex">
             {/**<SearchNavBar />*/}
-            <a href="" class="button-secondary">Donate <img className="icon money-icon" src={MoneyIcon} /></a>
+            <a href="/donate" class="button-secondary">Donate <img className="icon money-icon" src={MoneyIcon} /></a>
             <a href="" class="button-primary directory-btn">Apply to Directory <img className="icon apply-to-directory-icon" src={DirectoryIcon} /></a>
             <LanguagePicker />
         </div>
