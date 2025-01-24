@@ -560,6 +560,78 @@ form input:focus {
     width: 456px;
 }
 
+/* ========= Contact ========= */
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+    label {
+      font-family: "Epilogue";
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    input ,
+    textarea {
+      display: inline-flex;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      font-size: 20px;
+      font-family: "Epilogue";
+      padding: 0px 15px;
+      border: 1px solid var(--black-bg);
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 15px;
+      font-size: 20px;
+      font-family: "Epilogue";
+      border: 1px solid var(--black-bg);
+    }
+    .error {
+        color: #f10;
+        display: inline-block;
+        font-family: "Epilogue";
+        left: 0px;
+        bottom: -26px;
+        font-size: 12px;
+    }
+}
+.form-submit {
+    button {
+        &.rn-button {
+            width: 100%;
+        }
+    }
+}
+
+.form-group input:focus ~ label,
+.form-group.has-value label {
+    top: -14px;
+}
+
+.form-group textarea:focus ~ label{
+    top: -14px;
+}
+
+
+.form-output {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.714;
+    &.success {
+        color: rgb(40, 167, 69);
+    }
+    &.error {
+        color: #f10;
+    }
+}
+
+/* ======== /Contact =========== */
+
 
 /* --- CUSTOM DROPDOWN --- */
 

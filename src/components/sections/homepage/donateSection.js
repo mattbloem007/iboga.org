@@ -2,7 +2,7 @@
 import React from "react"
 import bgImage from '../../../assets/vectors/section-images/donate-section-img.png'
 import arrow from '../../../assets/vectors/arrow-icon.svg'
-import dollar from '../../../assets/vectors/MoneyIcon_x2.svg'
+import bitcoin from '../../../assets/vectors/bitcoin.svg'
 
 const Donate = ({ data }) => {
 
@@ -30,9 +30,15 @@ const Donate = ({ data }) => {
                                 </div>
                                 <div class="form-row">
                                     <div class="flex">
-                                        <input type="text" placeholder="R 100" />
-                                        <button className="button-primary">Donate <i className="icon money-icon" style={{marginLeft: "10px"}}>BTC</i></button>
-                                    </div>
+                                        {/**<input type="text" placeholder="R 100" />*/}
+                                        <button className="button-primary" style={{marginRight: "10px"}} onClick={() => {
+                                          navigator.clipboard.writeText("3NhdewdQaWdXyRcfgqfBw7SsxhPjKbrQAS")
+                                          alert("Legal Fund Bitcoin address copied to clipboard")
+                                        }}>Donate to legal aid fund <img className="icon bitcoin-icon" src={bitcoin}></img></button>
+                                        <button className="button-primary" onClick={() => {
+                                          navigator.clipboard.writeText("3LYGbxJYF9LJPvsdQe6N7z8GYrgfmviLJv")
+                                          alert("Our platform Bitcoin address copied to clipboard")
+                                        }}>Donate to our platform <img className="icon bitcoin-icon" src={bitcoin}></img></button>                                     </div>
                                 </div>
                             </form>
                         </div>
