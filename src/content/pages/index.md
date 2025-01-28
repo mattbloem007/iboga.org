@@ -28,15 +28,15 @@ header_slides:
       ctaText: Read journal article reviews
       ctaLink: /library
 section1:
-  section1_paragraph: "What is Iboga? Indigenously, it is the Holy Wood: an agent
-    of deep initiation and transformation.  In treatment, its alkaloids are the
+  section1_paragraph: "Indigenously, iboga is the Holy Wood: an agent of deep
+    initiation and transformation.  In treatment, its alkaloids are the
     addiction cure which not only interrupts your withdrawals but also helps you
     deal with the roots of your trauma. In medical science, it is one of the few
     compounds discovered which can regenerate the brain, making it potentially
     life saving.  This small shrub from the African rainforest contains within
-    its rootbark true magic - not only for healing, but for realignment and
+    its rootbark true magic - not only for healing, but for the realignment and
     reconnection of our lives."
-  section1_title: <strong class=\"heading-bold\">What</strong> Is Iboga
+  section1_title: <strong class=\"heading-bold\">What</strong> Is Iboga?
   cta:
     btn: false
     btn_text: ""
