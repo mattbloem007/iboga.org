@@ -55,6 +55,8 @@ donate_contact_section:
     - reason: This is a placeholder reason for contacting...
 donate_section:
   donate_title: Donate to the Legal Challenge Fund
-  donate_info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  donate_info: Join us in expanding access to life-saving addiction treatment by
+    contributing to our legal challenge fund, which supports advocacy efforts to
+    reform outdated drug laws and make iboga therapy legally available to those
+    who need it most.
 ---
