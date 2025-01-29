@@ -85,7 +85,7 @@ const NavBar = ({page}) => {
               <div className="scroll-nav-content">
                 <NavMenu scroll={scroll} page={page}/>
               </div>
-              <LanguagePicker />
+              {/**<LanguagePicker />*/}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Markdown from 'react-markdown'
 
 
 const OurStory = ({data}) => {
@@ -10,7 +11,7 @@ const OurStory = ({data}) => {
             <div class="story-content">
                 <h2>{data.title}</h2>
                 <h3>{data.subtitle}</h3>
-                <p dangerouslySetInnerHTML={{__html: data.paragraph}} />
+                <Markdown>{data.paragraph}</Markdown>
             </div>
             <div class="our-story-image">
             <GatsbyImage

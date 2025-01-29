@@ -63,36 +63,36 @@ const SliderTeam = ({ data }) => {
         <div className="margin-left-width">
         <Slider classNameName="our-team-slider" {...settings} ref={slider => { sliderRef = slider; }}>
         {data && data.map((team, i) => {
+          console.log("team", team)
           image = getImage(team.team_image)
           backgroundImage= convertToBgImage(image)
           if (team.team_image){
             return (
-              <BackgroundImage
-                 Tag="div"
-                 {...backgroundImage}
-                 preserveStackingContext
-               >
-              <div class="team-card-holder">
-                <div class="team-member-box" id={i} style={{background: "none"}}>
-                    <h3>{team.title}</h3>
-                    <p className="p-small">{team.excerpt}</p>
+              <div class="card-holder">
+                <div class="team-member-box" id={i} onClick={(e) => handleReadMore(e)}>
+                  <img class="team-member-img" src={team.team_image.publicURL} alt="" />
+                    <div class="team-member-excerpt">
+                      <h3>{team.title}</h3>
+                      <p className="p-small">{team.excerpt}</p>
+                    </div>
                     <div class="read-more-display" id={i} onClick={(e) => handleReadMore(e)}>
                         <p id={i}>Read More</p>
                         <div class="arrow-container" id={i}>
-                            <img className="icon arrow-icon" id={i} src={arrow}></img>
+                            <img className="icon arrow-icon" id={i} src={arrowWhite}></img>
                         </div>
                     </div>
                 </div>
               </div>
-              </BackgroundImage>
             )
           }
           else {
             return (
               <div class="team-card-holder">
                 <div class="team-member-box" id={i}>
+                  <div class="team-member-excerpt">
                     <h3>{team.title}</h3>
                     <p className="p-small">{team.excerpt}</p>
+                  </div>
                     <div class="read-more-display" id={i} onClick={(e) => handleReadMore(e)}>
                         <p id={i}>Read More</p>
                         <div class="arrow-container" id={i}>
@@ -119,11 +119,17 @@ const SliderTeam = ({ data }) => {
           </div>
     </section>
     {data && data.map((team, i) => {
+      console.log("Image", team.team_image.childImageSharp.gatsbyImageData)
       return (
         <section class="team-member-popup" id={`${i}-teampopup`}>
             <div class="max-width">
                 <div class="team-member-content">
                     <div class="member-image-container">
+                        <img
+                          class="team-member-img"
+                          src={team.team_image.publicURL}
+                          alt=""
+                        />
                         <h4 class="member-name">{team.title}</h4>
                         <div class="close-popup" id={i}><img src={closeBurger} alt="" id={i} onClick={(e) => handleClose(e)}></img></div>
                     </div>

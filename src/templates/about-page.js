@@ -38,6 +38,7 @@ export const pageQuery = graphql`
           title
           excerpt
           team_image {
+            publicURL
             childImageSharp {
               gatsbyImageData
             }

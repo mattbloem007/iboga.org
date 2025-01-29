@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Burger from '../assets/vectors/burger-menu.svg'
 import Close from '../assets/vectors/close-burger.svg'
 import Search from '../assets/vectors/SearchIcon_x2.svg'
-import MoneyIcon from "../assets/vectors/MoneyIcon_x2.svg"
+import MoneyIcon from "../assets/vectors/bitcoin.svg"
 import DirectoryIcon from "../assets/vectors/ApplyToDirectoryIcon_x2.svg"
 import ChevronIcon from "../assets/vectors/Vector6_x2.svg"
 
@@ -54,9 +54,9 @@ return (
             <div class="flex nav-bg">
                 <div class="logo"><h5>Iboga.org</h5></div>
                 <div class="mobile-nav-right-col">
-                    <button>
+                    {/**<button>
                         <img class="icon search-icon" src={Search}></img>
-                    </button>
+                    </button>*/}
                     <div class="burger-menu" onClick={() => toggleMenu()}>
                         <img src={Burger} alt=""/>
                     </div>
@@ -76,10 +76,10 @@ return (
                     <li><a href="/contact" onClick={() => toggleLinks()}>Contact Us</a></li>
                 </ul>
                 <div class="important-links">
-                    <a href="" class="button-secondary">Donate <img class="icon money-icon" src={MoneyIcon}></img></a>
+                    <a href="/donate" class="button-secondary">Donate <img class="icon money-icon" src={MoneyIcon}></img></a>
                     <div class="flex">
-                        <a href="" class="button-primary">Apply to Directory <img class="icon apply-icon" style={{height: "18px"}} src={DirectoryIcon}></img></a>
-                        <div class="language-picker">
+                        <a href="/directory" class="button-primary">Apply to Directory <img class="icon apply-icon" style={{height: "18px"}} src={DirectoryIcon}></img></a>
+                        {/**<div class="language-picker">
                             <div class="visible-choice" data-language-code="EN">
                                 EN <img class="icon chevron-icon" src={ChevronIcon}></img>
                             </div>
@@ -87,7 +87,7 @@ return (
                                 <li>English <span class="language-code">(EN)</span></li>
                                 <li>French<span class="language-code">(FR)</span></li>
                             </ul>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
             </div>

@@ -41,14 +41,20 @@ const TextBlockDark= ({ data }) => {
                                         <div class="form-row">
                                             <div class="flex">
                                                 {/**<input type="text" placeholder="R 100" />*/}
-                                                <button className="button-primary" style={{marginRight: "10px"}} onClick={() => {
+                                                <button className="button-primary" style={{width: "100%"}} onClick={() => {
                                                   navigator.clipboard.writeText("3NhdewdQaWdXyRcfgqfBw7SsxhPjKbrQAS")
                                                   alert("Legal Fund Bitcoin address copied to clipboard")
                                                 }}>Donate to legal aid fund <img className="icon bitcoin-icon" src={bitcoin}></img></button>
-                                                <button className="button-primary" onClick={() => {
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="flex">
+                                                {/**<input type="text" placeholder="R 100" />*/}
+                                                <button className="button-primary" style={{width: "100%"}} onClick={() => {
                                                   navigator.clipboard.writeText("3LYGbxJYF9LJPvsdQe6N7z8GYrgfmviLJv")
                                                   alert("Our platform Bitcoin address copied to clipboard")
-                                                }}>Donate to our platform <img className="icon bitcoin-icon" src={bitcoin}></img></button>                                            </div>
+                                                }}>Donate to our platform <img className="icon bitcoin-icon" src={bitcoin}></img></button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
