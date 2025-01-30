@@ -20,8 +20,8 @@ education_section3:
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
-      contributions can help expand the knowledge and understanding of this
-      powerful plant medicine
+      contributions will help expand our collective knowledge and understanding
+      of this powerful plant medicine
     cta:
       btn: true
       btn_text: Submit a Journal Entry
