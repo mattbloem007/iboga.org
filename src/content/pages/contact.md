@@ -15,12 +15,12 @@ reasons_form:
   - reason: I have a question or complaint about some of the content on the website
   - reason: Other
 contact_section2:
-  - title: Share Your Insights with Iboga.org's Journal
+  - title: Share Your Insights with our Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
-      contributions can help expand the knowledge and understanding of this
-      powerful plant medicine.
+      contributions will help expand our collective knowledge and understanding
+      of this powerful plant medicine.
     cta:
       btn: true
       btn_text: Submit a Journal Entry
