@@ -16,7 +16,7 @@ education_section2:
   slider1_title: Stories and Conversations
   slider1_info: ""
 education_section3:
-  - title: Share Your Insights with Iboga.org's Journal
+  - title: Share Your Insights with our Journal
     excerpt: Are you passionate about Iboga and its transformative potential? We
       invite researchers, practitioners, and enthusiasts to submit their
       articles, studies, and personal stories to Iboga.org's Journal. Your
