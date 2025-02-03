@@ -1,12 +1,14 @@
 ---
+resources: []
 template: blog-post
-title: "\"It's going to happen with or without us.\" Thomas Kingsley Brown makes
-  the case for legal ibogaine treatment clinics in the United States"
+title: "\"It's going to happen with or without us.\"  TKBrown advocates for
+  legal ibogaine clinics in US "
 slug: /thomaskingsleybrowntedx
 date: 2024-11-04 16:16
 postType:
   - Video
 video: https://www.youtube.com/embed/-fvdjhLJxV4?si=yJ4WbIUIX3glRvgN
+audio: ""
 description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
   discovery by Howard Lotsof that ibogaine therapy is a highly effective
   treatment for opioid addiction. He discusses present treatments and their lack
@@ -14,8 +16,6 @@ description: "Thomas Kingsley Brown presents his fascinating TEDx talk about the
   interested in researching ibogaine. He shares his own remarkable research
   results and makes a strong case for why ibogaine should be made legal in the
   United States. "
-audio: ""
-resources: []
 tags:
   - Research And Media
   - Home
@@ -27,7 +27,7 @@ Paper 1: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802>
 
 [](https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1320802)Paper 2: <https://www.tandfonline.com/doi/full/10.1080/00952990.2017.1310218>
 
-#### Transcript - formatted and gently proofread for ease of reading.
+#### Video Transcript:
 
 \[0:22] What if the best treatment for getting people off of opioids like heroin and oxycodone was discovered over fifty years ago by a 19-year-old heroin junkie in Brooklyn, but we're not using that treatment right now in this country because it's illegal here? Well, that'd be a tragedy given the devastating magnitude of the opioid crisis right now. In recent years, the death rates have been increasing, and those death rates are led by things like heroin and synthetic opioids like fentanyl.
 
