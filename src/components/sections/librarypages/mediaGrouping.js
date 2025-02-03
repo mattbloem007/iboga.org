@@ -4,21 +4,19 @@ import arrow from '../../../assets/vectors/arrow-next-black.svg'
 import LargeArticleItem from './largeArticleItem'
 import SideArticleItem from './sideArticleItem'
 
-const MediaGrouping = ({posts}) => {
+const MediaGrouping = ({posts, journalPosts, otherMediaPosts}) => {
   return (
     <section class="media-grouping">
         <div class="max-width">
           <div class="flex">
-            <LargeArticleItem post={posts.edges[0]} />
+            {journalPosts ? <LargeArticleItem post={journalPosts.edges[0]} /> : <LargeArticleItem post={posts.edges[0]} />}
             <div class="side-media">
-            {posts && posts.edges.map((post, index) => {
-              if (index >= 1 && index <= 2) {
+            {otherMediaPosts && otherMediaPosts.edges.map((post, index) => {
                 console.log("POSTS", post)
                 return (
 
                     <SideArticleItem post={post} />
                 )
-              }
             })}
             </div>
           </div>

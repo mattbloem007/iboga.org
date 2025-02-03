@@ -62,6 +62,35 @@ export const pageQuery = graphql`
              tags
              slug
              featuredImage {
+               publicURL
+               childImageSharp {
+                 gatsbyImageData
+               }
+             }
+           }
+         }
+       }
+     }
+
+     otherMediaPosts: allMarkdownRemark(
+       filter: {frontmatter: {tags: {eq: "Discussion Stories and Conversations"}, postType: {regex: "/(Video|Audio)/"}, template: {eq: "blog-post"}}},
+       limit: 2,
+       sort: {frontmatter: {date: DESC}}
+     ) {
+       edges {
+         node {
+           rawMarkdownBody
+           html
+           frontmatter {
+             title
+             description
+             tags
+             slug
+             postType
+             video
+             audio
+             featuredImage {
+               publicURL
                childImageSharp {
                  gatsbyImageData
                }
@@ -100,14 +129,14 @@ export const pageQuery = graphql`
   }
 `
 const EducationPage = ({ data }) => {
-  const { markdownRemark, posts,  footer } = data
+  const { markdownRemark, posts, otherMediaPosts, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
     <Layout className="page" page="discussion" footer={footer}>
       <Header data={frontmatter.education_banner} sizing={false} />
       <ShareWithUs data={frontmatter.education_section1} />
-      <MediaGrouping posts={posts} />
+      <MediaGrouping posts={posts} otherMediaPosts={otherMediaPosts}/>
       <SliderSection title={frontmatter.education_section2.slider1_title} info={frontmatter.education_section2.slider1_info} posts={posts} />
       <TextCards data={frontmatter.education_section3} />
       <NewsletterSection title={frontmatter.education_section4.title} newsletter_title={frontmatter.education_section4.excerpt}/>

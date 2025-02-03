@@ -53,6 +53,7 @@ export const pageQuery = graphql`
              video
              audio
              featuredImage {
+               publicURL
                childImageSharp {
                  gatsbyImageData
                }
@@ -82,6 +83,35 @@ export const pageQuery = graphql`
              video
              audio
              featuredImage {
+               publicURL
+               childImageSharp {
+                 gatsbyImageData
+               }
+             }
+           }
+         }
+       }
+     }
+
+     otherMediaPosts: allMarkdownRemark(
+       filter: {frontmatter: {postType: {regex: "/(Video|Audio)/"}, template: {eq: "blog-post"}}},
+       limit: 2,
+       sort: {frontmatter: {date: DESC}}
+     ) {
+       edges {
+         node {
+           rawMarkdownBody
+           html
+           frontmatter {
+             title
+             description
+             tags
+             slug
+             postType
+             video
+             audio
+             featuredImage {
+               publicURL
                childImageSharp {
                  gatsbyImageData
                }
@@ -121,13 +151,13 @@ export const pageQuery = graphql`
   }
 `
 const MediaPage = ({ data }) => {
-  const { markdownRemark, posts, journalPosts, footer } = data
+  const { markdownRemark, posts, journalPosts, otherMediaPosts, footer } = data
   const { frontmatter } = markdownRemark
 
   return (
     <Layout className="page" page="library" footer={footer}>
       <Header data={frontmatter.media_banner} sizing={true}/>
-      <MediaGrouping posts={posts} />
+      <MediaGrouping posts={posts} journalPosts={journalPosts} otherMediaPosts={otherMediaPosts}/>
       <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} link="journal-articles" />
       <SliderSection title={frontmatter.media_section3.slider2_title} info={frontmatter.media_section3.slider2_info} posts={posts} link="books-film-and-more"/>
       <NewsletterSection title={frontmatter.media_section4.title} newsletter_title={frontmatter.media_section4.excerpt}/>

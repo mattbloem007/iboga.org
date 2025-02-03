@@ -20,10 +20,12 @@ const LargeArticleItem = ({post}) => {
             <a href={`/library${post.node.frontmatter.slug}`} class="large-article">
             {
             post.node.frontmatter.featuredImage &&
-              <GatsbyImage
-              style={{width: "100%"}}
-              image={post.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+            <div class="large-article-img-holder">
+              <img
+              style={{width: "100%", maxHeight: "100%"}}
+              src={post.node.frontmatter.featuredImage.publicURL}
               alt={post.node.frontmatter.title + " - Featured image"}/>
+            </div>
             }
                 <h3>{post.node.frontmatter.title}</h3>
                 <p className="p-small">
@@ -43,7 +45,9 @@ const LargeArticleItem = ({post}) => {
       return (
         <div class="main-media">
             <a href={`/library${post.node.frontmatter.slug}`} class="large-article">
-              <iframe style={{borderRadius: "12px"}} src={post.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="large-article-img-holder">
+                <iframe style={{borderRadius: "12px"}} src={post.node.frontmatter.audio} width="100%" height="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
                 <h3>{post.node.frontmatter.title}</h3>
                 <p className="p-small">
                     {post.node.frontmatter.description}
@@ -62,7 +66,9 @@ const LargeArticleItem = ({post}) => {
       return (
         <div class="main-media">
             <a href={`/library${post.node.frontmatter.slug}`} class="large-article">
-              <iframe style={{maxWidth: "100%", width: "100%", height: "250px"}} src={post.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="large-article-img-holder">
+                <iframe style={{maxWidth: "100%", width: "100%", height: "100%"}} src={post.node.frontmatter.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
                 <h3>{post.node.frontmatter.title}</h3>
                 <p className="p-small">
                     {post.node.frontmatter.description}
