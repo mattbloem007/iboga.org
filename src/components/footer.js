@@ -11,9 +11,11 @@ const Footer = ({footer}) =>
         <div class="max-width">
             <div class="flex">
                 <div class="footer-left-col">
+                <a href="/">
                     <div class="footer-logo">
                       {footer ?  <h5> {footer.frontmatter.title}</h5> : <h5>Iboga.org..</h5>}
                     </div>
+                </a>
                     {footer ? <p class="p-small" dangerouslySetInnerHTML={{__html: footer.frontmatter.description}} />: <p></p>}
                 </div>
                 <div class="footer-right-col">

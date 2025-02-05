@@ -171,6 +171,7 @@ export const pageQuery = graphql`
            description
            tags
            featuredImage {
+             publicURL
              childImageSharp {
                gatsbyImageData
              }

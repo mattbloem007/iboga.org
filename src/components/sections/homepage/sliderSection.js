@@ -61,7 +61,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
 
 
   return (
-    <section className="research-media-slider">
+    <section className="media-slider">
       <div className="max-width">
         <div className="flex">
             <div className="slider-headline">
@@ -82,7 +82,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
         </div>
       </div>
         <div className="margin-left-width">
-        <Slider classNameName="article-slider" {...settings} ref={slider => { sliderRef = slider; }}>
+        <Slider classNameName="published-articles-slider" {...settings} ref={slider => { sliderRef = slider; }}>
         {posts && posts.map((slider) => {
           console.log("SLider data", slider)
           if (slider.node.frontmatter.postType == "Video") {
@@ -115,13 +115,10 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
           if (slider.node.frontmatter.featuredImage) {
             return (
               <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
-                <div className="thumbnail">
-                  <GatsbyImage
-                    style={{width: "100%", height: "100%"}}
-                    image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                  <img
+                    src={slider.node.frontmatter.featuredImage.publicURL}
                     alt={slider.node.frontmatter.title + " - Featured image"}
                   />
-                </div>
                   <div className="article-card-inner">
                       <h5>{slider.node.frontmatter.title}</h5>
                       <p className="p-small">{slider.node.frontmatter.description}</p>
