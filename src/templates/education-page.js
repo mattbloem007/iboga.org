@@ -18,6 +18,12 @@ export const pageQuery = graphql`
         education_banner {
           title
           excerpt
+          header_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+            publicURL
+          }
         }
 
         education_section1 {

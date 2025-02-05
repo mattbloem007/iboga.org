@@ -756,6 +756,8 @@ collections:
                 name: "title"
                 widget: "string"
               - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
+
               # - label: "CTA"
               #   name: "cta"
               #   widget: "object"
@@ -857,6 +859,7 @@ collections:
                 name: "title"
                 widget: "string"
               - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
               # - label: "CTA"
               #   name: "cta"
               #   widget: "object"

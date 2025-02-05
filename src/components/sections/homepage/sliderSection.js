@@ -22,6 +22,7 @@ import WhiteButton from '../../buttons/whiteButton'
 
 const SliderSection = ({ title, info, posts, cards, link }) => {
   const [progress, setProgress] = useState(0);
+  const [height, setHeight] = useState(false)
 
   let sliderRef = useRef(null);
   let numSlides = posts.length
@@ -113,12 +114,21 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
             )
           }
           if (slider.node.frontmatter.featuredImage) {
+            if (slider.node.frontmatter.featuredImage.childImageSharp.original) {
+              if (slider.node.frontmatter.featuredImage.childImageSharp.original.height >= 1000) {
+                console.log("do something")
+              }
+            }
             return (
               <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-card" tabindex="0">
-                  <img
-                    src={slider.node.frontmatter.featuredImage.publicURL}
+                <div className="thumbnail">
+                  {height ? <img src={slider.node.frontmatter.featuredImage.publicURL} alt={slider.node.frontmatter.title + " - Featured image"} /> :
+                  <GatsbyImage
+                    style={{width: "100%", height: "100%"}}
+                    image={slider.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
                     alt={slider.node.frontmatter.title + " - Featured image"}
-                  />
+                  />}
+                </div>
                   <div className="article-card-inner">
                       <h5>{slider.node.frontmatter.title}</h5>
                       <p className="p-small">{slider.node.frontmatter.description}</p>

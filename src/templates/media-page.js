@@ -16,6 +16,12 @@ export const pageQuery = graphql`
         media_banner {
           title
           excerpt
+          header_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+            publicURL
+          }
         }
 
         media_section2 {
@@ -54,6 +60,10 @@ export const pageQuery = graphql`
              featuredImage {
                publicURL
                childImageSharp {
+                 original {
+                  height
+                  width
+                }
                  gatsbyImageData
                }
              }

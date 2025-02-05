@@ -5,11 +5,23 @@ import LargeArticleItem from './largeArticleItem'
 import SideArticleItem from './sideArticleItem'
 
 const MediaGrouping = ({posts, journalPosts, otherMediaPosts}) => {
+
+  let featuredPost;
+
+  if (journalPosts) {
+    featuredPost = journalPosts.edges.filter(e => {
+      if (e.node.frontmatter.featuredImage) {
+        return e
+      }
+    });
+  }
+  console.log("featuredPost", featuredPost)
+
   return (
     <section class="media-grouping">
         <div class="max-width">
           <div class="flex">
-            {journalPosts ? <LargeArticleItem post={journalPosts.edges[0]} /> : <LargeArticleItem post={posts.edges[0]} />}
+            {journalPosts ? <LargeArticleItem post={featuredPost[0]} /> : <LargeArticleItem post={posts.edges[0]} />}
             <div class="side-media">
             {otherMediaPosts && otherMediaPosts.edges.map((post, index) => {
                 console.log("POSTS", post)

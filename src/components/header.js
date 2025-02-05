@@ -86,6 +86,8 @@ const Header = ({ children, page, data, sizing }) => {
   else if (HeaderData.header_image) {
     image = getImage(HeaderData.header_image)
     backgroundImage= convertToBgImage(image)
+    let newExcerpt = HeaderData.excerpt.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+    console.log("EDITIED", newExcerpt)
     return (
       <div className="hero-slider-container">
         <BackgroundImage
@@ -96,9 +98,7 @@ const Header = ({ children, page, data, sizing }) => {
         <section class="header-banner about-banner">
           <div class="max-width">
               <h1 dangerouslySetInnerHTML={{ __html: HeaderData.title }}></h1>
-              <p>
-                  {HeaderData.excerpt}
-              </p>
+              {sizing ? <p style={{maxWidth: "622px"}} dangerouslySetInnerHTML={{ __html: newExcerpt }}></p> : <p dangerouslySetInnerHTML={{ __html: newExcerpt }}></p>}
               {HeaderData.cta && <a href={HeaderData.cta.ctaLink} class="hero-button" tabindex="-1">{HeaderData.cta.ctaText} <img className="icon arrow-icon" src={ButtonArrow}></img></a>}
           </div>
         </section>

@@ -6,6 +6,7 @@ education_banner:
   excerpt: Explore eye-opening **podcasts**, **advice** from experienced servers,
     and personal **stories** shared by fellow travellers on their iboga
     journeys.
+  header_image: /assets/bg_about.png
 education_section1:
   title: Share Your Insights With Us
   paragraph: Share your unique iboga journey. Help others by contributing your
