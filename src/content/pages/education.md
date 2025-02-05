@@ -12,6 +12,15 @@ education_section1:
     story or joining our podcast to add your personal experience to our growing
     community of voices.
   image: /assets/sharewithus.png
+  cta:
+    - btn: true
+      btn_text: Submit Your Story
+      btn_type: button-secondary
+      btn_link: /journal-submission
+    - btn: true
+      btn_text: Be Our Podcast Guest
+      btn_type: button-secondary
+      btn_link: /conference-submission
 education_section2:
   slider1_title: Stories and Conversations
   slider1_info: ""

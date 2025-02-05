@@ -882,6 +882,39 @@ collections:
               - { label: 'Title', name: "title", widget: "string" }
               - { label: 'Description', name: "paragraph", widget: "markdown" }
               - { label: 'Image', name: "image", widget: "image"}
+              - label: "CTA Buttons"
+                name: "cta"
+                widget: "list"
+                fields:
+                  - {
+                      label: 'Button',
+                      name: btn,
+                      widget: boolean,
+                      default: false
+                    }
+                  - {
+                      label: 'Button Text',
+                      name: btn_text,
+                      widget: string,
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button type',
+                      name: btn_type,
+                      widget: select,
+                      options: [{ label: "White", value: "button-secondary" }, { label: "Orange", value: "hero-button" }],
+                      required: false,
+                      default: ""
+                    }
+                  - {
+                      label: 'Button Link',
+                      name: btn_link,
+                      widget: string,
+                      required: false,
+                      default: "/",
+                      hint: "Start link with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+                    }
 
           - label: "Published Articles Slider (Section 2)"
             name: "education_section2"

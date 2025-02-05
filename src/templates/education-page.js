@@ -28,6 +28,11 @@ export const pageQuery = graphql`
               gatsbyImageData
             }
           }
+          cta {
+            btn_text
+            btn_type
+            btn_link
+          }
         }
 
         education_section2 {
@@ -38,6 +43,11 @@ export const pageQuery = graphql`
         education_section3 {
           title
           excerpt
+          cta {
+            btn_text
+            btn_type
+            btn_link
+          }
         }
 
         education_section4 {
@@ -132,13 +142,32 @@ const EducationPage = ({ data }) => {
   const { markdownRemark, posts, otherMediaPosts, footer } = data
   const { frontmatter } = markdownRemark
 
+  const latestPost = posts.edges[0];
+  const shuffledPosts = posts.edges.sort(() => 0.5 - Math.random());
+  let selectedPosts = shuffledPosts.slice(0, 6);
+
+  selectedPosts.unshift(latestPost)
+
+  selectedPosts = selectedPosts.filter((value, index, self) =>
+    index === self.findIndex((t) => {
+      return (
+        t.node.frontmatter.title === value.node.frontmatter.title
+      )
+    }
+    )
+  )
+
   return (
     <Layout className="page" page="discussion" footer={footer}>
       <Header data={frontmatter.education_banner} sizing={false} />
-      <ShareWithUs data={frontmatter.education_section1} />
+      <ShareWithUs data={frontmatter.education_section1} buttonLinks={frontmatter.education}/>
       <MediaGrouping posts={posts} otherMediaPosts={otherMediaPosts}/>
-      <SliderSection title={frontmatter.education_section2.slider1_title} info={frontmatter.education_section2.slider1_info} posts={posts} />
-      <TextCards data={frontmatter.education_section3} />
+      <SliderSection
+                  title={frontmatter.education_section2.slider1_title}
+                  info={frontmatter.education_section2.slider1_info}
+                  posts={selectedPosts}
+                  />
+      <TextCards data={frontmatter.education_section3} cta={frontmatter.education_section3.cta}/>
       <NewsletterSection title={frontmatter.education_section4.title} newsletter_title={frontmatter.education_section4.excerpt}/>
     </Layout>
   )

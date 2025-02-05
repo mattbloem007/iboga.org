@@ -17,12 +17,11 @@ const LargeArticleItem = ({post}) => {
     if (postType == "Blog Post") {
       return (
         <div class="main-media">
-            <a href={`/library${post.node.frontmatter.slug}`} class="large-article">
+            <a href={`/library${post.node.frontmatter.slug}`} className="large-article">
             {
             post.node.frontmatter.featuredImage &&
-            <div class="large-article-img-holder">
+            <div className="large-article-img-holder">
               <img
-              style={{width: "100%", maxHeight: "100%"}}
               src={post.node.frontmatter.featuredImage.publicURL}
               alt={post.node.frontmatter.title + " - Featured image"}/>
             </div>

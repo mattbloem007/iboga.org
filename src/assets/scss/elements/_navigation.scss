@@ -398,11 +398,13 @@
     position: absolute;
     top: 78px;
     background-color: var(--white-bg);
-    width: 100%;
+    width: 400px;
+    right: 0;
     height: calc(100vh - 78px);
     flex-direction: column;
     justify-content: space-between;
     display: none;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .mobile-nav-links.opened {
@@ -448,6 +450,12 @@
 }
 
 /* --- /MOBILE NAV --- */
+
+@media screen and (max-width: 576px) {
+    .mobile-nav-links {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1425px) {
     .scroll-nav-content li {

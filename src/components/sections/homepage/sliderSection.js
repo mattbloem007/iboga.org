@@ -24,8 +24,9 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
   const [progress, setProgress] = useState(0);
 
   let sliderRef = useRef(null);
-  let numSlides = posts.edges.length
+  let numSlides = posts.length
   numSlides = numSlides - 1
+
 
   var settings = {
     swipe: true,
@@ -64,7 +65,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
       <div className="max-width">
         <div className="flex">
             <div className="slider-headline">
-                <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
+                <h5 dangerouslySetInnerHTML={{ __html: title }}></h5>
                 <p>
                     {info}
                 </p>
@@ -82,7 +83,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
       </div>
         <div className="margin-left-width">
         <Slider classNameName="article-slider" {...settings} ref={slider => { sliderRef = slider; }}>
-        {posts && posts.edges.map((slider) => {
+        {posts && posts.map((slider) => {
           console.log("SLider data", slider)
           if (slider.node.frontmatter.postType == "Video") {
             return (
@@ -122,7 +123,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
                   />
                 </div>
                   <div className="article-card-inner">
-                      <h4>{slider.node.frontmatter.title}</h4>
+                      <h5>{slider.node.frontmatter.title}</h5>
                       <p className="p-small">{slider.node.frontmatter.description}</p>
                   </div>
                   {/**<div className="article-button-container">
@@ -138,7 +139,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
             return (
               <a href={`/library${slider.node.frontmatter.slug}`} className="card-holder article-card-v2" tabindex="-1">
                   <div className="article-card-inner">
-                      <h4>{slider.node.frontmatter.title}</h4>
+                      <h5>{slider.node.frontmatter.title}</h5>
                       <p className="p-small">{slider.node.frontmatter.description}</p>
                   </div>
                   {/**<div className="article-button-container">
@@ -165,7 +166,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
             return (
               <div className="card-holder article-card-v3">
                   <div className="article-card-inner">
-                      <h4>{card.node.frontmatter.title}</h4>
+                      <h5>{card.node.frontmatter.title}</h5>
                       <p className="p-small">{card.node.frontmatter.description}</p>
                       <div className="multi-link-box">
                           <ul>

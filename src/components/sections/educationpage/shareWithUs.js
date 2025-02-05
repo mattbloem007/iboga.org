@@ -10,6 +10,8 @@ const ShareWithUs = ({ data }) => {
   let image = getImage(data.image)
   let backgroundImage= convertToBgImage(image)
 
+  console.log("DATA shareWithUs", data)
+
   return (
     <section class="share-with-us-2">
         <div class="max-width">
@@ -28,8 +30,11 @@ const ShareWithUs = ({ data }) => {
                         {data.paragraph}
                     </p>
                     <div class="share-with-us-buttons">
-                        <a href="/contact" class="button-secondary">Submit Your Story <img src={arrow} class="icon arrow-icon"></img></a>
-                        <a href="/contact" class="button-secondary">Be Our Podcast Guest <img src={arrow} class="icon arrow-icon"></img></a>
+                    {data.cta && data.cta.map(btn => {
+                      return (
+                        <a href={btn.btn_link} class={btn.btn_type}>{btn.btn_text} <img src={arrow} class="icon arrow-icon"></img></a>
+                      )
+                    })}
                     </div>
                 </div>
             </div>

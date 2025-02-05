@@ -37,7 +37,6 @@ export const pageQuery = graphql`
 
     posts:  allMarkdownRemark(
        filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}},
-       limit: 6,
        sort: {frontmatter: {date: DESC}}
      ) {
        edges {
@@ -67,7 +66,6 @@ export const pageQuery = graphql`
 
     journalPosts:  allMarkdownRemark(
        filter: {frontmatter: {tags: {eq: "Library Journal Articles"}, template: {eq: "blog-post"}}},
-       limit: 6,
        sort: {frontmatter: {date: DESC}}
      ) {
        edges {
@@ -154,12 +152,48 @@ const MediaPage = ({ data }) => {
   const { markdownRemark, posts, journalPosts, otherMediaPosts, footer } = data
   const { frontmatter } = markdownRemark
 
+  const latestPost = posts.edges[0];
+  const latestJournalPost = journalPosts.edges[0];
+  const shuffledPosts = posts.edges.sort(() => 0.5 - Math.random());
+  let selectedPosts = shuffledPosts.slice(0, 6);
+
+  const shuffledJournalPosts = journalPosts.edges.sort(() => 0.5 - Math.random());
+  let selectedJournalPosts = shuffledJournalPosts.slice(0, 6);
+
+  selectedPosts.unshift(latestPost)
+  selectedJournalPosts.unshift(latestJournalPost)
+
+  selectedPosts = selectedPosts.filter((value, index, self) =>
+    index === self.findIndex((t) => {
+      return (
+        t.node.frontmatter.title === value.node.frontmatter.title
+      )
+    }
+    )
+  )
+
+  selectedJournalPosts = selectedJournalPosts.filter(
+  (t, index) => index === selectedJournalPosts.findIndex(
+    other => t.node.frontmatter.title === other.node.frontmatter.title
+  ));
+
+
   return (
     <Layout className="page" page="library" footer={footer}>
       <Header data={frontmatter.media_banner} sizing={true}/>
       <MediaGrouping posts={posts} journalPosts={journalPosts} otherMediaPosts={otherMediaPosts}/>
-      <SliderSection title={frontmatter.media_section2.slider1_title} info={frontmatter.media_section2.slider1_info} posts={journalPosts} link="journal-articles" />
-      <SliderSection title={frontmatter.media_section3.slider2_title} info={frontmatter.media_section3.slider2_info} posts={posts} link="books-film-and-more"/>
+      <SliderSection
+                    title={frontmatter.media_section2.slider1_title}
+                    info={frontmatter.media_section2.slider1_info}
+                    posts={selectedJournalPosts}
+                    link="journal-articles"
+                    />
+      <SliderSection
+                    title={frontmatter.media_section3.slider2_title}
+                    info={frontmatter.media_section3.slider2_info}
+                    posts={selectedPosts}
+                    link="books-film-and-more"/
+                    >
       <NewsletterSection title={frontmatter.media_section4.title} newsletter_title={frontmatter.media_section4.excerpt}/>
     </Layout>
   )

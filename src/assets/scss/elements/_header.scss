@@ -113,6 +113,12 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1190px) {
+    .page-banner {
+        padding-top: 200px;
+    }
+}
+
 /* ------ /Page Banner ------ */
 
 /* ------ About Banner ------ */
