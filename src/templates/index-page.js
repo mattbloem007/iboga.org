@@ -237,12 +237,27 @@ const HomePage = ({ data }) => {
   const { markdownRemark, posts, footer } = data
   const { frontmatter } = markdownRemark
 
+  const latestPost = posts.edges[0];
+  const shuffledPosts = posts.edges.sort(() => 0.5 - Math.random());
+  let selectedPosts = shuffledPosts.slice(0, 6);
+
+  selectedPosts.unshift(latestPost)
+
+  selectedPosts = selectedPosts.filter((value, index, self) =>
+    index === self.findIndex((t) => {
+      return (
+        t.node.frontmatter.title === value.node.frontmatter.title
+      )
+    }
+    )
+  )
+
   return (
     <Layout page="home" footer={footer}>
       <Seo />
       <Header data={frontmatter.header_slides} />
       <TitleAndInfo title={frontmatter.section1.section1_title} info={frontmatter.section1.section1_paragraph} cta={frontmatter.section1.cta}/>
-      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={posts} />
+      <SliderSection title={frontmatter.slider1.slider1_title} info={frontmatter.slider1.slider1_info} posts={selectedPosts} />
       <ImageBreak image={frontmatter.section2.image_break.childImageSharp.gatsbyImageData}/>
       <TitleAndInfo title={frontmatter.section3.about_title} info={frontmatter.section3.about_paragraph} cta={frontmatter.section3.cta}/>
       <TextCards data={frontmatter.section4}/>
