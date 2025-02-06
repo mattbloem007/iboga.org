@@ -4,15 +4,17 @@ import bitcoin from "../assets/vectors/bitcoin.svg"
 import DirectoryIcon from "../assets/vectors/ApplyToDirectoryIcon_x2.svg"
 import LanguagePicker from './LanguagePicker'
 import SearchNavBar from './SearchNavBar'
+import { Link } from "gatsby"
+
 
 const MenuButtons = ({scroll}) => {
 
   return (
-    <div class="nav-top-right-col">
-        <div class="flex">
+    <div className="nav-top-right-col">
+        <div className="flex">
             {/**<SearchNavBar />*/}
-            <a href="/donate" class="button-secondary">Donate <img className="icon money-icon" src={bitcoin} /></a>
-            <a href="/directory" class="button-primary directory-btn">Apply to Directory <img className="icon apply-to-directory-icon" src={DirectoryIcon} /></a>
+            <Link to="/donate" className="button-secondary">Donate <img className="icon money-icon" src={bitcoin} /></Link>
+            <Link to="/directory" className="button-primary directory-btn">Apply to Directory <img className="icon apply-to-directory-icon" src={DirectoryIcon} /></Link>
             {/**<LanguagePicker />*/}
         </div>
     </div>

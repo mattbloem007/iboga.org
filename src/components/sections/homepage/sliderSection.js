@@ -22,7 +22,7 @@ import WhiteButton from '../../buttons/whiteButton'
 
 const SliderSection = ({ title, info, posts, cards, link }) => {
   const [progress, setProgress] = useState(0);
-  const [height, setHeight] = useState(false)
+  let height = false
 
   let sliderRef = useRef(null);
   let numSlides = posts.length
@@ -117,6 +117,10 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
             if (slider.node.frontmatter.featuredImage.childImageSharp.original) {
               if (slider.node.frontmatter.featuredImage.childImageSharp.original.height >= 1000) {
                 console.log("do something")
+                height = true;
+              }
+              else {
+                height = false;
               }
             }
             return (

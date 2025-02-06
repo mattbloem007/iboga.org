@@ -1,36 +1,37 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const NavMenu = ({scroll, page}) => (
   <div className="nav-bottom-row">
     <div className="max-width">
       {!scroll ? <ul className="nav-links">
         <li>
-          <a href="/" class={page == "home" ? "active-page" : ''}>Home</a>
+          <Link to="/" class={page == "home" ? "active-page" : ''}>Home</Link>
         </li>
         <li>
-          <a href="/about" class={page == "about" ? "active-page" : ''}>About</a>
+          <Link to="/about" class={page == "about" ? "active-page" : ''}>About</Link>
         </li>
         <li>
-          <a href="/directory" class={page == "directory" ? "active-page" : ''}>Directory</a>
+          <Link to="/directory" class={page == "directory" ? "active-page" : ''}>Directory</Link>
         </li>
         <li>
-          <a href="/library" class={page == "library" ? "active-page" : ''}>Library</a>
+          <Link to="/library" class={page == "library" ? "active-page" : ''}>Library</Link>
         </li>
         <li>
-          <a href="/discussion" class={page == "discussion" ? "active-page" : ''}>Discussion</a>
+          <Link to="/discussion" class={page == "discussion" ? "active-page" : ''}>Discussion</Link>
         </li>
         <li>
-          <a href="/contact" class={page == "contact" ? "active-page" : ''}>Contact</a>
+          <Link to="/contact" class={page == "contact" ? "active-page" : ''}>Contact</Link>
         </li>
       </ul>
       :
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/directory">Directory</a></li>
-        <li><a href="/library">Library</a></li>
-        <li><a href="/discussion">Discussion</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/directory">Directory</Link></li>
+        <li><Link to="/library">Library</Link></li>
+        <li><Link to="/discussion">Discussion</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     }
     </div>
