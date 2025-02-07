@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: "\"Man is inextricably linked with nature\" - Nolan Williams proves we
+title: "\"Man is inextricably linked with nature\" - Nolan Williams shows why we
   should study iboga's capacity to heal PTSD"
 slug: /williamsvideo
 date: 2025-01-07 11:54
