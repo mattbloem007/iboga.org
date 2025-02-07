@@ -1,4 +1,5 @@
 ---
+resources: []
 template: blog-post
 title: New research proves that sacred plant medicines show unprecedented mental
   health benefits
@@ -6,13 +7,12 @@ slug: /vorobyevaarticle
 date: 2024-10-21 15:02
 postType:
   - Blog Post
-description: New scientific review reveals how psilocybin, ibogaine, and DMT
-  could transform mental health treatment through their unique serotonergic
-  mechanisms and long-lasting effects
-featuredImage: /assets/austin-schmid-hrdvsypffas-unsplash.jpg
 video: ""
 audio: ""
-resources: []
+description: New scientific review reveals how psilocybin, ibogaine, and DMT
+  could transform mental health treatment through their unique serotonergic
+  mechanisms and long-lasting effects.
+featuredImage: /assets/austin-schmid-hrdvsypffas-unsplash.jpg
 tags:
   - Home
   - Research And Media
