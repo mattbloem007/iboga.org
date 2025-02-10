@@ -30,7 +30,7 @@ donate_section2:
     - list_item: Public education and awareness campaigns
   how_you_can_help_title: "How You Can Help:"
   how_you_can_help:
-    - list_item: Donate to the fund
+    - list_item: Donate
     - list_item: Share our mission with your network
     - list_item: Contribute your expertise (legal, scientific, or policy experience)
   title_and_paragraphs:
