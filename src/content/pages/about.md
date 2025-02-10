@@ -88,7 +88,13 @@ about_section4:
     Over the past three years, I've had the privilege of connecting with others who share a similar mission of responsible knowledge-sharing and advocacy around iboga.  Together, we are entering a new era with Iboga.org.  Our expanded vision is to create a truly global, collaborative resource,  guided by the principles of integrity, inclusivity, and respect for this extraordinary medicine.
 
 
-    While I am involved in a commercial venture focusing on iboga (Mpande Ethnomedicine), I am committed to ensuring Iboga.org operates with full editorial independence.  We strive for transparency about how my work may intersect with this informational resource.
+    While I am involved in a commercial venture focusing on iboga (Mpande Ethnomedicine), I am committed to ensuring Iboga.org operates with full editorial independence.  We strive for transparency about how my work may intersect with this informational resource.\
+
+    \
+
+    Bokayé!\
+
+    Sy
   image: /assets/our_story_image.png
 about_section5:
   - title: Our Vision
