@@ -17,11 +17,11 @@ education_section1:
     - btn: true
       btn_text: Submit Your Story
       btn_type: button-secondary
-      btn_link: /journal-submission
+      btn_link: /contact
     - btn: true
       btn_text: Be Our Podcast Guest
       btn_type: button-secondary
-      btn_link: /conference-submission
+      btn_link: /contact
 education_section2:
   slider1_title: Stories and Conversations
   slider1_info: ""
