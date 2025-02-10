@@ -50,9 +50,9 @@ donate_section3:
 donate_contact_section:
   title: '<strong class="heading-bold">Connect</strong> with Us or Collaborate '
   reasons_form:
-    - reason: This is a placeholder reason for contacting...
-    - reason: This is a placeholder reason for contacting...
-    - reason: This is a placeholder reason for contacting...
+    - reason: I would like to offer my expertise to support this cause
+    - reason: I would like to request support from the legal challenge fund
+    - reason: I have a question, comment, or complaint about your fundraising
 donate_section:
   donate_title: Donate to the Legal Challenge Fund
   donate_info: Join us in expanding access to life-saving addiction treatment by
