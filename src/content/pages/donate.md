@@ -54,9 +54,9 @@ donate_contact_section:
     - reason: I would like to request support from the legal challenge fund
     - reason: I have a question, comment, or complaint about your fundraising
 donate_section:
-  donate_title: Donate to the Legal Challenge Fund
-  donate_info: Join us in expanding access to life-saving addiction treatment by
-    contributing to our legal challenge fund, which supports advocacy efforts to
-    reform outdated drug laws and make iboga therapy legally available to those
-    who need it most.
+  donate_title: Donate
+  donate_info: "Join us in expanding access to iboga therapy by donating two ways:
+    to our legal challenge fund advancing drug policy reform and treatment
+    availability, or to our platform, directly supporting the work we do for the
+    iboga community."
 ---
