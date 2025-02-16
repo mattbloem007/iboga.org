@@ -117,7 +117,7 @@ const ConferenceForm = ({ participation, slots }) => {
                         </div>
                     </div>
 
-                    <div class="form-row">
+                  {/**  <div class="form-row">
                         <div class="form-element">
                             <label for="">Preferred Presentation Date</label>
                             <input class="date-picker" type="date" />
@@ -138,7 +138,7 @@ const ConferenceForm = ({ participation, slots }) => {
                             </ul>
                             <input type="text" class="dropdown-input" hidden />
                         </div>
-                    </div>
+                    </div>*/}
 
                     <div class="form-row">
                         <div class="form-element">
@@ -155,7 +155,7 @@ const ConferenceForm = ({ participation, slots }) => {
                     </div>
 
                     <div class="form-row">
-                        <button class="button-secondary">Submit Submission <img className="icon send-icon" src={Send}></img></button>
+                        <button class="button-secondary">Submit <img className="icon send-icon" src={Send}></img></button>
                     </div>
 
                 </form>

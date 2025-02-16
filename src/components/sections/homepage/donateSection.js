@@ -1,5 +1,6 @@
 
 import React from "react"
+import { Link } from "gatsby"
 import bgImage from '../../../assets/vectors/section-images/donate-section-img.png'
 import arrow from '../../../assets/vectors/arrow-icon.svg'
 import bitcoin from '../../../assets/vectors/bitcoin.svg'
@@ -23,6 +24,11 @@ const Donate = ({ data }) => {
                     <div class="donate-buttons-container">
                         <div>
                             <form action="">
+                              <div class="form-row">
+                                  <div class="flex">
+                                    <Link className="button-secondary" style={{width: "100%"}} to="/donate">Read more... <img className="icon arrow-icon" src={arrow}></img></Link>
+                                  </div>
+                              </div>
                                 <div class="form-row">
                                     <div class="flex">
                                       <button className="button-primary" style={{width: "100%"}} onClick={() => {

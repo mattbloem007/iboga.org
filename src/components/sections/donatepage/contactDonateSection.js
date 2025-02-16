@@ -8,6 +8,7 @@ import dollar from '../../../assets/vectors/MoneyIcon_x2.svg'
 import bitcoin from '../../../assets/vectors/bitcoin.svg'
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
+import DisclaimerCard from './disclaimerCard'
 
 const ContactDonateSection = ({ disclaimer, contact, reasons, donate }) => {
   const [dropdown, setDropDown] = useState(false)
@@ -94,6 +95,8 @@ const ContactDonateSection = ({ disclaimer, contact, reasons, donate }) => {
   }
 
   return (
+    <>
+    <DisclaimerCard data={disclaimer} />
     <section className="contact-section">
         <div className="max-width">
             <h2 dangerouslySetInnerHTML={{ __html: contact.title }}></h2>
@@ -250,6 +253,7 @@ const ContactDonateSection = ({ disclaimer, contact, reasons, donate }) => {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

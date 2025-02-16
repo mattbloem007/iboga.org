@@ -121,7 +121,7 @@ const ConferenceForm = ({ categories }) => {
 
 
                     <div class="form-row">
-                        <button class="button-secondary">Submit Submission <img className="icon send-icon" src={Send}></img></button>
+                        <button class="button-secondary">Submit <img className="icon send-icon" src={Send}></img></button>
                     </div>
 
                 </form>

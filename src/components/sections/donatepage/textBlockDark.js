@@ -1,10 +1,13 @@
 import React from "react"
+import { Link } from 'gatsby'
 import dollar from '../../../assets/vectors/MoneyIcon_x2.svg'
 import facebook from '../../../assets/vectors/facebook-icon.svg'
 import instagram from '../../../assets/vectors/instagram-icon.svg'
 import x from '../../../assets/vectors/x-icon.svg'
 import whatsapp from '../../../assets/vectors/whatsapp-icon.svg'
 import bitcoin from '../../../assets/vectors/bitcoin.svg'
+import arrow from '../../../assets/vectors/arrow-icon.svg'
+
 
 
 const TextBlockDark= ({ data }) => {
@@ -76,6 +79,19 @@ const TextBlockDark= ({ data }) => {
                     </div>
                     <div class="support-w-contributing">
                         <h3 class="ol-title">{data.how_you_can_help[2].list_item}</h3>
+                        <div class="support-us-block-action">
+                          <div class="donate-buttons-container">
+                              <div>
+                                  <form action="">
+                                      <div class="form-row">
+                                          <div class="flex">
+                                            <Link className="button-primary" to="/contact">Contact Us <img className="icon arrow-icon" src={arrow}></img></Link>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
