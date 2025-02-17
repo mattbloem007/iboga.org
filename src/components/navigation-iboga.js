@@ -33,11 +33,16 @@ const NavBar = ({page}) => {
   console.log("greenNav", greenNav)
   const [scroll, setScroll] = useState(false)
   useEffect(() => {
+      handleResize();
       window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 10)
       })
       window.addEventListener("resize", handleResize)
   }, [])
+
+  // useEffect(() => {
+  //   handleResize();
+  // }, [])
 
   //choose the screen size
   const handleResize = () => {
