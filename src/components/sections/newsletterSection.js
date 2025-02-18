@@ -44,7 +44,7 @@ const NewsletterSection = ({ title, newsletter_title, newsletter_img }) => {
                 <div class="newsletter-left-col">
                   <h4>{title}</h4>
                   <p dangerouslySetInnerHTML={{__html: newsletter_title}} />
-                  <Link target="_blank" to="https://ibogadao.substack.com/" class="button-primary substack-link">Subscribe to Newsletter <img className="icon send-icon" src={sendWhite}></img></Link>
+                  <Link target="_blank" to="https://ibogadao.substack.com/" className="button-primary substack-link">Subscribe to Newsletter <img className="icon send-icon" src={sendWhite}></img></Link>
                 </div>
                 <div class="newsletter-right-col">
                   {imageElement}

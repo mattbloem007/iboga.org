@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from "react"
 import bgImage from '../../assets/vectors/section-images/donate-section-img.png'
 import Send from '../../assets/vectors/send.svg'
-import SendWhite from '../../assets/vectors/send-white.svg'
+import sendWhite from '../../assets/vectors/send-white.svg'
 import chev from '../../assets/vectors/chevron.svg'
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
+import newsletterImage from '../../assets/vectors/newsletter-img.webp'
+import { Link } from 'gatsby'
 
 const ContactSection = ({ title, newsletter_title, reasons }) => {
   const [dropdown, setDropDown] = useState(false)
@@ -208,32 +210,24 @@ const ContactSection = ({ title, newsletter_title, reasons }) => {
                     </div>
 
                     <div className="form-row">
-                      <button className="button-secondary" type="submit" onMouseEnter={() => handleHover()} onMouseLeave={() => handleHoverLeave()}>Send Message {hover ? <img className="icon send-icon" src={SendWhite}></img> : <img className="icon send-icon" src={Send}></img>}</button>
+                      <button className="button-secondary" type="submit" onMouseEnter={() => handleHover()} onMouseLeave={() => handleHoverLeave()}>Send Message {hover ? <img className="icon send-icon" src={sendWhite}></img> : <img className="icon send-icon" src={Send}></img>}</button>
                       {success && <p style={{color: "green", marginTop: "10px"}}>Message sent! We will be in touch soon</p>}
                     </div>
 
                 </form>
-                <form action="" className="news-letter-form">
-                    <h4>{newsletter_title}</h4>
-                    <div className="form-row">
-                        <label for="">Full Name</label>
-                        <input type="text" />
+                <div class="aside-news-letter-container">
+                    <div class="aside-img-container">
+                        <img src={newsletterImage} alt="" />
                     </div>
-                    <div className="form-row">
-                        <label for="">Email Address</label>
-                        <input type="text" />
-                    </div>
-                    <div className="form-row-check">
-                        <div className="custom-checkbox">
-                            <label className="custom-checkbox" for="newsletter-agreement">
-                            <input type="checkbox" name="newsletter-agreement" id="newsletter-agreement"/>
-                            I agree to receive the newsletter and updates.</label>
-                        </div>
-                    </div>
-                    <div className="form-row">
-                      <button className="button-secondary">Send Message <img className="icon send-icon" src={SendWhite}></img></button>
-                    </div>
+                <form action="" class="news-letter-form">
+                        <h4>Join our Newsletter
+                            to receive important updates</h4>
+                        <p>
+                            Sign up to our newsletter to receive regular updates about the latest iboga research, news from the community, and more.
+                        </p>
+                        <Link target="_blank" to="https://ibogadao.substack.com/" className="button-primary substack-link">Subscribe to Newsletter <img className="icon send-icon" src={sendWhite}></img></Link>
                 </form>
+              </div>
             </div>
         </div>
     </section>
