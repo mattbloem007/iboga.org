@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import BackArrow from '../assets/vectors/black-back-arrow.svg'
+import newsletterImage from '../assets/vectors/newsletter-img.webp'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -107,7 +108,11 @@ const ArticlePage = ({ data }) => {
           <div class="max-width" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}>
           </div>
       </div>
-      <NewsletterSection title="Newsletter" newsletter_title="Sign up to our newsletter to receive regular updates about the latest iboga research, news from the community, and more."/>
+      <NewsletterSection
+      title="Join our Newsletter to receive important updates"
+      newsletter_title="Sign up to our newsletter to receive regular updates about the latest iboga research, news from the community, and more."
+      newsletter_img={newsletterImage}
+      />
     </Layout>
   )
 }

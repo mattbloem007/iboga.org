@@ -14,7 +14,8 @@ media_section3:
   slider2_title: Books, Films, and more
   slider2_info: Browse collections of books, films, and other educational media
 media_section4:
-  title: Newsletter
+  title: Join our Newsletter to receive important updates
   excerpt: "Sign up to our newsletter to receive regular updates about the latest
     iboga research, news from the community, and more. "
+  newsletter_img: /assets/newsletter-img.webp
 ---

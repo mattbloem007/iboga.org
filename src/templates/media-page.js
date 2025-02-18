@@ -37,6 +37,9 @@ export const pageQuery = graphql`
         media_section4 {
           title
           excerpt
+          newsletter_img {
+            publicURL
+          }
         }
       }
     }
@@ -204,7 +207,11 @@ const MediaPage = ({ data }) => {
                     posts={selectedPosts}
                     link="books-film-and-more"/
                     >
-      <NewsletterSection title={frontmatter.media_section4.title} newsletter_title={frontmatter.media_section4.excerpt}/>
+      <NewsletterSection
+      title={frontmatter.media_section4.title}
+      newsletter_title={frontmatter.media_section4.excerpt}
+      newsletter_img={frontmatter.media_section4.newsletter_img}
+      />
     </Layout>
   )
 }

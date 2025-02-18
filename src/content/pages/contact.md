@@ -38,9 +38,10 @@ contact_section2:
       advocate, your voice can inspire and educate others in the Iboga
       community.
 contact_section3:
-  title: Newsletter
-  excerpt: "Sign up to our newsletter to receive regular updates about the latest
-    iboga research, news from the community, and more. "
+  title: Join our Newsletter to receive important updates
+  excerpt: Sign up to our newsletter to receive regular updates about the latest
+    iboga research, news from the community, and more.
+  newsletter_img: /assets/newsletter-img.webp
 ---
 
 Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.

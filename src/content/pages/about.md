@@ -111,8 +111,9 @@ about_section5:
       responsible integration practices and advocate for the sustainable future
       of iboga.
 about_section6:
-  title: Newsletter
+  title: Join our Newsletter to receive important updates
   excerpt: "Sign up to our newsletter to receive regular updates about the latest
     iboga research, news from the community, and more. "
+  newsletter_img: /assets/newsletter-img.webp
 title: About Foundation
 ---

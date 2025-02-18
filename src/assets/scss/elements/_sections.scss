@@ -1152,17 +1152,18 @@ img.team-member-img {
 }
 
 .horizontal-newsletter .news-letter-form {
+    padding: 0px;
+}
+
+.horizontal-newsletter .news-letter-form {
     display: flex;
     max-width: 100%;
     width: 100%;
-    justify-content: space-between;
 }
 
 .newsletter-left-col {
     max-width: 558px;
-    padding-right: 64px;
-    margin-right: 64px;
-    border-right: 2px solid var(--black-bg);
+    padding: 20px 64px 20px 20px;
 }
 
 .newsletter-left-col p {
@@ -1170,21 +1171,55 @@ img.team-member-img {
 }
 
 .newsletter-right-col {
+  position: relative;
+  flex: 1;
+}
+
+.newsletter-right-col img {
+    position: absolute;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.substack-link {
+    width: 100%;
+    margin-top: 32px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .newsletter-left-col {
+        max-width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .newsletter-left-col {
-        padding-right: 0px;
-        margin-right: 0px;
-        border: none;
-        max-width: 100%;
-        margin-bottom: 32px;
-    }
 
     .horizontal-newsletter .news-letter-form {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+
+    .newsletter-left-col {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .newsletter-right-col {
+        height: 300px;
+    }
+
+    .newsletter-right-col img {
+        position: initial;
+    }
+}
+
+.aside-news-letter-container img {
+    max-width: 456px;
+    display: block;
+    object-fit: cover;
+    height: 100%;
 }
 
 /* ------ /horizontal-newsletter ------ */
@@ -1369,6 +1404,25 @@ img.team-member-img {
     .side-media .article-video-card img,
     .media-grouping .side-media .article-card img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .aside-news-letter-container {
+        flex-direction: column;
+    }
+
+    .aside-img-container {
+        height: 300px;
+        position: relative;
+        width: 100%;
+    }
+
+    .aside-img-container img {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -1666,6 +1720,11 @@ img.team-member-img {
     .share-with-us-2 .flex {
         flex-direction: column;
     }
+
+    .aside-news-letter-container {
+       display: flex;
+   }
+
 
     .share-with-us-2 .left-col {
         width: 100%;

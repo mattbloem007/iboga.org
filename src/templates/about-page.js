@@ -69,6 +69,9 @@ export const pageQuery = graphql`
         about_section6 {
           title
           excerpt
+          newsletter_img {
+            publicURL
+          }
         }
       }
     }
@@ -116,7 +119,10 @@ const AboutPage = ({ data }) => {
       <OurApproach data={frontmatter.about_section3} />
       <OurStory data={frontmatter.about_section4} />
       <TextCards data={frontmatter.about_section5} />
-      <NewsletterSection title={frontmatter.about_section6.title} newsletter_title={frontmatter.about_section6.excerpt}/>
+      <NewsletterSection
+      title={frontmatter.about_section6.title}
+      newsletter_title={frontmatter.about_section6.excerpt}
+      newsletter_img={frontmatter.about_section6.newsletter_img}/>
     </Layout>
   )
 }

@@ -59,6 +59,9 @@ export const pageQuery = graphql`
         education_section4 {
           title
           excerpt
+          newsletter_img {
+            publicURL
+          }
         }
       }
     }
@@ -174,7 +177,11 @@ const EducationPage = ({ data }) => {
                   posts={selectedPosts}
                   />
       <TextCards data={frontmatter.education_section3} cta={frontmatter.education_section3.cta}/>
-      <NewsletterSection title={frontmatter.education_section4.title} newsletter_title={frontmatter.education_section4.excerpt}/>
+      <NewsletterSection
+      title={frontmatter.education_section4.title}
+      newsletter_title={frontmatter.education_section4.excerpt}
+      newsletter_img={frontmatter.education_section4.newsletter_img}
+      />
     </Layout>
   )
 }

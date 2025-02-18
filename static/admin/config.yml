@@ -476,6 +476,11 @@ collections:
                   name: newsletter_title,
                   widget: string
                 }
+              - {
+                  label: 'Newsletter Image',
+                  name: 'newsletter_img',
+                  widget: 'image'
+                }
               - label: "Reasons for Contacting (Select on Form)"
                 name: "reasons_form"
                 label_singular: "Reason/Subject"
@@ -623,6 +628,11 @@ collections:
                   label: 'Newsletter Description',
                   name: excerpt,
                   widget: string
+                }
+              - {
+                  label: 'Newsletter Image',
+                  name: 'newsletter_img',
+                  widget: 'image'
                 }
 
       - label: "Directory"
@@ -838,6 +848,11 @@ collections:
                   name: excerpt,
                   widget: string
                 }
+              - {
+                  label: 'Newsletter Image',
+                  name: 'newsletter_img',
+                  widget: 'image'
+                }
 
       - label: "Education"
         name: "education"
@@ -998,6 +1013,11 @@ collections:
                   name: excerpt,
                   widget: string
                 }
+              - {
+                  label: 'Newsletter Image',
+                  name: 'newsletter_img',
+                  widget: 'image'
+                }
 
       - label: "Contact"
         name: "contact"
@@ -1094,6 +1114,11 @@ collections:
                   label: 'Newsletter Description',
                   name: excerpt,
                   widget: string
+                }
+              - {
+                  label: 'Newsletter Image',
+                  name: 'newsletter_img',
+                  widget: 'image'
                 }
 
 
@@ -1413,6 +1438,11 @@ collections:
       - { label: "Donate Info", name: "donate_info", widget: "text", required: true }
       - { label: "Newsletter Title", name: "newsletter_title", widget: "text", required: true }
       - { label: "Newsletter Info", name: "newsletter_info", widget: "text", required: true }
+      - {
+          label: 'Newsletter Image',
+          name: 'newsletter_img',
+          widget: 'image'
+        }
 
   - name: settings
     label: Settings

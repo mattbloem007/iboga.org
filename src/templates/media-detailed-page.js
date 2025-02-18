@@ -22,6 +22,9 @@ export const pageQuery = graphql`
         donate_info
         newsletter_title
         newsletter_info
+        newsletter_img {
+          publicURL
+        }
       }
     }
 
@@ -91,7 +94,11 @@ const MediaDetailPage = ({ data }) => {
       <CardGrouping cards={posts} />
       <ArticleGrouping />
       <Donate data={frontmatter}/>
-      <NewsletterSection title={frontmatter.newsletter_title} newsletter_title={frontmatter.newsletter_info} />
+      <NewsletterSection
+      title={frontmatter.newsletter_title}
+      newsletter_title={frontmatter.newsletter_info}
+      newsletter_img={frontmatter.newsletter_img}
+      />
     </Layout>
   )
 }
