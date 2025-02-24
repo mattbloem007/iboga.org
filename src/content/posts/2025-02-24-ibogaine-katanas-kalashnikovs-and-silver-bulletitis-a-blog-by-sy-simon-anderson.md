@@ -16,7 +16,7 @@ featuredImage: /assets/katana.jpg
 tags:
   - Discussion Stories and Conversations
 ---
-**Written by SY**\
+**Written by SY (Simon Anderson)**\
 \
 "I am not actually a doctor," Dr. Iboga told me recently. "I am truly a dance teacher. Yet so many humans are just looping around and around in circles. So, first doctor, then Maestro!" 
 
