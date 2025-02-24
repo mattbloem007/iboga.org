@@ -12,6 +12,7 @@ description: Exploring iboga's potential beyond a "silver bullet" for addiction,
   and Western medicine, it offers a path forward that honors both urgent healing
   needs and traditional practices—moving from mechanistic quick fixes toward a
   dance of transformation led by Dr. Iboga himself.
+featuredImage: /assets/katana.jpg
 tags:
   - Discussion Stories and Conversations
 ---
