@@ -1,7 +1,7 @@
 ---
 resources: []
 template: blog-post
-title: "\"It's going to happen with or without us.\"  TKBrown advocates for
+title: "\"It's going to happen with or without us.\"  T. K. Brown advocates for
   legal ibogaine clinics in US "
 slug: /thomaskingsleybrowntedx
 date: 2024-11-04 16:16
