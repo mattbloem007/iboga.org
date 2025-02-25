@@ -15,7 +15,10 @@ const MediaGrouping = ({posts, journalPosts, otherMediaPosts}) => {
       }
     });
   }
-  console.log("featuredPost", featuredPost)
+
+  // const filteredMedia = otherMediaPosts.edges.filter((item) => item !== posts.edges[0]);
+  //
+  // console.log("filteredMedia", filteredMedia)
 
   return (
     <section class="media-grouping">

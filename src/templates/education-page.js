@@ -91,6 +91,31 @@ export const pageQuery = graphql`
        }
      }
 
+     featuredPosts:  allMarkdownRemark(
+        filter: {frontmatter: {postType: {regex: "/(Blog Post)/"}, tags: {eq: "Discussion Stories and Conversations"}, template: {eq: "blog-post"}}},
+      ) {
+        edges {
+          node {
+            rawMarkdownBody
+            html
+            frontmatter {
+              title
+              postType
+              video
+              description
+              tags
+              slug
+              featuredImage {
+                publicURL
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+            }
+          }
+        }
+      }
+
      otherMediaPosts: allMarkdownRemark(
        filter: {frontmatter: {tags: {eq: "Discussion Stories and Conversations"}, postType: {regex: "/(Video|Audio)/"}, template: {eq: "blog-post"}}},
        limit: 2,
@@ -148,7 +173,7 @@ export const pageQuery = graphql`
   }
 `
 const EducationPage = ({ data }) => {
-  const { markdownRemark, posts, otherMediaPosts, footer } = data
+  const { markdownRemark, posts, otherMediaPosts, featuredPosts, footer } = data
   const { frontmatter } = markdownRemark
 
   const latestPost = posts.edges[0];
@@ -170,7 +195,7 @@ const EducationPage = ({ data }) => {
     <Layout className="page" page="discussion" footer={footer}>
       <Header data={frontmatter.education_banner} sizing={false} />
       <ShareWithUs data={frontmatter.education_section1} buttonLinks={frontmatter.education}/>
-      <MediaGrouping posts={posts} otherMediaPosts={otherMediaPosts}/>
+      <MediaGrouping posts={featuredPosts} otherMediaPosts={otherMediaPosts}/>
       <SliderSection
                   title={frontmatter.education_section2.slider1_title}
                   info={frontmatter.education_section2.slider1_info}

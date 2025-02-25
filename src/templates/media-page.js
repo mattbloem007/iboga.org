@@ -44,6 +44,31 @@ export const pageQuery = graphql`
       }
     }
 
+    featuredPosts:  allMarkdownRemark(
+       filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, postType: {regex: "/(Blog Post)/"}, template: {eq: "blog-post"}}},
+     ) {
+       edges {
+         node {
+           rawMarkdownBody
+           html
+           frontmatter {
+             title
+             postType
+             video
+             description
+             tags
+             slug
+             featuredImage {
+               publicURL
+               childImageSharp {
+                 gatsbyImageData
+               }
+             }
+           }
+         }
+       }
+     }
+
     posts:  allMarkdownRemark(
        filter: {frontmatter: {tags: {eq: "Library Books, Films, and More"}, template: {eq: "blog-post"}}},
        sort: {frontmatter: {date: DESC}}
@@ -162,7 +187,7 @@ export const pageQuery = graphql`
   }
 `
 const MediaPage = ({ data }) => {
-  const { markdownRemark, posts, journalPosts, otherMediaPosts, footer } = data
+  const { markdownRemark, posts, journalPosts, otherMediaPosts, featuredPosts, footer } = data
   const { frontmatter } = markdownRemark
 
   const latestPost = posts.edges[0];
@@ -194,19 +219,17 @@ const MediaPage = ({ data }) => {
   return (
     <Layout className="page" page="library" footer={footer}>
       <Header data={frontmatter.media_banner} sizing={true}/>
-      <MediaGrouping posts={posts} journalPosts={journalPosts} otherMediaPosts={otherMediaPosts}/>
+      <MediaGrouping posts={featuredPosts} journalPosts={journalPosts} otherMediaPosts={otherMediaPosts}/>
       <SliderSection
                     title={frontmatter.media_section2.slider1_title}
                     info={frontmatter.media_section2.slider1_info}
                     posts={selectedJournalPosts}
-                    link="journal-articles"
                     />
       <SliderSection
                     title={frontmatter.media_section3.slider2_title}
                     info={frontmatter.media_section3.slider2_info}
                     posts={selectedPosts}
-                    link="books-film-and-more"/
-                    >
+                    />
       <NewsletterSection
       title={frontmatter.media_section4.title}
       newsletter_title={frontmatter.media_section4.excerpt}
@@ -217,6 +240,8 @@ const MediaPage = ({ data }) => {
 }
 
 export default MediaPage
+
+// link="journal-articles"
 
 // journalCards: allMarkdownRemark(
 //  filter: {frontmatter: {tags: {eq: "Journal Articles"}, template: {eq: "slider-card"}}}

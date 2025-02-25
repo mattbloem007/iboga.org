@@ -66,7 +66,7 @@ const SliderSection = ({ title, info, posts, cards, link }) => {
       <div className="max-width">
         <div className="flex">
             <div className="slider-headline">
-                <h5 dangerouslySetInnerHTML={{ __html: title }}></h5>
+                <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
                 <p>
                     {info}
                 </p>
