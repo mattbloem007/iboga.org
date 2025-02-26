@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: '"I wanted to die because I had nothing left." How iboga helped take Kia
-  Elfström from a terminal cancer diagnosis to total remission.'
+title: "\"I wanted to die because I had nothing left.\" Kia Elfström's story
+  from a terminal cancer diagnosis to total remission"
 slug: /interviewkiaelfström
 date: 2024-12-02 22:05
 postType:
@@ -19,7 +19,7 @@ featuredImage: /assets/kia-elfström-1.jpg
 tags:
   - Discussion Stories and Conversations
 ---
-*Editor's note: Kia Elfström is the Swedish author of a brilliant book called "A Little While Longer" \["En Liten Stund Till"], in which she shares how the work she did with iboga contributed to her healing her aggressive breast cancer. Kia has very generously shared with us the first three chapters of the book, translated into English, and they are available to read in our Library here. I do hope you enjoy reading about Kia's journey as much as I enjoyed speaking with her about it.*
+*Editor's note: Kia Elfström is the Swedish author of a brilliant book called "A Little While Longer" \["En Liten Stund Till"], in which she shares how the work she did with iboga contributed to her healing her aggressive breast cancer. Kia has very generously shared her book with us, and we are diligently translating it from Swedish so we can share it with you. I do hope you enjoy reading about Kia's journey as much as I enjoyed speaking with her about it.*
 
 ![](/assets/en-liten-stund-till-kia-elfstrom-book-cover.png)
 
