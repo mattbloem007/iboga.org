@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iboga.org",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://iboga.netlify.app",
+    "description": "A website devoted to Iboga",
+    "siteUrl": "https://iboga.org",
     "image": "/assets/stackrole.png",
     "iconimage": "/assets/stackrole.png",
     "twitterUsername": "@stackrole"
