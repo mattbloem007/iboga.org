@@ -1352,6 +1352,59 @@ collections:
                 widget: "string"
               - { label: "Slug", name: "slug", widget: "string" }
 
+      - label: "Privacy Policy"
+        name: "privacy_policy"
+        file: "src/content/pages/policy.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "policy-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/privacy-policy",
+            }
+          - label: "Policy Banner"
+            name: "policy_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+              - { label: 'Header Image', name: 'header_image', widget: 'image', required: true }
+
+      - label: "Terms & Conditions"
+        name: "terms"
+        file: "src/content/pages/terms.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "terms-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/terms",
+            }
+          - label: "Terms Banner"
+            name: "terms_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - { label: "Paragraph", name: "excerpt", widget: "markdown" }
+
   - name: "slider_cards"
     label: "Slider Cards"
     label_singular: "Slider Card"

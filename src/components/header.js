@@ -45,10 +45,9 @@ const Header = ({ children, page, data, sizing }) => {
   // `);
 
   const HeaderData = data
-  const headerImage = HeaderData.header_image
   let image, backgroundImage;
   console.log("page", page)
-  if (HeaderData.length) {
+  if (HeaderData && HeaderData.length) {
     return (
       <Slider className="hero-slider-container" {...settings}>
       {
@@ -83,7 +82,7 @@ const Header = ({ children, page, data, sizing }) => {
       </Slider>
     )
   }
-  else if (HeaderData.header_image) {
+  else if (HeaderData && HeaderData.header_image) {
     image = getImage(HeaderData.header_image)
     backgroundImage= convertToBgImage(image)
     let newExcerpt = HeaderData.excerpt.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
@@ -106,7 +105,7 @@ const Header = ({ children, page, data, sizing }) => {
     </div>
     )
   }
-  else if (HeaderData.header_image === undefined) {
+  else if (HeaderData && HeaderData.header_image === undefined) {
     let newExcerpt = HeaderData.excerpt.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
     console.log("EDITIED", newExcerpt)
 
@@ -148,6 +147,17 @@ const Header = ({ children, page, data, sizing }) => {
         </div>
       )
     }
+  }
+  else if (!HeaderData) {
+    return(
+      <div className="hero-slider-container">
+        <section class="page-banner donate-page-banner">
+            <div class="max-width">
+                <h1>Privacy Policy</h1>
+            </div>
+        </section>
+      </div>
+    )
   }
 
 
