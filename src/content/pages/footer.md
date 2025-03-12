@@ -24,9 +24,9 @@ media_links:
     slug: /discussion
 legal_links:
   - title: Terms & Conditions
-    slug: /
+    slug: /terms
   - title: Privacy Policy
-    slug: /
+    slug: /privacy-policy
 contact_links:
   - title: Contact Us
     slug: /contact
