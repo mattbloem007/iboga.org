@@ -73,7 +73,7 @@ const JournalPage = ({ data }) => {
       <div class="article-headline" style={{paddingTop: "80px"}}>
         <div class="max-width">
           <div class="info-container" style={{marginBottom: "0px"}}>
-            <a href=""><img class="icon arrow-icon" src={ButtonArrow} style={{marginRight: "10px"}}></img>Back To Home</a>
+            <a href="/"><img class="icon arrow-icon" src={ButtonArrow} style={{marginRight: "10px"}}></img>Back To Home</a>
             <p style={{paddingTop: "80px"}}>
                 Welcome to iboga.org. We're committed to fostering meaningful dialogue about healing and scientific research while ensuring a safe, respectful environment for our community.
             </p>
