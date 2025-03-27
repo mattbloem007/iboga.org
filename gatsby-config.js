@@ -15,6 +15,25 @@ const settings = require("./src/util/site.json")
 module.exports = {
   siteMetadata: settings.meta,
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-W561DVDK2S", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId: 'UA-1*******0-2',
+    //     head: true,
+    //     defer: true,
+    //   },
+    // },
     `gatsby-plugin-decap-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

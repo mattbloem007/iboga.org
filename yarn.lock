@@ -7459,14 +7459,22 @@ gatsby-plugin-decap-cms@^4.0.4:
     mini-css-extract-plugin "1.6.2"
     netlify-identity-widget "^1.9.2"
 
-gatsby-plugin-google-analytics@^4.7.0:
-  version "4.25.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.25.0.tgz#9235094d56ddf945eda184c77e1dade08ef2c0da"
-  integrity sha512-fbHrViBAbJ0Ch2gcpuJQlGxWoapaNed42k75eR4gCiZPzaTUvCKagJgLG8ro8ukD1rfD594lgLzdSEaYYcH4WQ==
+gatsby-plugin-google-analytics@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-5.14.0.tgz#836104491938710d1e19ad15020ee43302a08713"
+  integrity sha512-mzUXk+0nmRKYJilKtZFaajO05MYM1aDd3LkJYDH7kDhgiiAjHo9n404n3I2D7/3G7ikxmlY31zg7y6EsIzZX7w==
   dependencies:
-    "@babel/runtime" "^7.15.4"
-    minimatch "3.0.4"
+    "@babel/runtime" "^7.20.13"
+    minimatch "^3.1.2"
     web-vitals "^1.1.2"
+
+gatsby-plugin-google-gtag@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.14.0.tgz#89f520481e20cc0830a52334f7f19d08be547d11"
+  integrity sha512-iXBQR4xjU20vR1b0zSE1McDxJZdm3pNxm8FMSvFIa9IswZskRgnjSYUBjGLMeGf8+t8y8rSTie94Ni0pJqf6dA==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    minimatch "^3.1.2"
 
 gatsby-plugin-image@^3.13.1:
   version "3.13.1"
@@ -10683,13 +10691,6 @@ mini-css-extract-plugin@1.6.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
     webpack-sources "^1.1.0"
-
-minimatch@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
-  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  dependencies:
-    brace-expansion "^1.1.7"
 
 minimatch@3.0.5:
   version "3.0.5"
