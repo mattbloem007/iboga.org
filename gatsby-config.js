@@ -26,6 +26,13 @@ module.exports = {
         },
       },
     },
+    {
+     resolve: "gatsby-plugin-google-tagmanager",
+     options: {
+       id: "GTM-PX7T2SB8",
+       includeInDevelopment: false,
+     },
+   },
     // {
     //   resolve: 'gatsby-plugin-google-analytics',
     //   options: {
