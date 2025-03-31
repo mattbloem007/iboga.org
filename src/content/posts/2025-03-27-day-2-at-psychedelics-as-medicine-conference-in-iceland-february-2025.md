@@ -36,8 +36,6 @@ Policy reform took center stage as Natalia Rebollo confronted colonialism in dru
 
 For the iboga community specifically, Day 2 delivered actionable insights: from Bismark Dadzie's innovative integrated catfish-and-iboga farm system, to clinical protocols from Bruno Chaves Rasmussen, to concrete policy reform strategies that could expand therapeutic access while honoring traditional contexts.
 
-
-
 ### Iboga-Specific Content
 
 #### Iboga Without Borders: A Global Perspective on Healing
@@ -168,8 +166,7 @@ Day 2 of the conference offered several key takeaways for the iboga community:
 * Ethical commercialization remains challenging: The "Mind to Market" panel's discussion of maintaining integrity while scaling access highlights tensions the iboga community must navigate as interest grows.
 * Traditional wisdom deserves scientific respect: Throughout the day, speakers emphasized that indigenous knowledge systems contain vital insights that complement rather than contradict scientific understanding.
 
-### \
-Conclusion
+## Conclusion
 
 The second day of the "Psychedelics as Medicine" conference wove together threads of science, spirituality, policy, and practice into a rich tapestry reflecting the multifaceted nature of psychedelic medicine. For the iboga community specifically, the day offered both validation of traditional approaches and excitement about emerging possibilities.
 
